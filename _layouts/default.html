@@ -5,27 +5,20 @@
 	<title> {% if page.title %} {{ page.title }} | {% endif %} Chris Mousdale :: Designer &amp; Developer</title>
 </head>
 <body>
+<nav role="navigation">
+	<ul>
+		<li>
+			<a href="#">About me</a>
+			<a href="#">Portfolio</a>
+			<a href="#">Thoughts</a>
+			<a href="/photography">Photography</a>
+		</li>
+	</ul>
+</nav>
 
 	<h1>{{ page.title }}</h1>
 	
 	{{ content }}
-	
-	<section>
-	<h4>A selection of my images:</h4>
-	<ul class="entries">
-	
-	{% for post in site.posts %}
-		<li>
-			<a href="{{post.url}}">
-				<img src="{{post.image}}" alt="" />
-				<h3>{{post.title}}</h3>
-			</a>
-			<em>Posted on {{post.date | date_to_long_string}}.</em>
-		</li>
-	{% endfor %}
-	</ul>
-	
-	</section>
 	
 <footer>
   <p>&copy; Chris Mousdale 2011 | All Rights Reserved.</p>
