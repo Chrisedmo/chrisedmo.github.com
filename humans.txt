@@ -1,0 +1,43 @@
+/* the humans responsible & colophon */
+/* humanstxt.org */
+
+
+/* TEAM */
+  Big Cheese: Chris Mousdale
+  Site: www.mousdale.com
+  Twitter: @chrisedmo
+  Location: Jersey
+
+/* THANKS */
+  Names (& URL):
+
+/* SITE */
+  Standards: HTML5, CSS3
+  Components: Jekyll, GitHub, Dropbox, ifttt, Modernizr, jQuery, Less CSS
+  Software: Espresso 2, Codekit
+
+
+
+                               -o/-
+                               +oo//-
+                              :ooo+//:
+                             -ooooo///-
+                             /oooooo//:
+                            :ooooooo+//-
+                           -+oooooooo///-
+           -://////////////+oooooooooo++////////////::
+            :+ooooooooooooooooooooooooooooooooooooo+:::-
+              -/+ooooooooooooooooooooooooooooooo+/::////:-
+                -:+oooooooooooooooooooooooooooo/::///////:-
+                  --/+ooooooooooooooooooooo+::://////:-
+                     -:+ooooooooooooooooo+:://////:--
+                       /ooooooooooooooooo+//////:-
+                      -ooooooooooooooooooo////-
+                      /ooooooooo+oooooooooo//:
+                     :ooooooo+/::/+oooooooo+//-
+                    -oooooo/::///////+oooooo///-
+                    /ooo+::://////:---:/+oooo//:
+                   -o+/::///////:-      -:/+o+//-
+                   :-:///////:-            -:/://
+                     -////:-                 --//:
+                       --                       -:
