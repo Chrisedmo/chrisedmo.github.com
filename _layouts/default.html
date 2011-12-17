@@ -2,11 +2,16 @@
 <html lang="en-US">
 <head>
 	<meta charset="UTF-8">
-	<title>{{page.title}}</title>
+	<title> {% if page.title %} {{ page.title }} | {% endif %} Chris Mousdale :: Designer &amp; Developer</title>
 </head>
 <body>
+
 	<h1>{{ page.title }}</h1>
 	
 	{{ content }}
+	
+<footer>
+  <p>@copy; Chris Mousdale 2011 | All Rights Reserved.</p>
+</footer>	
 </body>
 </html>

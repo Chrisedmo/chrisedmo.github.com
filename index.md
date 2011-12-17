@@ -5,7 +5,7 @@ title: Chris Mousdale
 
 ##Designer/Developer
 
-Welcome to the new site!
+Chris Mousdale is a designer with over 12 years experience.
 
 ##test h2
 
