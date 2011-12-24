@@ -1,0 +1,25 @@
+<footer>
+  <p>&copy; Chris Mousdale 2011 | All Rights Reserved.</p>
+</footer>
+<!-- Grab Google CDN's jQuery, with a protocol relative URL; fall back to local if offline -->
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+<script>window.jQuery || document.write('<script src="js/libs/jquery-1.7.1.min.js"><\/script>')</script>
+<script type="text/javascript" src="/js/jquery.tweet.js"></script>
+<script type="text/javascript" charset="utf-8">
+$(document).ready(function() {
+	$(".twitter-feed").anchorfy({ animate: true});
+	
+	$(".tweet").tweet({
+	    username: "chrisedmo",
+	    join_text: "auto",
+	    avatar_size: null,
+	    count: 2,
+	    auto_join_text_default: "",
+	    auto_join_text_ed: "",
+	    auto_join_text_ing: "",
+	    auto_join_text_reply: "",
+	    auto_join_text_url: "",
+	    loading_text: ""
+	});
+});
+</script>
