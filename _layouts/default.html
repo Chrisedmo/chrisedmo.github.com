@@ -11,31 +11,11 @@ topnav:
     href: /photography
 ---
 
-<!DOCTYPE HTML>
-<html lang="en">
-<head>
-	<meta charset="UTF-8">
-	<title> {% if page.title %} {{ page.title }} | {% endif %} Chris Mousdale :: Designer &amp; Developer</title>
-	<meta name="description" content="">
-	<meta name="author" content="Chris Mousdale">
-	<meta name="viewport" content="width=device-width,initial-scale=1">
-</head>
-<body>
+{% include header.html %}
 
-<nav role="navigation">
-  <ul>	
-    {% for t in page.topnav %}
-        <li>
-        	<a href="{{ t.href }}" {% if t.title %} title="{{ t.title }}"{% endif %}
-        	class="box{% if t.text == navTitle %} active{% endif %}"><span class="glossy" />{{ t.text }}</a>
-        </li>
-    {% endfor %}
-  </ul>
-</nav>
-
-	{{ page.title }}
+{{ page.title }}
 	
-	{{ content }}
+{{ content }}
 
 <section>
 	<article id="twitter-feed">
@@ -49,5 +29,3 @@ topnav:
 </section>
 	
 {% include footer.html %}
-</body>
-</html>
