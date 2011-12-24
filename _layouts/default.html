@@ -1,14 +1,31 @@
+---
+# -*- html -*- mode
+layout: basic
+---
+
 <!DOCTYPE HTML>
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
 	<title> {% if page.title %} {{ page.title }} | {% endif %} Chris Mousdale :: Designer &amp; Developer</title>
-	  <meta name="description" content="">
-	  <meta name="author" content="Chris Mousdale">
-	  <meta name="viewport" content="width=device-width,initial-scale=1">
+	<meta name="description" content="">
+	<meta name="author" content="Chris Mousdale">
+	<meta name="viewport" content="width=device-width,initial-scale=1">
 </head>
 <body>
-<nav role="navigation">
+<!-- begin: main navigation -->
+<div id="menu">
+  <ul>	
+    {% for t in page.topnav %}
+        <li>
+        	<a href="{{ t.href }}" {% if t.title %} title="{{ t.title }}"{% endif %}
+        	class="box{% if t.text == navTitle %} active{% endif %}"><span class="glossy" />{{ t.text }}</a>
+        </li>
+    {% endfor %}
+  </ul>
+</div><!-- end: menu -->
+
+<!--nav role="navigation">
 	<ul>
 		<li>
 			<a href="#">About me</a>
@@ -17,7 +34,7 @@
 			<a href="/photography">Photography</a>
 		</li>
 	</ul>
-</nav>
+</nav-->
 
 	<h1>{{ page.title }}</h1>
 	
