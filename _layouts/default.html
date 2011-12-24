@@ -3,12 +3,12 @@
 topnav:
   - text: About
     href: /about
-  - text: Movies
-    href: /movies
-  - text: Projects
-    href: /projects
-  - text: Blog
-    href: /
+  - text: Portfolio
+    href: /portfolio
+  - text: Thoughts
+    href: /thoughts
+  - text: Photography
+    href: /photography
 ---
 
 <!DOCTYPE HTML>
@@ -21,8 +21,8 @@ topnav:
 	<meta name="viewport" content="width=device-width,initial-scale=1">
 </head>
 <body>
-<!-- begin: main navigation -->
-<div id="menu">
+
+<nav role="navigation">
   <ul>	
     {% for t in page.topnav %}
         <li>
@@ -31,22 +31,16 @@ topnav:
         </li>
     {% endfor %}
   </ul>
-</div><!-- end: menu -->
+</nav>
 
-<!--nav role="navigation">
-	<ul>
-		<li>
-			<a href="#">About me</a>
-			<a href="#">Portfolio</a>
-			<a href="#">Thoughts</a>
-			<a href="/photography">Photography</a>
-		</li>
-	</ul>
-</nav-->
-
-	<h1>{{ page.title }}</h1>
+	{{ page.title }}
 	
 	{{ content }}
+
+<section>
+	<article id="twitter-feed">
+	</article>
+</section>	
 	
 <section class="social-links">
 	<article>
@@ -56,8 +50,6 @@ topnav:
 	</article>
 </section>
 	
-<footer>
-  <p>&copy; Chris Mousdale 2011 | All Rights Reserved.</p>
-</footer>	
+{{ include footer.html }}	
 </body>
 </html>
