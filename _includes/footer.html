@@ -1,25 +1,15 @@
 <footer>
   <p>&copy; Chris Mousdale {{ 'now' | date: "%Y" }} | All Rights Reserved.</p>
 </footer>
-<!-- Grab Google CDN's jQuery, with a protocol relative URL; fall back to local if offline -->
-<script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
-<script>window.jQuery || document.write('<script src="js/libs/jquery-1.7.1.min.js"><\/script>')</script>
-<script src="/js/jquery.tweet.js"></script>
+<script src="http://twitterjs.googlecode.com/svn/trunk/src/twitter.min.js"></script>
 <script>
-$(document).ready(function() {
-	
-	$("#twitter-feed").tweet({
-	    username: "chrisedmo",
-	    join_text: "auto",
-	    avatar_size: null,
-	    count: 5,
-	    auto_join_text_default: "",
-	    auto_join_text_ed: "",
-	    auto_join_text_ing: "",
-	    auto_join_text_reply: "",
-	    auto_join_text_url: "",
-	    loading_text: ""
-	});
+getTwitters('tweet', { 
+  id: 'chrisedmo', 
+  count: 5, 
+  enableLinks: true, 
+  ignoreReplies: true, 
+  clearContents: true,
+  template: '"%text%" <a href="http://twitter.com/%user_screen_name%/statuses/%id_str%/">%time%</a>'
 });
 </script>
 </body>
