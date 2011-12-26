@@ -12,12 +12,13 @@
 <body>
 
 <nav role="navigation">
-  <ul>	
+	<a href="/" rel="author" title="Chris Mousdale home page">Chris Mousdale<span>AKA Chrisedmo</span></a>
+	<ul>	
     {% for t in page.topnav %}
         <li>
         	<a href="{{ t.href }}" {% if t.title %} title="{{ t.title }}"{% endif %}
         	class="box{% if t.text == navTitle %} active{% endif %}"><span class="glossy" />{{ t.text }}</a>
         </li>
     {% endfor %}
-  </ul>
+	</ul>
 </nav>

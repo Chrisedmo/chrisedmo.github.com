@@ -1,0 +1,20 @@
+---
+layout: default
+title: My thoughts
+---
+
+<section>
+<ul class="entries">
+
+{% for post in site.posts %}
+	<li>
+		<a href="{{post.url}}">
+			<img src="{{post.image}}" alt="" />
+			<h3>{{post.title}}</h3>
+		</a>
+		<em>Posted on {{post.date | date_to_long_string}}.</em>
+	</li>
+{% endfor %}
+</ul>
+
+</section>
