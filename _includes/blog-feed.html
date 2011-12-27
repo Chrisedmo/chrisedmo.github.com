@@ -1,0 +1,11 @@
+<ul class="entries">
+{% for post in site.posts %}
+	<li>
+		<a href="{{post.url}}">
+			<h3>{{post.title}}</h3>
+		</a>
+		<time datetime="{{post.date | date:"%Y-%m-%d"}}">Posted on: {{ post.date | date_to_long_string }}</time>
+		{{ post.content | number_of_words }} words
+	</li>
+{% endfor %}
+</ul>
