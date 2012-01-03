@@ -1,12 +1,9 @@
-<ul class="entries">
+<section class="entries">
 {% for post in site.posts %}
-	<li>
-		<a href="{{post.url}}">
-			<h3>{{post.title}}</h3>
-		</a>
-		<time datetime="{{post.date | date:"%Y-%m-%d"}}">Posted on: {{ post.date | date_to_long_string }}</time>
-		| {{ post.content | number_of_words }} words
+	<article>
+		<a href="{{post.url}}"><h1>{{post.title}}</h1></a>
+		<p>Posted on: <time datetime="{{post.date | date:"%Y-%m-%d"}}">{{ post.date | date_to_long_string }}</time> | {{ post.content | number_of_words }} words</p>
 		<p>{{ post.short }}</p>
-	</li>
+	</article>
 {% endfor %}
-</ul>
+</section>
