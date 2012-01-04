@@ -3,7 +3,7 @@ layout: default
 title: Chris Mousdale
 ---
 
-##Designer/Developer
+{% include intro.html %}
 
 Chris Mousdale is a designer with over 12 years experience.
 

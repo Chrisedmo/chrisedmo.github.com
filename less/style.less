@@ -1,3 +1,41 @@
 /* HTML5BP Stuff */
 @import "reset.less";
 
+
+
+.intro h2 {
+	font-size: 90px;
+	width: 500px;
+	position: relative;
+	line-height: 120px;
+	text-transform: uppercase;
+}
+
+h2 b {
+	-webkit-transform: rotate(-4deg);
+	position: absolute;
+	overflow: hidden;
+}
+
+h2 b.developer {
+	top: 118px;
+}
+
+h2 b i {
+	font-style: normal;
+	display: inline-block;
+}
+
+h2 b.designer i {
+	-webkit-transform-origin: left top;
+	-webkit-transform: translateY(0.2em) rotate(4deg);
+	-webkit-transform-origin-x: 0%;
+	-webkit-transform-origin-y: 0%;
+}
+
+h2 b.developer i {
+	-webkit-transform-origin: right top;
+	-webkit-transform: translateY(-0.2em) rotate(4deg);
+	-webkit-transform-origin-x: 100%;
+	-webkit-transform-origin-y: 0%;
+}
