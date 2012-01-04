@@ -19,21 +19,3 @@
 	<meta name="viewport" content="width=device-width,initial-scale=1">
 	<link rel="stylesheet" type="text/css" href="/css/style.css" media="all" />
 </head>
-
-{% for t in page.topnav %}
-	{% if t.text == page.title %}{% assign navTitle = page.title %}{% endif %}
-{% endfor %}
-
-<body>
-
-<nav role="navigation">
-	<a href="/" rel="author" title="Chris Mousdale home page">Chris Mousdale<br /><span>(Chrisedmo)</span></a>
-	<ul>	
-    {% for t in page.topnav %}
-        <li>
-        	<a href="{{ t.href }}" {% if t.title %} title="{{ t.title }}"{% endif %}{% if t.text == navTitle %}
-        	class="active{% endif %}">{{ t.text }}</a>
-        </li>
-    {% endfor %}
-	</ul>
-</nav>
