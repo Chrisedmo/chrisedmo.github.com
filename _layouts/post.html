@@ -2,11 +2,13 @@
 layout: base
 ---
 
+<article class="blog-post">
 <header>
 	<h1>{{page.title}}</h1>
 	<time datetime="{{page.date | date:"%Y-%m-%d"}}">Posted on: {{ page.date | date_to_long_string }}</time>
 </header>
 
-{{ content }}
+	{{ content }}
+</article>
 
 {% include social.html %}

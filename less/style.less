@@ -3,6 +3,33 @@
 
 /* TYPOGRAPHY */
 
+body {
+	-webkit-font-smoothing: antialiased;
+	color: #222;
+}
+
+h1, h2, h3, h4, h5 ,h6 {
+	text-transform: uppercase;
+	text-rendering: optimizeLegibility;
+	letter-spacing: 0.02em;
+}
+
+@base: 1.2em;
+@leading: (@base * 1.2);
+
+p {
+	font-size: @base;
+	margin: 0;
+	line-height: @leading;
+}
+
+p + p {
+	text-indent: 2em;
+}
+
+time {
+	text-transform: uppercase;
+}
 
 /* NAVIGATION */
 
@@ -14,7 +41,7 @@ nav {
 	left: 0;
 	background-color: #eee;
 	text-align: right;
-	padding: 2.5%;
+	padding: 32px 2.5% 2.5%;
 	font-family: "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
 }
 
@@ -26,11 +53,12 @@ section[role=content] {
 
 
 .intro h2 {
-	font-size: 90px;
 	width: 500px;
 	position: relative;
-	line-height: 120px;
 	text-transform: uppercase;
+	font-size: 90px;
+	line-height: 120px;
+	text-rendering: optimizeLegibility;
 }
 
 h2 b {
@@ -60,4 +88,8 @@ h2 b.developer i {
 	-webkit-transform: translateY(-0.2em) rotate(4deg);
 	-webkit-transform-origin-x: 100%;
 	-webkit-transform-origin-y: 0%;
+}
+
+article.blog-post  {
+	width: 50%;
 }
