@@ -1,6 +1,5 @@
 ---
 layout: default
-title: Chris Mousdale
 ---
 
 {% include intro.html %}
