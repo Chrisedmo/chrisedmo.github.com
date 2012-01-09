@@ -17,21 +17,45 @@ body {
 	font-size: 1.6rem;
 	padding-right: 5%;
 	padding-top: 36px;
+	padding-top: 3.6em;
+	line-height: 22px;
+	line-height: 2.2rem;
+	background-color: #fff; 
+	/*	THIS IS FOR THE CSS GRID 
+	background-image: -webkit-linear-gradient(#eee .05em, transparent .05em);	
+	background-size: 100% 2.2rem; /*change this for grid height */
+	background-image:   
+	-webkit-linear-gradient(gray 1px, transparent 1px),
+	-webkit-linear-gradient(0, gray 1px, transparent 1px);
+	background-size:2.2rem 2.2rem, 2.2rem 2.2rem;
+	background-position:-1px -1px, -1px -1px
+}
+
+a:link, a:visited {
+	text-decoration: none;
 }
 
 h1, h2, h3, h4, h5 ,h6 {
 	text-rendering: optimizeLegibility;
+	-moz-font-feature-settings: "kern=1"; 
+	-ms-font-feature-settings: "kern" 1;
 	margin-top: 0;
+	font-weight: normal;
 }
 
 h1 {
-	font-size: 36px;
-	font-size: 3.6rem;
+	font-size: 88px;
+	font-size: 8.8rem;
+	line-height: 66px;
+	line-height: 6.6rem;
+	letter-spacing: -0.05em;
 }
 
 nav h1 {
 	font-size: 24px;
 	font-size: 2.4rem;
+	line-height: 24px;
+	line-height: 2.4rem;
 }
 
 h1 span {
@@ -39,9 +63,9 @@ h1 span {
 	font-size: 1.6rem;
 }
 
-.entries h1 {
-	margin-bottom: 5px;
-	margin-bottom: 0.5rem;
+h1 {
+	margin-bottom: 22px;
+	margin-bottom: 2.2rem;
 }
 
 .entries h2 {
@@ -59,9 +83,32 @@ p + p {
 
 time {
 	text-transform: uppercase;
+	font-size: 12px;
+	font-size: 1.2rem;
+	padding-top: 10px;
+	padding-top: 1rem;
 }
 
 /* NAVIGATION */
+
+body:after {
+    content: "FULL";
+    font-size: 25%;
+    position: fixed;
+    top: 0;    
+    width: 100%;
+    background: -webkit-linear-gradient(left, 
+    			gray 22.222222222222%, 
+    			black 22.222222222222%,
+    			black 44.444444444444%,
+    			gray 44.444444444444%,
+    			gray 77.777777777778%,
+    			black 77.777777777778%
+    
+    
+    );
+    color: #fff;
+}
 
 nav {
 	height: 100%;
@@ -79,8 +126,13 @@ nav {
 
 section[role=content] {
 	position: relative;
-	left: 42.222222222222%;
-	width: 52.777777777778%;
+	left: 22.222222222222%;
+	width: 77.777777777778%;
+}
+
+.blog-post > section {
+	position: relative;
+	margin-left: 20%;
 }
 
 
