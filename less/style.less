@@ -2,13 +2,20 @@
 @import "reset.less";
 
 @basepx: 1em;
-@leading: (@basepx * 1.4);
+@leading: (@basepx * 1.5);
 
 body {
 	-webkit-font-smoothing: antialiased;
 	padding: 5%;
 	font: @basepx Georgia, "Times New Roman", Times, serif;
 	line-height: @leading;
+	/*	THIS IS FOR THE CSS GRID 
+	background-image: -webkit-linear-gradient(#eee .05em, transparent .05em);	
+	background-size: 100% 2.2rem; /*change this for grid height */
+	background-image:   
+	-webkit-linear-gradient(gray 1px, transparent 1px);	
+	background-size:2.2rem 2.2rem;
+	background-position: -1px -1px;
 }
 
 h1, h2, h3, h4, h5, h6, nav ul, .published {
