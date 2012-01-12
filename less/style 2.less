@@ -1,0 +1,245 @@
+/* HTML5BP Stuff */
+@import "reset.less";
+
+/* TYPOGRAPHY */
+
+@base: 10px;
+@leading: (@base * 2.2);
+
+html {
+	font-size: @base;	
+}
+
+body {
+	-webkit-font-smoothing: antialiased;
+	margin: 0;
+	color: #222;
+	font-size: 16px;
+	font-size: 1.6rem;
+	padding-right: 5%;
+	padding-top: 42px;
+	padding-top: 4.2rem;
+	line-height: 22px;
+	line-height: 2.2rem;
+	background-color: #fff; 
+	/*	THIS IS FOR THE CSS GRID 
+	background-image: -webkit-linear-gradient(#eee .05em, transparent .05em);	
+	background-size: 100% 2.2rem; /*change this for grid height */
+	background-image:   
+	-webkit-linear-gradient(gray 1px, transparent 1px);	
+	background-size:2.2rem 2.2rem;
+	background-position: -1px 1-px;
+}
+
+a:link, a:visited {
+	text-decoration: none;
+}
+
+h1, h2, h3, h4, h5 ,h6 {
+	text-rendering: optimizeLegibility;
+	-moz-font-feature-settings: "kern=1"; 
+	-ms-font-feature-settings: "kern" 1;
+	margin-top: 0;
+	line-height: @leading;
+	margin-bottom: @leading;
+	font-weight: normal;
+}
+
+h1 {
+	font-size: 88px;
+	font-size: 8.8rem;
+	line-height: 66px;
+	line-height: 6.6rem;
+	letter-spacing: -0.05em;
+}
+
+nav h1 {
+	font-size: 24px;
+	font-size: 2.4rem;
+	line-height: 24px;
+	line-height: 2.4rem;
+}
+
+h1 span {
+	font-size: 16px;
+	font-size: 1.6rem;
+}
+
+h1 {
+	margin-bottom: 22px;
+	margin-bottom: 2.2rem;
+}
+
+.entries h2 {
+	font-size: 16px;
+	font-size: 1.6rem;
+}
+
+p {
+	margin: 0;
+}
+
+p + p {
+	text-indent: 2em;
+}
+
+time {
+	text-transform: uppercase;
+	font-size: 10px;
+	font-size: 1rem;
+	line-height: @leading;
+	margin-bottom: @leading;
+}
+
+/* NAVIGATION */
+
+/*body:after {
+    content: "FULL";
+    font-size: 25%;
+    position: fixed;
+    top: 0;    
+    width: 100%;
+    background: -webkit-linear-gradient(left, 
+    			gray 22.222222222222%, 
+    			black 22.222222222222%,
+    			black 44.444444444444%,
+    			gray 44.444444444444%,
+    			gray 77.777777777778%,
+    			black 77.777777777778%
+    
+    
+    );
+    color: #fff;
+}*/
+
+nav {
+	height: 100%;
+	width: 17.222222222222%;
+	position: fixed;
+	top: 0;
+	left: 0;
+	background-color: #fff;
+	text-align: right;
+	font-family: "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
+	padding-right: 2.5%;
+	padding-left: 2.5%;
+	padding-top: 36px;
+}
+
+section[role=content] {
+	position: relative;
+	left: 22.222222222222%;
+	width: 77.777777777778%;
+}
+
+.blog-post > section {
+	position: relative;
+	margin-left: 20%;
+}
+
+
+/* DESIGNER / DEVELOPER INTRO */
+
+.intro h2 {
+	width: 500px;
+	position: relative;
+	text-transform: uppercase;
+	font-size: 90px;
+	line-height: 120px;
+	text-rendering: optimizeLegibility;
+}
+
+h2 b {
+	-webkit-transform: rotate(-4deg);
+	position: absolute;
+	overflow: hidden;
+}
+
+h2 b.developer {
+	top: 118px;
+}
+
+h2 b i {
+	font-style: normal;
+	display: inline-block;
+}
+
+h2 b.designer i {
+	-webkit-transform-origin: left top;
+	-webkit-transform: translateY(0.2em) rotate(4deg);
+	-webkit-transform-origin-x: 0%;
+	-webkit-transform-origin-y: 0%;
+}
+
+h2 b.developer i {
+	-webkit-transform-origin: right top;
+	-webkit-transform: translateY(-0.2em) rotate(4deg);
+	-webkit-transform-origin-x: 100%;
+	-webkit-transform-origin-y: 0%;
+}
+
+/* ARTICLES HEADER */
+
+.blog-post header {
+	width: 100%;
+	margin-bottom: (@leading * 2.5);
+	margin-bottom: 5.4rem;
+}
+
+/* MEDIA QUERIES THAT CHANGE THE FONT SIZING:
+http://blog.responsivenews.co.uk/post/13925578846/fluid-grids-orientation-resolution-independence
+*/
+
+@media (min-width: 1217px) {
+					html {
+						font-size: 16px;
+					}
+				}
+				
+@media (max-width: 1216px) {
+					html {
+						font-size: 15px;
+					}
+				}
+				
+@media (max-width: 1140px) {
+					html {
+						font-size: 14px;
+					}
+				}
+				
+@media (max-width: 1064px) {
+					html {
+						font-size: 13px;
+					}
+				}
+				
+@media (max-width: 988px) {
+					html {
+						font-size: 12px;
+					}
+				}
+				
+@media (max-width: 912px) {
+					html {
+						font-size: 11px;
+					}
+				}
+				
+@media (max-width: 836px) {
+					html {
+						font-size: 10px;
+					}
+				}
+				
+@media (max-width: 760px) {
+					html {
+						font-size: 9px;
+					}
+				}
+				
+@media (max-width: 684px) {
+					html {
+						font-size: 8px;
+					}
+				}
