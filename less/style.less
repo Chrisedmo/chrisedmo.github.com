@@ -1,36 +1,110 @@
 /* HTML5BP Stuff */
 @import "reset.less";
 
-@basepx: 1em;
+/* NEED TO CHANGE TO 18px For base.*/
+
+@basepx: 1.125em;
 @leading: (@basepx * 1.5);
+
+
+line-height: 22px;
+line-height: 2.2rem;
+
+html {
+	font-size: @basepx ;
+}
 
 body {
 	-webkit-font-smoothing: antialiased;
 	padding: 5%;
-	font: @basepx Georgia, "Times New Roman", Times, serif;
+	font-family: Constantia, Palatino, "Palatino Linotype", "Palatino LT STD", Georgia, serif;
 	line-height: @leading;
 	/*	THIS IS FOR THE CSS GRID 
 	background-image: -webkit-linear-gradient(#eee .05em, transparent .05em);	
-	background-size: 100% 2.2rem; /*change this for grid height */
+	background-size: 100% 2.2rem; /*change this for grid height 
 	background-image:   
 	-webkit-linear-gradient(gray 1px, transparent 1px);	
 	background-size:1.5rem 1.5rem;
-	background-position: 0%;
+	background-position: 0%; */
+	background-color: #f7f7f7;
+	color: #444;
+}
+
+/* HEADERS */
+
+h1, h2, h3, h4, h5, h6 {
+	font-weight: bold;	
+}
+
+h1, h2, h3, h4, h5 {
+	letter-spacing: -0.05em;
 }
 
 h1, h2, h3, h4, h5, h6, nav ul, .published {
 	margin-bottom: @basepx;
 }
 
+h1 {
+	font-size: 2em;
+	span {font-size: 1rem;}
+}
+
+h2 {
+	font-size: 1.5em;
+	font-weight: 500;
+}
+
+h3 {
+	font-size: 1.375em;
+	font-weight: 300;
+}
+
+h4 {
+	font-size: 1.25em;
+}
+
+h5, h6 {
+	font-size: 1.125em;
+}
+
+p {
+	font-size: 18px;
+	font-size:	1rem;
+}
+
 p + p {
 	text-indent: 1em;
 }
 
-nav ul {
-	font-family: "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
-}
-
-
 .published {
 	text-transform: uppercase;
+}
+
+nav {
+	font-family: "Jubilat-1";
+	font-weight: 300;
+	a:link, a:visited {text-decoration: none;}
+}
+
+/* STRUCTURE */
+
+nav {
+	height: 100%;
+	width: 17.222222222222%;
+	position: fixed;
+}
+
+section[role=content]{
+	position: relative;
+	left: 22.222222222222%;
+	width: 72.777777777778%;
+	/*
+	TRYING OUT COLUMNS FOR WIDER SCREENS
+	header {width: 100%;}
+	section {-moz-column-count: 2;
+		-moz-column-gap: @leading;
+		-webkit-column-count: 2;
+		-webkit-column-gap: @leading;
+		column-count: 2;
+		column-gap: @leading;}*/
 }
