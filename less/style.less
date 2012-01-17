@@ -3,29 +3,35 @@
 
 /* NEED TO CHANGE TO 18px For base.*/
 
-@basepx: 1.125em;
-@leading: (@basepx * 1.5);
+@base: 18;
+@leading: 1.5;
+@basepx: (@base * 1px);
 
 
-line-height: 22px;
-line-height: 2.2rem;
+.line-height(@x: @leading) {
+	line-height: (@base * @x * 1px);
+	line-height: (@base / @base * @x *1rem);
+}
+
+.font-size() {
+	font-size: (@base * 1px);
+	font-size: (@base / @base * 1rem);
+}
+
+.margin-bottom(@m: @leading) {
+	margin-bottom: (@base * @m * 1px);
+	margin-bottom: (@base / @base * @m * 1rem);
+}
 
 html {
-	font-size: @basepx ;
+	font-size: (@basepx);
 }
 
 body {
 	-webkit-font-smoothing: antialiased;
-	padding: 5%;
+	padding: 0;
 	font-family: Constantia, Palatino, "Palatino Linotype", "Palatino LT STD", Georgia, serif;
-	line-height: @leading;
-	/*	THIS IS FOR THE CSS GRID 
-	background-image: -webkit-linear-gradient(#eee .05em, transparent .05em);	
-	background-size: 100% 2.2rem; /*change this for grid height 
-	background-image:   
-	-webkit-linear-gradient(gray 1px, transparent 1px);	
-	background-size:1.5rem 1.5rem;
-	background-position: 0%; */
+	.line-height;
 	background-color: #f7f7f7;
 	color: #444;
 }
@@ -33,30 +39,35 @@ body {
 /* HEADERS */
 
 h1, h2, h3, h4, h5, h6 {
-	font-weight: bold;	
+	font-weight: 700;
+	text-rendering: optimizeLegibility;
+	-moz-font-feature-settings: "kern=1"; 
+	-ms-font-feature-settings: "kern" 1;
 }
 
-h1, h2, h3, h4, h5 {
+h1, h2 {
 	letter-spacing: -0.05em;
+	.margin-bottom(2);
 }
 
-h1, h2, h3, h4, h5, h6, nav ul, .published {
-	margin-bottom: @basepx;
+h3, h4, h5, h6, nav ul {
+	.margin-bottom;
 }
 
 h1 {
-	font-size: 2em;
+	font-size: 2.75em;
+	.line-height(2);
 	span {font-size: 1rem;}
+	
 }
 
 h2 {
-	font-size: 1.5em;
-	font-weight: 500;
+	font-size: 1.75em;
+	.line-height;
 }
 
 h3 {
-	font-size: 1.375em;
-	font-weight: 300;
+	font-size: 1.25em;
 }
 
 h4 {
@@ -68,8 +79,7 @@ h5, h6 {
 }
 
 p {
-	font-size: 18px;
-	font-size:	1rem;
+	.font-size;
 }
 
 p + p {
@@ -78,12 +88,21 @@ p + p {
 
 .published {
 	text-transform: uppercase;
+	font-size: 0.75em;
+	margin-bottom: @basepx;
 }
 
 nav {
-	font-family: "Jubilat-1";
-	font-weight: 300;
+	font-family: "etica-1","etica-2";
+	font-weight: 700;
+	text-transform: uppercase;
+	h1 {line-height: @basepx;
+}
 	a:link, a:visited {text-decoration: none;}
+}
+
+time {
+	font-weight: 400;
 }
 
 /* STRUCTURE */
@@ -91,13 +110,15 @@ nav {
 nav {
 	height: 100%;
 	width: 17.222222222222%;
+	padding: 5% 2.5% 2.5%;
+	background-color: grey;
 	position: fixed;
 }
 
 section[role=content]{
 	position: relative;
 	left: 22.222222222222%;
-	width: 72.777777777778%;
+	width: 77.777777777778%;
 	/*
 	TRYING OUT COLUMNS FOR WIDER SCREENS
 	header {width: 100%;}
@@ -109,11 +130,22 @@ section[role=content]{
 		column-gap: @leading;}*/
 }
 
+header.intro {
+	padding: 15% 0;
+}
+
 @media only screen and (max-width: 480px) {
+	
 	nav, section[role=content] {
-		width: 100%;
+		width: 90%;
 		position: relative;
 		left: 0;
-		
+		padding: 5%;
+	}
+}
+
+@media only screen and (max-width: 320px) {
+	html {
+		font-size: 16px;
 	}
 }
