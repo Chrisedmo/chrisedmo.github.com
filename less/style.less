@@ -1,7 +1,7 @@
 /* HTML5BP Stuff */
 @import "reset.less";
 
-/* NEED TO CHANGE TO 18px For base.*/
+/* ====== BASE TYPE ====== */
 
 @base: 18;
 @leading: 1.5;
@@ -22,6 +22,8 @@
 	margin-bottom: (@base * @m * 1px);
 	margin-bottom: (@base / @base * @m * 1rem);
 }
+
+/* ====== CORE ELEMENTS ====== */
 
 html {
 	font-size: (@basepx);
@@ -58,8 +60,7 @@ h3, h4, h5, h6, nav ul {
 h1 {
 	font-size: 2.75em;
 	.line-height(2);
-	span {font-size: 1rem;}
-	
+		span {font-size: 1rem;}
 }
 
 h2 {
@@ -109,7 +110,7 @@ time {
 /* STRUCTURE */
 
 nav {
-text-align: right;
+	text-align: right;
 	height: 100%;
 	width: 17.222222222222%;
 	padding: 5% 2.5% 2.5%;
@@ -135,6 +136,47 @@ section[role=content]{
 header.intro {
 	padding: 15% 0;
 }
+
+/* DESIGNER / DEVELOPER INTRO */
+
+.intro h2 {
+	width: 500px;
+	position: relative;
+	text-transform: uppercase;
+	font-size: 90px;
+	line-height: 120px;
+	text-rendering: optimizeLegibility;
+}
+
+h2 b {
+	-webkit-transform: rotate(-4deg);
+	position: absolute;
+	overflow: hidden;
+}
+
+h2 b.developer {
+	top: 118px;
+}
+
+h2 b i {
+	font-style: normal;
+	display: inline-block;
+}
+
+h2 b.designer i {
+	-webkit-transform-origin: left top;
+	-webkit-transform: translateY(0.2em) rotate(4deg);
+	-webkit-transform-origin-x: 0%;
+	-webkit-transform-origin-y: 0%;
+}
+
+h2 b.developer i {
+	-webkit-transform-origin: right top;
+	-webkit-transform: translateY(-0.2em) rotate(4deg);
+	-webkit-transform-origin-x: 100%;
+	-webkit-transform-origin-y: 0%;
+}
+
 
 @media only screen and (max-width: 480px) {
 	
