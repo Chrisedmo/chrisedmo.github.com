@@ -3,7 +3,7 @@
 
 /* ====== BASE TYPE ====== */
 
-@base: 18;
+@base: 16;
 @leading: 1.5;
 @basepx: (@base * 1px);
 
@@ -23,6 +23,11 @@
 	margin-bottom: (@base / @base * @m * 1rem);
 }
 
+.margin-top(@m: @leading) {
+	margin-top: (@base * @m * 1px);
+	margin-top: (@base / @base * @m * 1rem);
+}
+
 /* ====== CORE ELEMENTS ====== */
 
 html {
@@ -38,6 +43,10 @@ body {
 	color: #444;
 }
 
+li {
+	font-size: @basepx;
+}
+
 /* HEADERS */
 
 h1, h2, h3, h4, h5, h6 {
@@ -45,15 +54,15 @@ h1, h2, h3, h4, h5, h6 {
 	text-rendering: optimizeLegibility;
 	-moz-font-feature-settings: "kern=1"; 
 	-ms-font-feature-settings: "kern" 1;
+	font-family: "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
 }
 
 h1, h2 {
-	letter-spacing: -0.05em;
 	.margin-bottom(2);
 	width: 100%;
 }
 
-h3, h4, h5, h6, nav ul {
+h3, h4, h5, h6 {
 	.margin-bottom;
 }
 
@@ -96,11 +105,23 @@ p + p {
 }
 
 nav {
-	font-family: "etica-1","etica-2";
+	font-family: "etica-1","etica-2","Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
 	font-weight: 700;
 	text-transform: uppercase;
-		h1 {line-height: @basepx; .font-size(1.5);}
-		a:link, a:visited {text-decoration: none;}
+		
+		h1 {
+			.font-size(1); 
+			margin-bottom: @basepx;
+			}
+		
+		a:link, a:visited {
+			text-decoration: none;
+			color: #ffffff;
+		}
+		
+		ul {
+			margin: 0;
+		}
 }
 
 time {
@@ -109,29 +130,55 @@ time {
 
 /* STRUCTURE */
 
+
 nav {
-	text-align: right;
-	height: 100%;
-	width: 17.222222222222%;
-	padding: 5% 2.5% 2.5%;
-	background-color: grey;
-	position: fixed;
+	background-color: black;
+	padding-top: @basepx;
+	
+	h1 {
+		width: 90%;
+		padding-right: 5%;
+		padding-left: 5%;
+		}
+		
+	li{
+		width: 45%;
+		padding-left: 5%;
+		display: inline-block;
+		margin-bottom: 0;			
+		
+		a {
+			display: block; line-height: (@basepx * 2);
+		}
+	}
+	
+	li:nth-child(1) {
+		background-color: red;
+	}
+	
+	li:nth-child(2) {
+		background-color: orange;
+	}
+	
+	li:nth-child(3) {
+		background-color: teal;
+	}
+	
+	li:nth-child(4) {
+		background-color: green;
+	}
+	
 }
 
+section[role=content] {
+	padding: 5%;
+}
+/* ADD THIS in for larger styles
 section[role=content]{
 	position: relative;
 	left: 22.222222222222%;
 	width: 77.777777777778%;
-	/*
-	TRYING OUT COLUMNS FOR WIDER SCREENS
-	header {width: 100%;}
-	section {-moz-column-count: 2;
-		-moz-column-gap: @leading;
-		-webkit-column-count: 2;
-		-webkit-column-gap: @leading;
-		column-count: 2;
-		column-gap: @leading;}*/
-}
+}*/
 
 header.intro {
 	padding: 15% 0;
@@ -175,21 +222,4 @@ h2 b.developer i {
 	-webkit-transform: translateY(-0.2em) rotate(4deg);
 	-webkit-transform-origin-x: 100%;
 	-webkit-transform-origin-y: 0%;
-}
-
-
-@media only screen and (max-width: 480px) {
-	
-	nav, section[role=content] {
-		width: 90%;
-		position: relative;
-		left: 0;
-		padding: 5%;
-	}
-}
-
-@media only screen and (max-width: 320px) {
-	html {
-		font-size: 16px;
-	}
 }
