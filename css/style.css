@@ -493,12 +493,12 @@ h6 {
   text-rendering: optimizeLegibility;
   -moz-font-feature-settings: "kern=1";
   -ms-font-feature-settings: "kern" 1;
-  font-family: "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
 }
 h1, h2 {
   margin-bottom: 32px;
   margin-bottom: 2rem;
   width: 100%;
+  font-family: "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
 }
 h3,
 h4,
@@ -522,6 +522,7 @@ h2 {
 }
 h3 {
   font-size: 1.25em;
+  font-family: "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
 }
 h4 {
   font-size: 1.25em;
@@ -565,7 +566,7 @@ time {
 }
 /* STRUCTURE */
 nav {
-  position: absolute;
+  display: inline-block;
   background-color: black;
   padding-top: 16px;
   width: 100%;
