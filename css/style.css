@@ -218,9 +218,6 @@ sub {
 /* =============================================================================
    Lists
    ========================================================================== */
-ul {
-  font-size: 0;
-}
 ul, ol {
   margin: 1em 0;
   padding: 0 0 0 40px;
@@ -229,7 +226,8 @@ dd {
   margin: 0 0 0 40px;
 }
 nav ul, nav ol {
-  /*list-style: none; list-style-image: none; */
+  list-style: none;
+  list-style-image: none;
   margin: 0;
   padding: 0;
 }
@@ -484,9 +482,6 @@ body {
   background-color: #f7f7f7;
   color: #444;
 }
-li {
-  font-size: 16px;
-}
 /* HEADERS */
 h1,
 h2,
@@ -570,8 +565,10 @@ time {
 }
 /* STRUCTURE */
 nav {
+  position: absolute;
   background-color: black;
   padding-top: 16px;
+  width: 100%;
 }
 nav h1 {
   width: 90%;
@@ -579,14 +576,15 @@ nav h1 {
   padding-left: 5%;
 }
 nav li {
-  width: 45%;
-  padding-left: 5%;
-  display: inline-block;
+  width: 50%;
+  display: block;
+  float: left;
   margin-bottom: 0;
 }
 nav li a {
   display: block;
-  line-height: 32px;
+  padding-left: 10%;
+  line-height: 40px;
 }
 nav li:nth-child(1) {
   background-color: red;

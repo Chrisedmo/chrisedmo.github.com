@@ -43,10 +43,6 @@ body {
 	color: #444;
 }
 
-li {
-	font-size: @basepx;
-}
-
 /* HEADERS */
 
 h1, h2, h3, h4, h5, h6 {
@@ -132,8 +128,10 @@ time {
 
 
 nav {
+	position: absolute;
 	background-color: black;
 	padding-top: @basepx;
+	width: 100%;
 	
 	h1 {
 		width: 90%;
@@ -142,13 +140,15 @@ nav {
 		}
 		
 	li{
-		width: 45%;
-		padding-left: 5%;
-		display: inline-block;
+		width: 50%;
+		display: block;
+		float: left;
 		margin-bottom: 0;			
 		
 		a {
-			display: block; line-height: (@basepx * 2);
+			display: block; 
+			padding-left: 10%;
+			line-height: (@basepx * 2.5);
 		}
 	}
 	
