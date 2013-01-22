@@ -2,10 +2,9 @@
 <!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
 <!--[if IE 7]>    <html class="no-js lt-ie9 lt-ie8" lang="en"> <![endif]-->
 <!--[if IE 8]>    <html class="no-js lt-ie9" lang="en"> <![endif]-->
-<!-- Consider adding a manifest.appcache: h5bp.com/d/Offline -->
 <!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
 <head>
-	<meta charset="UTF-8">
+	<meta charset="utf-8">
 	<title> {% if page.title %} {{ page.title }} | {% endif %} Chris Mousdale :: Designer &amp; Developer</title>
 	{% if page.description %}
 	<meta name="description" content="{{ page.description }}">
@@ -20,23 +19,21 @@
 	<meta name="author" content="Chris Mousdale">
 	<meta name="publisher" content="Chris Mousdale"/>
 	<meta name="copyright" content="Chris Mousdale"/>
+	<meta name="HandheldFriendly" content="True">
 	<meta name="viewport" content="width=device-width,initial-scale=1">
 	<meta http-equiv="cleartype" content="on">	
-	
-	<!-- For all browsers -->
-	<link rel="stylesheet" href="/css/style.css">
-	<!--link rel="stylesheet" media="print" href="css/print.css"-->
-	<!-- For progressively larger displays -->
-	<!--
-	<link rel="stylesheet" media="only screen and (min-width: 480px)" href="/css/480.css">
-	<link rel="stylesheet" media="only screen and (min-width: 600px)" href="/css/600.css">
-	<link rel="stylesheet" media="only screen and (min-width: 768px)" href="/css/768.css">
-	<link rel="stylesheet" media="only screen and (min-width: 992px)" href="/css/992.css">
-	-->
-	<!-- For Retina displays -->
-	<!--
-	<link rel="stylesheet" media="only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (-o-min-device-pixel-ratio: 3/2), only screen and (min-device-pixel-ratio: 1.5)" href="/css/2x.css">
-	-->
+
+	<!-- Prefetch DNS for external assets (Twitter widgets etc). -->
+	<link rel="dns-prefetch" href="//fonts.googleapis.com">
+    <link rel="dns-prefetch" href="//s3.buysellads.com">
+    <link rel="dns-prefetch" href="//platform.twitter.com">
+    <link rel="dns-prefetch" href="//www.google-analytics.com">
+    <link rel="dns-prefetch" href="//themes.googleusercontent.com">
+    <link rel="dns-prefetch" href="//stats.buysellads.com">
+    <link rel="dns-prefetch" href="//p.twitter.com">
+    <link rel="dns-prefetch" href="//cdn.api.twitter.com">
+
+	<link rel="stylesheet" href="/css/style.min.css">
 	
 	<script src="/js/modernizr.custom.js"></script>
 	<script src="http://use.typekit.com/ezu6pyt.js"></script>
