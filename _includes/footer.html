@@ -1,19 +1,16 @@
 <footer>
-  <p>&copy; Chris Mousdale {{ 'now' | date: "%Y" }} | All Rights Reserved.</p>
-  <a href="/built-with.html">For the geeks only…</a>
+  <p>&copy; {{ 'now' | date: "%Y" }} Chris Mousdale.
+  <a href="/built-with.html">For the geeks…</a></p>
 </footer>
 <script src="http://twitter.com/javascripts/blogger.js"></script> 
 <script src="http://twitter.com/statuses/user_timeline/Chrisedmo.json?callback=twitterCallback2&amp;count=5"></script> 
 
-<!--! A fix for the iOS orientationchange zoom bug.Script by @scottjehl, rebound by @wilto. MIT License.-->
-
-<script>(function(j){var i=j.document;if(!i.querySelectorAll){return}var l=i.querySelectorAll("meta[name=viewport]")[0],a=l&&l.getAttribute("content"),h=a+", maximum-scale=1.0",d=a+", maximum-scale=10.0",g=true,c=j.orientation,k=0;if(!l){return}function f(){l.setAttribute("content",d);g=true}function b(){l.setAttribute("content",h);g=false}function e(m){c=Math.abs(j.orientation);k=Math.abs(m.gamma);if(k>8&&c===0){if(g){b()}}else{if(!g){f()}}}j.addEventListener("orientationchange",f,false);j.addEventListener("deviceorientation",e,false)})(this);</script>
-
-<!-- FIT TEXT FOR HEADERS OR NAME -->
-<!--
-<script src="/js/min/fittext-min.js"></script>
-<script>fitText(document.getElementById('fittext'), 1.2)</script>
--->
+<script>
+    var _gaq=[['_setAccount','UA-XXXXX-X'],['_trackPageview']];
+    (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
+    g.src=('https:'==location.protocol?'//ssl':'//www')+'.google-analytics.com/ga.js';
+    s.parentNode.insertBefore(g,s)}(document,'script'));
+</script>
 
 </body>
 </html>
