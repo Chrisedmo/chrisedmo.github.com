@@ -2,34 +2,12 @@
   "CodeKitInfo" : "This is a CodeKit project configuration file. It is designed to sync project settings across multiple machines. Modifying the contents of this file can be a poor life decision if you don't know what you're doing. This file is not useful unless accompanied by the project that created it in CodeKit. For more information, see: http:\/\/incident57.com\/codekit",
   "creatorBuild" : "8248",
   "files" : {
-    "\/less\/normalize.less" : {
-      "ignoreWasSetByUser" : 1,
-      "ignore" : 1,
-      "hidden" : 0,
-      "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/less\/normalize.less",
-      "outputStyle" : 0,
-      "shouldRunBless" : 0,
-      "outputAbbreviatedPath" : "\/css\/normalize.css",
-      "strictImports" : 0,
-      "fileType" : 1,
-      "debugStyle" : 0
-    },
-    "\/_includes\/header.html" : {
+    "\/_site\/2011\/12\/17\/test.html" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 0,
       "hidden" : 0,
       "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/_includes\/header.html",
-      "outputAbbreviatedPath" : "No Output Path",
-      "fileType" : 2048
-    },
-    "\/_includes\/footer.html" : {
-      "ignoreWasSetByUser" : 0,
-      "ignore" : 0,
-      "hidden" : 0,
-      "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/_includes\/footer.html",
+      "inputAbbreviatedPath" : "\/_site\/2011\/12\/17\/test.html",
       "outputAbbreviatedPath" : "No Output Path",
       "fileType" : 2048
     },
@@ -42,12 +20,139 @@
       "outputAbbreviatedPath" : "No Output Path",
       "fileType" : 2048
     },
+    "\/_site\/photography\/index.html" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 0,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/_site\/photography\/index.html",
+      "outputAbbreviatedPath" : "No Output Path",
+      "fileType" : 2048
+    },
+    "\/_site\/less\/normalize.less" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 1,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/_site\/less\/normalize.less",
+      "outputStyle" : 1,
+      "shouldRunBless" : 0,
+      "outputAbbreviatedPath" : "\/_site\/css\/normalize.css",
+      "strictImports" : 0,
+      "fileType" : 1,
+      "debugStyle" : 0
+    },
+    "\/js\/bigtext.min.js" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 1,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/js\/bigtext.min.js",
+      "outputStyle" : 1,
+      "syntaxCheckerStyle" : 1,
+      "outputAbbreviatedPath" : "\/js\/bigtext.min.min.js",
+      "fileType" : 64
+    },
+    "\/_site\/js\/bigtext.min.js" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 1,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/_site\/js\/bigtext.min.js",
+      "outputStyle" : 1,
+      "syntaxCheckerStyle" : 1,
+      "outputAbbreviatedPath" : "\/_site\/js\/bigtext.min.min.js",
+      "fileType" : 64
+    },
+    "\/_site\/css\/style.min.css" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 0,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/_site\/css\/style.min.css",
+      "outputAbbreviatedPath" : "No Output Path",
+      "fileType" : 16
+    },
+    "\/_site\/2011\/12\/26\/test-2.html" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 0,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/_site\/2011\/12\/26\/test-2.html",
+      "outputAbbreviatedPath" : "No Output Path",
+      "fileType" : 2048
+    },
     "\/_layouts\/base.html" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 0,
       "hidden" : 0,
       "outputPathIsSetByUser" : 0,
       "inputAbbreviatedPath" : "\/_layouts\/base.html",
+      "outputAbbreviatedPath" : "No Output Path",
+      "fileType" : 2048
+    },
+    "\/_site\/blog\/index.html" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 0,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/_site\/blog\/index.html",
+      "outputAbbreviatedPath" : "No Output Path",
+      "fileType" : 2048
+    },
+    "\/_layouts\/default.html" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 0,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/_layouts\/default.html",
+      "outputAbbreviatedPath" : "No Output Path",
+      "fileType" : 2048
+    },
+    "\/_includes\/header.html" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 0,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/_includes\/header.html",
+      "outputAbbreviatedPath" : "No Output Path",
+      "fileType" : 2048
+    },
+    "\/js\/modernizr.custom.js" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 0,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/js\/modernizr.custom.js",
+      "outputStyle" : 1,
+      "syntaxCheckerStyle" : 1,
+      "outputAbbreviatedPath" : "\/js\/modernizr.custom.min.js",
+      "fileType" : 64
+    },
+    "\/_layouts\/post.html" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 0,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/_layouts\/post.html",
+      "outputAbbreviatedPath" : "No Output Path",
+      "fileType" : 2048
+    },
+    "\/css\/style.min.css" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 1,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/css\/style.min.css",
+      "outputAbbreviatedPath" : "No Output Path",
+      "fileType" : 16
+    },
+    "\/_includes\/footer.html" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 0,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/_includes\/footer.html",
       "outputAbbreviatedPath" : "No Output Path",
       "fileType" : 2048
     },
@@ -64,61 +169,43 @@
       "fileType" : 1,
       "debugStyle" : 0
     },
-    "\/_includes\/nav.html" : {
+    "\/_site\/index.html" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 0,
       "hidden" : 0,
       "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/_includes\/nav.html",
+      "inputAbbreviatedPath" : "\/_site\/index.html",
       "outputAbbreviatedPath" : "No Output Path",
       "fileType" : 2048
     },
-    "\/js\/fittext.js" : {
+    "\/_site\/js\/bigtext.js" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 0,
       "hidden" : 0,
       "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/js\/fittext.js",
+      "inputAbbreviatedPath" : "\/_site\/js\/bigtext.js",
       "outputStyle" : 1,
       "syntaxCheckerStyle" : 1,
-      "outputAbbreviatedPath" : "\/js\/fittext-ck.js",
+      "outputAbbreviatedPath" : "\/_site\/js\/bigtext.min.js",
       "fileType" : 64
     },
-    "\/_layouts\/default.html" : {
+    "\/_site\/js\/modernizr.custom.js" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 0,
       "hidden" : 0,
       "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/_layouts\/default.html",
-      "outputAbbreviatedPath" : "No Output Path",
-      "fileType" : 2048
-    },
-    "\/js\/modernizr.custom.js" : {
-      "ignoreWasSetByUser" : 0,
-      "ignore" : 0,
-      "hidden" : 0,
-      "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/js\/modernizr.custom.js",
+      "inputAbbreviatedPath" : "\/_site\/js\/modernizr.custom.js",
       "outputStyle" : 1,
       "syntaxCheckerStyle" : 1,
-      "outputAbbreviatedPath" : "\/js\/modernizr.custom-ck.js",
+      "outputAbbreviatedPath" : "\/_site\/js\/modernizr.custom.min.js",
       "fileType" : 64
     },
-    "\/css\/style.min.css" : {
-      "ignoreWasSetByUser" : 0,
-      "ignore" : 1,
-      "hidden" : 0,
-      "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/css\/style.min.css",
-      "outputAbbreviatedPath" : "No Output Path",
-      "fileType" : 16
-    },
-    "\/_layouts\/post.html" : {
+    "\/_site\/built-with.html" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 0,
       "hidden" : 0,
       "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/_layouts\/post.html",
+      "inputAbbreviatedPath" : "\/_site\/built-with.html",
       "outputAbbreviatedPath" : "No Output Path",
       "fileType" : 2048
     },
@@ -131,16 +218,18 @@
       "outputAbbreviatedPath" : "No Output Path",
       "fileType" : 2048
     },
-    "\/js\/min\/fittext-min.js" : {
-      "ignoreWasSetByUser" : 0,
-      "ignore" : 0,
+    "\/less\/normalize.less" : {
+      "ignoreWasSetByUser" : 1,
+      "ignore" : 1,
       "hidden" : 0,
       "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/js\/min\/fittext-min.js",
+      "inputAbbreviatedPath" : "\/less\/normalize.less",
       "outputStyle" : 1,
-      "syntaxCheckerStyle" : 1,
-      "outputAbbreviatedPath" : "\/js\/min\/fittext-min-ck.js",
-      "fileType" : 64
+      "shouldRunBless" : 0,
+      "outputAbbreviatedPath" : "\/css\/normalize.css",
+      "strictImports" : 0,
+      "fileType" : 1,
+      "debugStyle" : 0
     },
     "\/_includes\/intro.html" : {
       "ignoreWasSetByUser" : 0,
@@ -150,6 +239,66 @@
       "inputAbbreviatedPath" : "\/_includes\/intro.html",
       "outputAbbreviatedPath" : "No Output Path",
       "fileType" : 2048
+    },
+    "\/_site\/portfolio\/index.html" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 0,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/_site\/portfolio\/index.html",
+      "outputAbbreviatedPath" : "No Output Path",
+      "fileType" : 2048
+    },
+    "\/_site\/about\/index.html" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 0,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/_site\/about\/index.html",
+      "outputAbbreviatedPath" : "No Output Path",
+      "fileType" : 2048
+    },
+    "\/js\/bigtext.js" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 0,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/js\/bigtext.js",
+      "outputStyle" : 1,
+      "syntaxCheckerStyle" : 1,
+      "outputAbbreviatedPath" : "\/js\/bigtext.min.js",
+      "fileType" : 64
+    },
+    "\/index.html" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 0,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/index.html",
+      "outputAbbreviatedPath" : "No Output Path",
+      "fileType" : 2048
+    },
+    "\/_includes\/nav.html" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 0,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/_includes\/nav.html",
+      "outputAbbreviatedPath" : "No Output Path",
+      "fileType" : 2048
+    },
+    "\/_site\/less\/style.less" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 0,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/_site\/less\/style.less",
+      "outputStyle" : 1,
+      "shouldRunBless" : 0,
+      "outputAbbreviatedPath" : "\/_site\/css\/style.css",
+      "strictImports" : 0,
+      "fileType" : 1,
+      "debugStyle" : 0
     }
   },
   "manualImportLinks" : [
@@ -158,7 +307,7 @@
   "projectSettings" : {
     "hamlNoEscapeInAttributes" : 0,
     "kitAutoOutputPathStyle" : 0,
-    "lessOutputStyle" : 0,
+    "lessOutputStyle" : 1,
     "hamlAutoOutputPathReplace2" : "",
     "draggedImportConcatenationStyle" : 1,
     "jadeAutoOutputPathStyle" : 0,
@@ -172,7 +321,7 @@
     "lessAutoOutputPathStyle" : 2,
     "genericWebpageFileExtensionsString" : "html, htm, shtml, shtm, xhtml, php, jsp, asp, aspx, erb, ctp",
     "coffeeMinifyOutput" : 1,
-    "javascriptOutputSuffix" : "-ck",
+    "javascriptOutputSuffix" : ".min",
     "jadeOutputStyle" : 0,
     "coffeeAutoOutputPathStyle" : 0,
     "autoSyncProjectSettingsFile" : 1,
