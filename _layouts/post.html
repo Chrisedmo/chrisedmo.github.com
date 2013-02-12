@@ -11,17 +11,15 @@ layout: base
 <section>{{ content }}</section>
 </article>
 
-<div id="page-nav"> 
-    <div class="prev"> 
-    {% if page.previous.url %} 
-        <a href="{{page.previous.url}}" title="Previous Post: {{page.previous.title}}">&laquo; {{page.previous.title}}</a> 
-    {% endif %} 
-    </div> 
-    <div class="next"> 
-    {% if page.next.url %} 
-        <a href="{{page.next.url}}" title="Next Post: {{page.next.title}}">{{page.next.title}} &raquo; </a> 
-    {% endif %} 
-	</div> 
+<div class="arrow-wrapper prev"> 
+{% if page.previous.url %} 
+    <a href="{{page.previous.url}}" title="Previous Post: {{page.previous.title}}">&laquo; {{page.previous.title}}</a> 
+{% endif %} 
+</div> 
+<div class="arrow-wrapper next"> 
+{% if page.next.url %} 
+    <a href="{{page.next.url}}" title="Next Post: {{page.next.title}}">{{page.next.title}} &raquo; </a> 
+{% endif %} 
 </div> 
 
 {% comment %}
