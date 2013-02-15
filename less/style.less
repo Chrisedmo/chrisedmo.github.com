@@ -27,7 +27,7 @@
 	margin-top: (@base / @base * @m * 1rem);
 }
 
-@font-color: #fff;
+@font-color: #444;
 @link-color: #F5DEB3;
 
 @font-face {
@@ -46,22 +46,10 @@ html {
     font-size: @basepx;
     -webkit-text-size-adjust: 100%;
     -ms-text-size-adjust: 100%;
-    background-color: brown;
-    box-shadow: inset 0 0 100px rgba(0, 0, 0, 0.2);
-    height: 100%;
-    -webkit-transition: background-color 0.2s ease-in-out;  
-    -moz-transition: background-color 0.2s ease-in-out;  
-    -o-transition: background-color 0.2s ease-in-out;  
-    -ms-transition: background-color 0.2s ease-in-out;  
-    transition: background-color 0.2s ease-in-out;  
 }
 
 body {
-    width: 84%;
-    margin:0 auto;
-    max-width:1140px;
-    font: bold 1.2em/1.4 "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
-    text-align: center;
+
 }
 
 // H5BP STUFF
@@ -88,19 +76,6 @@ body {
 ::selection {
     background: #b3d4fc;
     text-shadow: none;
-}
-
-/*
- * A better looking default horizontal rule
- */
-
-hr {
-    display: block;
-    height: 1px;
-    border: 0;
-    border-top: 1px solid #ccc;
-    margin: 1em 0;
-    padding: 0;
 }
 
 /*
@@ -150,8 +125,7 @@ textarea {
 body {
     font-family: "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
 	-webkit-font-smoothing: antialiased;
-	padding: 0;
-    width: 84%;
+
     margin:0 auto;
     max-width:1140px;
 	.line-height;
@@ -161,16 +135,9 @@ body {
 /* HEADERS */
 
 h1, h2, h3, h4, h5, h6 {
-	font-weight: 700;
 	text-rendering: optimizeLegibility;
 	-moz-font-feature-settings: "kern=1"; 
 	-ms-font-feature-settings: "kern" 1;
-}
-
-h1, h2 {
-	.margin-bottom(2);
-	width: 100%;
-	font-family: "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
 }
 
 h3, h4, h5, h6 {
@@ -215,33 +182,14 @@ a {
 }
 
 .intro {
-    width: 100%;
-    text-transform: uppercase;
-    text-rendering: optimizeLegibility;
-    line-height: 0.75;
-    font-weight: 900;
-    margin-top: -8%;
-    color: transparent;
-    background-color: rgba(0,0,0,0.5);
-    -webkit-background-clip: text;
-    -moz-background-clip: text;
-    background-clip: text;
-    text-shadow: rgba(255,255,255,0.1) 0px 2px 1px;
-}
 
-.no-backgroundcliptext .intro {
-    background-color: transparent;
-    color: transparent;
-    color: rgba(0, 0, 0, 0.5); 
-    filter: ~"progid:DXImageTransform.Microsoft.gradient(startColorstr=#7F000000,endColorstr=#7F000000)";
-    zoom: 1;
 }
 
 header {
     /*-webkit-transition: -webkit-transform 2s ease-in-out;     
     perspective: 800px;
     perspective-origin: 50% 100px;  */
-    font-family: "etica-1","etica-2", "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
+
 }
 
 /*header:hover {
