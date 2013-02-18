@@ -1,6 +1,5 @@
 ---
 layout: default
-published: false
 title: Testing posting from prose.io?
 short: Prose.io is a lovely lightweight 'CMS' for giuthub pages
 ---
