@@ -1,3 +1,4 @@
 _site
+_plugins
 .DS_Store
 codekit-config.json
