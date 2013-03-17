@@ -3,12 +3,14 @@ layout: base
 ---
 
 <article class="blog-post">
-<header class="intro">
-	<h1>{{page.title}}</h1>
-	<p class="published"><time datetime="{{page.date | date:"%Y-%m-%d"}}">Posted on: {{ page.date | date_to_long_string }}</time></p>
-</header>
+	<header class="intro">
+		<h1>{{page.title}}</h1>
+		<p class="published">
+			<time datetime="{{page.date | date:"%Y-%m-%d"}}">Posted on: {{ page.date | date_to_long_string }}</time>
+		</p>
+	</header>
 
-<section>{{ content }}</section>
+	<section class="content-body">{{ content }}</section>
 </article>
 
 <div class="arrow-wrapper prev"> 
@@ -21,7 +23,3 @@ layout: base
     <a href="{{page.next.url}}" title="Next Post: {{page.next.title}}">{{page.next.title}} &raquo; </a> 
 {% endif %} 
 </div> 
-
-{% comment %}
-<!-- {% include social.html %} -->
-{% endcomment %}
