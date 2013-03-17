@@ -3,12 +3,14 @@
 {% endfor %}
 
 <nav role="navigation">
-	<ul class="nav site-nav">
-    {% for t in page.topnav %}
-        <li>
-        	<a href="{{ t.href }}" {% if t.title %} title="{{ t.title }}"{% endif %}{% if t.text == navTitle %}
-        	class="active{% endif %}">{{ t.text }}</a>
-        </li>
-    {% endfor %}
-	</ul>
+	<div class="container">
+        <ul class="nav site-nav">
+            {% for t in page.topnav %}
+                <li>
+                    <a href="{{ t.href }}" {% if t.title %} title="{{ t.title }}"{% endif %}{% if t.text == navTitle %}
+                    class="active{% endif %}">{{ t.text }}</a>
+                </li>
+            {% endfor %}
+        </ul>
+    </div>
 </nav>

@@ -44,17 +44,18 @@ textarea{resize:vertical;}
 .twitter{background-color:#2C77BA;}
 .dribbble{background-color:#EA4C89;}
 .linkedin{background-color:#006699;}
-body{font-family:"Helvetica Neue",Arial,Helvetica,Geneva,sans-serif;-webkit-font-smoothing:antialiased;margin:0 auto;max-width:1140px;line-height:24px;line-height:1.5rem;color:#444444;}
+body{font-family:"Helvetica Neue",Arial,Helvetica,Geneva,sans-serif;-webkit-font-smoothing:antialiased;line-height:24px;line-height:1.5rem;color:#444444;}
 h1,h2,h3,h4,h5,h6{text-rendering:optimizeLegibility;-moz-font-feature-settings:"kern=1";-ms-font-feature-settings:"kern" 1;}
 h3,h4,h5,h6{margin-bottom:24px;margin-bottom:1.5rem;}
 h1{font-size:2.75em;line-height:32px;line-height:2rem;}h1 span{font-size:1rem;}
 h2{font-size:1.75em;line-height:24px;line-height:1.5rem;}
-h3{font-size:1.25em;font-family:"Helvetica Neue",Arial,Helvetica,Geneva,sans-serif;}
+h3{font-size:1.25em;}
 h4{font-size:1.25em;}
 h5,h6{font-size:1.125em;}
-p{font-size:16px;font-size:1rem;margin-bottom:24px;margin-bottom:1.5rem;}
+p{font-size:16px;font-size:1rem;}
 p+p{text-indent:1em;}
 a{color:#f5deb3;}
+.intro{background-color:#000;}
 header{}
 .info{font-weight:100;color:wheat;}
 .bigtext-line1{margin-bottom:20px;}
@@ -72,6 +73,7 @@ header{}
 .block-list{list-style:none;padding-left:0;}
 .grid div{position:relative;}
 .grid p{position:absolute;bottom:0;height:0;overflow:hidden;}
+.container{width:80%;max-width:1180px;}
 .ir{background-color:transparent;border:0;overflow:hidden;*text-indent:-9999px;}
 .ir:before{content:"";display:block;width:0;height:150%;}
 .hidden{display:none !important;visibility:hidden;}
