@@ -2,7 +2,7 @@
 layout: base
 ---
 
-<article class="blog-post">
+<section class="blog-post">
 	<header class="intro">
 		<div class="container">
 			<h1>{{page.title}}</h1>
@@ -11,8 +11,8 @@ layout: base
 			</p>
 		</div>
 	</header>
-	<section class="content-body">{{ content }}</section>
-</article>
+</section>
+<article class="content-body">{{ content }}</article>
 
 <div class="arrow-wrapper prev"> 
 {% if page.previous.url %} 
