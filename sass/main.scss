@@ -1,6 +1,7 @@
 /* HTML5BP Stuff */
 @import "normalize";
-@import "csswizardry-grids";
+// Dont actually need this…
+// @import "csswizardry-grids";
 
 /* ====== BASE TYPE ====== */
 
@@ -75,8 +76,8 @@ textarea {
    ========================================================================== */
 
 body {
-    font-family: "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
-	-webkit-font-smoothing: antialiased;
+    font-family: serif;
+	// -webkit-font-smoothing: antialiased;
 }
 
 /* HEADERS */
@@ -92,12 +93,23 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 header {
-
+    position: absolute;
+    width: 100%;
+    top: 0;
+    color: #fff;
+    a {
+        color: #fff;
+    }
 }
 
 .container {
     width: 80%;
     max-width: 1180px;
+}
+
+.content-body {
+    width: 600px;
+    margin: 0 auto;
 }
 
 /* ==========================================================================
