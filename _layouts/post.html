@@ -2,17 +2,17 @@
 layout: base
 ---
 
-<section class="blog-post">
-	<header class="intro">
-		<div class="container">
-			<h1>{{page.title}}</h1>
-			<p class="author">
-				<time datetime="{{page.date | date:"%Y-%m-%d"}}">Posted on: {{ page.date | date_to_long_string }}</time>
-			</p>
-		</div>
-	</header>
-</section>
-<article class="content-body">{{ content }}</article>
+<header class="blog-post intro">
+	<div class="container">
+		<h1>{{page.title}}</h1>
+	</div>
+</header>
+<article class="content-body">
+	<p class="author">
+		<time datetime="{{page.date | date:"%Y-%m-%d"}}">Posted on: {{ page.date | date_to_long_string }}</time>
+	</p>
+	{{ content }}
+</article>
 
 <div class="arrow-wrapper prev"> 
 {% if page.previous.url %} 
