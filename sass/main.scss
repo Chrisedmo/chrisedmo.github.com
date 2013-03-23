@@ -5,6 +5,8 @@
 
 /* ====== BASE TYPE ====== */
 
+$gothic: 'franklin-gothic-urw-cond';
+$serif: 'ff-tisa-web-pro';
 
 @font-face {
     font-family: 'SocialicoRegular';
@@ -83,22 +85,63 @@ body {
 /* HEADERS */
 
 h1, h2, h3, h4, h5, h6 {
+    font-family: $gothic;    
 	text-rendering: optimizeLegibility;
 	-moz-font-feature-settings: "kern=1"; 
 	-ms-font-feature-settings: "kern" 1;
 }
 
-.intro {
-    background-color: #000;
-}
-
-header {
+.head {
     position: absolute;
     width: 100%;
     top: 0;
-    color: #fff;
+    z-index: 1;
+    text-align: center;
+    span {
+        display: block;
+        font-family: $serif;
+        font-size: 0.3em;
+        letter-spacing: 2px;
+    }
     a {
         color: #fff;
+        text-decoration: none;
+        font-size: 3em;
+        .home & {
+            color: #000;
+        }
+    }
+}
+
+.intro {
+    background-color: #000;
+    z-index: 0;
+    height: 80vh;
+    position: relative;
+    h1 {
+        margin-top: 0;
+        font-family: $gothic;
+        position: absolute;
+        bottom: 20px;
+    }
+}
+
+header {
+    color: #fff;
+    font-family: $gothic;
+    text-transform: uppercase;
+}
+
+.posts {
+    ul {
+        margin: none;
+        padding: 0;
+        text-align: center;
+    }
+    li {
+        list-style: none;
+        padding: 0;
+
     }
 }
 
