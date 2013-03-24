@@ -80,6 +80,9 @@ textarea {
 body {
     font-family: serif;
 	// -webkit-font-smoothing: antialiased;
+    &.home {
+        padding-top: 100px;
+    }
 }
 
 /* HEADERS */
@@ -89,6 +92,10 @@ h1, h2, h3, h4, h5, h6 {
 	text-rendering: optimizeLegibility;
 	-moz-font-feature-settings: "kern=1"; 
 	-ms-font-feature-settings: "kern" 1;
+}
+
+h2.post-title {
+    font-family: $gothic;
 }
 
 .head {
@@ -102,7 +109,6 @@ h1, h2, h3, h4, h5, h6 {
         background-color: rgba(255,255,255,0.9);
     }
     span {
-        display: block;
         font-family: $serif;
         font-size: 0.3em;
         letter-spacing: 2px;
@@ -120,8 +126,11 @@ h1, h2, h3, h4, h5, h6 {
 .intro {
     background-color: #000;
     z-index: 0;
-    height: 80vh;
+    height: 40vh;
     position: relative;
+    &.image {
+        height: 80vh;
+    }
     h1 {
         margin-top: 0;
         font-family: $gothic;
