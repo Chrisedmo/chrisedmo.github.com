@@ -159,6 +159,24 @@ header {
     margin: 0 auto;
 }
 
+// HOME PAGE BLOG POSTS
+
+.block-list {
+    display: -webkit-box;
+    overflow-x: scroll;
+    li {
+        width: 33.3333%;
+        a {
+            display: block;
+            text-decoration: none;
+            height: 80vh;
+            padding: 0 16px;
+        }
+    }
+}
+
+
+
 /* ==========================================================================
    Helper classes
    ========================================================================== */
