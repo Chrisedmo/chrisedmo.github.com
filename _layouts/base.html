@@ -37,8 +37,8 @@ topnav:
 	<meta http-equiv="cleartype" content="on">	
 
 	<!-- Prefetch DNS for external assets (Twitter widgets etc). -->
-<!-- 	<link rel="dns-prefetch" href="//fonts.googleapis.com">
-    <link rel="dns-prefetch" href="//use.typekit.com/"> -->
+	<link rel="dns-prefetch" href="//fonts.googleapis.com">
+    <link rel="dns-prefetch" href="//use.typekit.com/">
     <link rel="dns-prefetch" href="//typecast.com/">
     <link rel="dns-prefetch" href="//platform.twitter.com">
     <link rel="dns-prefetch" href="//www.google-analytics.com">
@@ -46,8 +46,6 @@ topnav:
     <link rel="dns-prefetch" href="//cdn.api.twitter.com">
 	<!--script type="text/javascript" src="http://use.typekit.com/ezu6pyt.js"></script>
 	<script type="text/javascript">try{Typekit.load();}catch(e){}</script-->
-		<!-- TRYING OUT NEW FONTS _ THIS IS OLD DIDOT SET UP
-	<script type="text/javascript" src="http://typecast.com/project_css/chrisedmo/54707228e9a98.js"></script> -->
 	<script type="text/javascript" src="http://typecast.com/project_css/chrisedmo/633753d165793.js"></script>
 
 	<link rel="stylesheet" href="/css/style.min.css">
@@ -65,10 +63,10 @@ topnav:
 {{ content }}	
 
 </section>
-{% include social.html %}
-<footer>
-  <p>&copy; {{ 'now' | date: "%Y" }} Chris Mousdale.
-  <a href="/built-with.html">For the geeks…</a></p>
+<footer role="footer">
+	{% include social.html %}
+	<p>&copy; {{ 'now' | date: "%Y" }} Chris Mousdale.
+	<a href="/built-with.html">For the geeks…</a></p>
 </footer>
 <script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
 <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.7.2.min.js"><\/script>')</script>
