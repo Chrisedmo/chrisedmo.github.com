@@ -13,7 +13,7 @@
 {% endcomment %}
 <div class="posts">
     <ul class="block-list">
-        {% for post in paginator.posts %}
+        {% for post in site.posts %}
         <li {% if post.image %} style="background: url('{{ post.image }}') no-repeat center; background-size: cover;"{% endif %}>
             <a href="{{ post.url }}" title="{{ post.title }}">
                 <p class="author">{{ post.date | date: "%d %B, %Y" }}</p>
