@@ -82,9 +82,9 @@ textarea {
 body {
     font-family: serif;
 	// -webkit-font-smoothing: antialiased;
-    &.home {
-        padding-top: 100px;
-    }
+    // &.home {
+    //     padding-top: 100px;
+    // }
 }
 
 /* HEADERS */
@@ -136,7 +136,7 @@ h2.post-title {
     &.image {
         height: 80vh;
     }
-    h1 {
+    h1, h2 {
         margin-top: 0;
         font-family: $gothic;
         position: absolute;

@@ -1,6 +1,7 @@
 ---
 layout: home
 page-class: home
+image: img/shoes.jpg
 ---
 
 ## Hi there, I’m Chris. 

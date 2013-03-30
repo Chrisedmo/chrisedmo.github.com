@@ -2,15 +2,26 @@
   "CodeKitInfo" : "This is a CodeKit project configuration file. It is designed to sync project settings across multiple machines. Modifying the contents of this file can be a poor life decision if you don't know what you're doing. This file is not useful unless accompanied by the project that created it in CodeKit. For more information, see: http:\/\/incident57.com\/codekit",
   "creatorBuild" : "8283",
   "files" : {
-    "\/sass\/csswizardry-grids.scss" : {
+    "\/js\/bigtext.js" : {
       "ignoreWasSetByUser" : 1,
       "ignore" : 1,
       "hidden" : 0,
       "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/sass\/csswizardry-grids.scss",
+      "inputAbbreviatedPath" : "\/js\/bigtext.js",
+      "outputStyle" : 1,
+      "syntaxCheckerStyle" : 1,
+      "outputAbbreviatedPath" : "\/js\/bigtext.min.js",
+      "fileType" : 64
+    },
+    "\/_site\/sass\/csswizardry-grids.scss" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 1,
+      "hidden" : 1,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/_site\/sass\/csswizardry-grids.scss",
       "outputStyle" : 0,
       "shouldRunBless" : 0,
-      "outputAbbreviatedPath" : "\/css\/csswizardry-grids.css",
+      "outputAbbreviatedPath" : "\/_site\/css\/csswizardry-grids.css",
       "fileType" : 4,
       "debugStyle" : 0
     },
@@ -31,18 +42,6 @@
       "inputAbbreviatedPath" : "\/_site\/photography\/index.html",
       "outputAbbreviatedPath" : "No Output Path",
       "fileType" : 2048
-    },
-    "\/_site\/sass\/csswizardry-grids.scss" : {
-      "ignoreWasSetByUser" : 0,
-      "ignore" : 1,
-      "hidden" : 1,
-      "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/_site\/sass\/csswizardry-grids.scss",
-      "outputStyle" : 0,
-      "shouldRunBless" : 0,
-      "outputAbbreviatedPath" : "\/_site\/css\/csswizardry-grids.css",
-      "fileType" : 4,
-      "debugStyle" : 0
     },
     "\/_site\/sass\/normalize.scss" : {
       "ignoreWasSetByUser" : 0,
@@ -167,6 +166,17 @@
       "fileType" : 4,
       "debugStyle" : 0
     },
+    "\/img\/shoes.jpg" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 0,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/img\/shoes.jpg",
+      "processed" : 0,
+      "outputAbbreviatedPath" : "\/img\/shoes.jpg",
+      "initialSize" : 789481,
+      "fileType" : 4096
+    },
     "\/_site\/index.html" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 1,
@@ -207,6 +217,15 @@
       "outputAbbreviatedPath" : "No Output Path",
       "fileType" : 2048
     },
+    "\/_includes\/social.html" : {
+      "ignoreWasSetByUser" : 1,
+      "ignore" : 1,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/_includes\/social.html",
+      "outputAbbreviatedPath" : "No Output Path",
+      "fileType" : 2048
+    },
     "\/_site\/portfolio\/index.html" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 1,
@@ -216,12 +235,12 @@
       "outputAbbreviatedPath" : "No Output Path",
       "fileType" : 2048
     },
-    "\/_includes\/social.html" : {
-      "ignoreWasSetByUser" : 1,
-      "ignore" : 1,
+    "\/_layouts\/home.html" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 0,
       "hidden" : 0,
       "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/_includes\/social.html",
+      "inputAbbreviatedPath" : "\/_layouts\/home.html",
       "outputAbbreviatedPath" : "No Output Path",
       "fileType" : 2048
     },
@@ -234,26 +253,24 @@
       "outputAbbreviatedPath" : "No Output Path",
       "fileType" : 2048
     },
-    "\/js\/bigtext.js" : {
+    "\/_includes\/nav.html" : {
       "ignoreWasSetByUser" : 1,
       "ignore" : 1,
       "hidden" : 0,
       "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/js\/bigtext.js",
-      "outputStyle" : 1,
-      "syntaxCheckerStyle" : 1,
-      "outputAbbreviatedPath" : "\/js\/bigtext.min.js",
-      "fileType" : 64
+      "inputAbbreviatedPath" : "\/_includes\/nav.html",
+      "outputAbbreviatedPath" : "No Output Path",
+      "fileType" : 2048
     },
-    "\/sass\/normalize.scss" : {
-      "ignoreWasSetByUser" : 0,
+    "\/sass\/csswizardry-grids.scss" : {
+      "ignoreWasSetByUser" : 1,
       "ignore" : 1,
       "hidden" : 0,
       "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/sass\/normalize.scss",
+      "inputAbbreviatedPath" : "\/sass\/csswizardry-grids.scss",
       "outputStyle" : 0,
       "shouldRunBless" : 0,
-      "outputAbbreviatedPath" : "\/css\/normalize.css",
+      "outputAbbreviatedPath" : "\/css\/csswizardry-grids.css",
       "fileType" : 4,
       "debugStyle" : 0
     },
@@ -268,14 +285,17 @@
       "outputAbbreviatedPath" : "\/js\/bigtext.min.min.js",
       "fileType" : 64
     },
-    "\/_includes\/nav.html" : {
-      "ignoreWasSetByUser" : 1,
+    "\/sass\/normalize.scss" : {
+      "ignoreWasSetByUser" : 0,
       "ignore" : 1,
       "hidden" : 0,
       "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/_includes\/nav.html",
-      "outputAbbreviatedPath" : "No Output Path",
-      "fileType" : 2048
+      "inputAbbreviatedPath" : "\/sass\/normalize.scss",
+      "outputStyle" : 0,
+      "shouldRunBless" : 0,
+      "outputAbbreviatedPath" : "\/css\/normalize.css",
+      "fileType" : 4,
+      "debugStyle" : 0
     }
   },
   "manualImportLinks" : [
