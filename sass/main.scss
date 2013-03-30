@@ -8,6 +8,8 @@
 $gothic: 'franklin-gothic-urw-cond';
 $serif: 'ff-tisa-web-pro';
 
+$padding: 30px;
+
 @font-face {
     font-family: 'SocialicoRegular';
     src: url('socialico-webfont.eot');
@@ -112,6 +114,8 @@ h2.post-title {
         font-family: $serif;
         font-size: 0.3em;
         letter-spacing: 2px;
+        display: block;
+        margin-top: -6px;
     }
     a {
         color: #fff;
@@ -128,6 +132,7 @@ h2.post-title {
     z-index: 0;
     height: 40vh;
     position: relative;
+    min-height: 310px;
     &.image {
         height: 80vh;
     }
@@ -159,12 +164,14 @@ header {
 }
 
 .container {
-    width: 80%;
+    width: 90%;
+    margin: 0 auto;
     max-width: 1180px;
 }
 
 .content-body {
-    width: 600px;
+    width: 50%;
+    max-width: 600px;
     margin: 0 auto;
 }
 
