@@ -1,5 +1,6 @@
 /* HTML5BP Stuff */
 @import "normalize";
+@import "compass/css3";
 // Dont actually need this…
 // @import "csswizardry-grids";
 
@@ -8,7 +9,9 @@
 $gothic: "franklin-gothic-urw-cond-1","franklin-gothic-urw-cond-2", sans-serif;
 $serif: "ff-tisa-web-pro-1","ff-tisa-web-pro-2", palatino, serif;
 
-$padding: 30px;
+$base: 18px; 
+
+$padding: ($base * 2);
 
 @font-face {
     font-family: 'SocialicoRegular';
@@ -21,6 +24,12 @@ $padding: 30px;
     font-style: normal;
 
 }
+
+// COLOURS
+
+$lGray: #eee;
+
+//  HELPERS
 
 // H5BP STUFF
 
@@ -81,6 +90,7 @@ textarea {
 
 body {
     font-family: $serif;
+    font-size: $base;
 	// -webkit-font-smoothing: antialiased;
     // &.home {
     //     padding-top: 100px;
@@ -91,6 +101,7 @@ body {
 
 h1, h2, h3, h4, h5, h6 {
     font-family: $gothic;    
+    text-transform: uppercase;    
 	text-rendering: optimizeLegibility;
 	-moz-font-feature-settings: "kern=1"; 
 	-ms-font-feature-settings: "kern" 1;
@@ -98,6 +109,7 @@ h1, h2, h3, h4, h5, h6 {
 
 h2.post-title {
     font-family: $gothic;
+    text-transform: uppercase;
 }
 
 .head {
@@ -136,9 +148,12 @@ h2.post-title {
     &.image {
         height: 80vh;
     }
-    h1, h2 {
+    h1, h2, h3 {
         margin-top: 0;
         font-family: $gothic;
+    }
+    h1, h2 {
+        font-size: 5vw;
     }
     .inner {
         position: absolute;
@@ -162,6 +177,13 @@ header {
         list-style: none;
         padding: 0;
 
+    }
+    a {
+        color: #fff;
+        background-color: rgba(0,0,0,0.35);
+        &:hover {
+            background-color: transparent;
+        }
     }
 }
 
@@ -193,6 +215,37 @@ header {
     }
 }
 
+
+// PAGINATION
+
+.pagination {
+    width: 100%;
+    border-top: 1px solid $lGray;
+    border-bottom: 1px solid $lGray;
+    .arrow-wrapper {
+        width: 50%;
+        float: left;
+        text-align: center;
+        @include box-sizing(border-box);
+        &.prev {
+            float: right;
+            border-left: 1px solid $lGray;
+        }
+        p {
+            margin: 0
+        }
+        a{
+            display: block;
+            padding-top: $padding;
+            padding-bottom: $padding;
+            @include single-transition(background-color, 0.35s, ease-in-out, 0);
+            background-color: #fff;
+            &:hover {
+                background-color: $lGray;
+            }
+        }
+    }
+}
 
 
 /* ==========================================================================
@@ -303,7 +356,17 @@ header {
    ========================================================================== */
 
 @media only screen and (max-width: 35em) {
-
+    .pagination {
+        .arrow-wrapper {
+            width: 100%;
+            float: none;
+            &.prev {
+                float: none;
+                border-left: none;
+                border-top: 1px solid $lGray;
+            }
+        }
+    }
 }
 
 @media only screen and (-webkit-min-device-pixel-ratio: 1.5),
