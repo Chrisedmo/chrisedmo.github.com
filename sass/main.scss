@@ -139,8 +139,10 @@ h2.post-title {
     h1, h2 {
         margin-top: 0;
         font-family: $gothic;
+    }
+    .inner {
         position: absolute;
-        bottom: 20px;
+        bottom: $padding;
     }
 }
 
