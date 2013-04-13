@@ -5,8 +5,8 @@
 
 /* ====== BASE TYPE ====== */
 
-$gothic: 'franklin-gothic-urw-cond';
-$serif: 'ff-tisa-web-pro';
+$gothic: "franklin-gothic-urw-cond-1","franklin-gothic-urw-cond-2", sans-serif;
+$serif: "ff-tisa-web-pro-1","ff-tisa-web-pro-2", palatino, serif;
 
 $padding: 30px;
 
@@ -80,7 +80,7 @@ textarea {
    ========================================================================== */
 
 body {
-    font-family: serif;
+    font-family: $serif;
 	// -webkit-font-smoothing: antialiased;
     // &.home {
     //     padding-top: 100px;

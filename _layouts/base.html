@@ -38,15 +38,21 @@ topnav:
 
 	<!-- Prefetch DNS for external assets (Twitter widgets etc). -->
 	<link rel="dns-prefetch" href="//fonts.googleapis.com">
-    <link rel="dns-prefetch" href="//use.typekit.com/">
-    <link rel="dns-prefetch" href="//typecast.com/">
+    <link rel="dns-prefetch" href="//use.typekit.net/">
     <link rel="dns-prefetch" href="//platform.twitter.com">
     <link rel="dns-prefetch" href="//www.google-analytics.com">
     <link rel="dns-prefetch" href="//p.twitter.com">
     <link rel="dns-prefetch" href="//cdn.api.twitter.com">
-	<!--script type="text/javascript" src="http://use.typekit.com/ezu6pyt.js"></script>
-	<script type="text/javascript">try{Typekit.load();}catch(e){}</script-->
-	<script type="text/javascript" src="http://typecast.com/project_css/chrisedmo/633753d165793.js"></script>
+    <!-- TYPEKIT I LOVE YOU -->
+	<script type="text/javascript">
+	  (function() {
+	    var config = {
+	      kitId: 'ezu6pyt',
+	      scriptTimeout: 3000
+	    };
+	    var h=document.getElementsByTagName("html")[0];h.className+=" wf-loading";var t=setTimeout(function(){h.className=h.className.replace(/(\s|^)wf-loading(\s|$)/g," ");h.className+=" wf-inactive"},config.scriptTimeout);var tk=document.createElement("script"),d=false;tk.src='//use.typekit.net/'+config.kitId+'.js';tk.type="text/javascript";tk.async="true";tk.onload=tk.onreadystatechange=function(){var a=this.readyState;if(d||a&&a!="complete"&&a!="loaded")return;d=true;clearTimeout(t);try{Typekit.load(config)}catch(b){}};var s=document.getElementsByTagName("script")[0];s.parentNode.insertBefore(tk,s)
+	  })();
+	</script>
 
 	<link rel="stylesheet" href="/css/style.min.css">
 	
@@ -72,9 +78,7 @@ topnav:
 </footer>
 <script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
 <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.7.2.min.js"><\/script>')</script>
-<script src="js/bigtext.min.js"></script>
     <script>
-    	// $('.intro').bigtext();
     	$('a.icon').hover (
 		  function () {
 		    $("html").addClass($(this).attr("data-class"));
