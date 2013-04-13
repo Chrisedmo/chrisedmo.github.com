@@ -3,3 +3,4 @@ _plugins
 _hidden
 .DS_Store
 codekit-config.json
+.sass-cache/*
