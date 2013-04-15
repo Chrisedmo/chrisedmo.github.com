@@ -11,6 +11,8 @@ $serif: "ff-tisa-web-pro-1","ff-tisa-web-pro-2", palatino, serif;
 
 $base: 18px; 
 
+$size1: ($base - 6px);
+
 $padding: ($base * 2);
 
 @font-face {
@@ -155,9 +157,14 @@ h2.post-title {
     h1, h2 {
         font-size: 5vw;
     }
+    h3 {
+        display: inline;
+        background-color: rgba(0,0,0,0.75);
+    }
     .inner {
         position: absolute;
         bottom: $padding;
+        width: 50%;
     }
 }
 
@@ -165,6 +172,12 @@ header {
     color: #fff;
     font-family: $gothic;
     text-transform: uppercase;
+}
+
+.date {
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    font-size: $size1;
 }
 
 .posts {
@@ -210,7 +223,7 @@ header {
             display: block;
             text-decoration: none;
             height: 80vh;
-            padding: 0 16px;
+            padding: 16px;
         }
     }
 }
@@ -232,7 +245,7 @@ header {
             border-left: 1px solid $lGray;
         }
         p {
-            margin: 0
+            margin: 0;
         }
         a{
             display: block;
@@ -240,6 +253,7 @@ header {
             padding-bottom: $padding;
             @include single-transition(background-color, 0.35s, ease-in-out, 0);
             background-color: #fff;
+            text-decoration: none;
             &:hover {
                 background-color: $lGray;
             }

@@ -13,7 +13,7 @@ layout: base
 	</div>
 </header>
 <article class="content-body">
-	<p class="author">
+	<p class="date">
 		<time datetime="{{page.date | date:"%Y-%m-%d"}}">Posted on: {{ page.date | date_to_long_string }}</time>
 	</p>
 	{{ content }}
@@ -23,7 +23,7 @@ layout: base
 	<div class="arrow-wrapper next"> 
 	{% if page.next.url %} 
 		<a href="{{page.next.url}}" title="Next Post: {{page.next.title}}">
-			<p class="author">Next Post:</p>
+			<p class="date">Next Post:</p>
 		    <p> &laquo; {{page.next.title}}</p>
 		</a> 
 	{% endif %} 
@@ -31,7 +31,7 @@ layout: base
 	<div class="arrow-wrapper prev"> 
 	{% if page.previous.url %} 
 		<a href="{{page.previous.url}}" title="Previous Post: {{page.previous.title}}">
-			<p class="author">Previous Post:</p>
+			<p class="date">Previous Post:</p>
 		    <p>{{page.previous.title}} &raquo; </p>
 		</a> 
 	{% endif %} 
