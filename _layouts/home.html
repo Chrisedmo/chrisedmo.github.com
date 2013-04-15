@@ -1,0 +1,9 @@
+---
+layout: base
+---
+<header class="intro {% if page.image %}image" style="background: url('{{ page.image }}');" {% else %} style="background-color: #{{ page.bg }};" {% endif %}>
+	<div class="container">
+		<div class="inner">{{ content }}</div>
+	</div>
+</header>
+{% include blog-feed.html %}

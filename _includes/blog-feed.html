@@ -1,46 +1,16 @@
-{% comment %}
-<!-- <section class="entries">
-{% for post in site.posts %}
-	<article>
-		<p class="published"><time datetime="{{post.date | date:"%Y-%m-%d"}}">Posted on: {{ post.date | date_to_long_string }}</time> | {{ post.content | number_of_words }} words</p>
-		<header>
-			<a href="{{post.url}}"><h1>{{post.title}}</h1></a>
-			<h2>{{ post.short }}</h2>
-		</header>
-	</article>
-{% endfor %}
-</section> -->
-{% endcomment %}
-<section class="posts">
+<div class="container">
+    <h2>My blog:</h2>
+</div>
+<div class="posts">
     <ul class="block-list">
-        {% for post in paginator.posts %}
-        <li>
-            <span class="post-time">{{ post.date | date: "%d %B, %Y" }}</span>
-            <h2 class="post-title"><a href="{{ post.url }}">{{ post.title }}</a></h2>
-            <p>{{ post.short }}</p>
+        {% for post in site.posts %}
+        <li style="{% if post.image %} background: url('{{ post.image }}') no-repeat center; background-size: cover;{% else %} background-color: #{{ post.bg }}{% endif %}">
+            <a href="{{ post.url }}" title="{{ post.title }}">
+                <p class="date">{{ post.date | date: "%d %B, %Y" }}</p>
+                <h2 class="post-title">{{ post.title }}</h2>
+                <p>{{ post.short }}</p>
+            </a>
         </li>
         {% endfor %}
     </ul>
-</section>
-{% comment %}
-<!-- <ol class="nav  pagination">
-    <li class="pagination__prev">
-        {% if paginator.previous_page %}
-        {% if paginator.previous_page == 1 %}
-            <a href="/">Previous</a>
-        {% else %}
-            <a href="/page{{paginator.previous_page}}">Previous</a>
-        {% endif %}
-        {% else %}
-            Previous
-        {% endif %}
-    </li>
-    <li class="pagination__next">
-        {% if paginator.next_page %}
-            <a href="/page{{paginator.next_page}}">Next</a>
-        {% else %}
-            Next
-        {% endif %}
-    </li>
-</ol> -->
-{% endcomment %}
+</div>

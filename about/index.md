@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: base
 title: About
 description: About Chris Mousdale - Designer and developer in Jersey
 ---
