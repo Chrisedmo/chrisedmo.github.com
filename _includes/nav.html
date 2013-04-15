@@ -3,13 +3,14 @@
 {% endfor %}
 
 <nav role="navigation">
-	<h1><a href="/" rel="author" title="Chris Mousdale home page">Chris Mousdale</a></h1>
-	<ul class="nav site-nav">
-    {% for t in page.topnav %}
-        <li>
-        	<a href="{{ t.href }}" {% if t.title %} title="{{ t.title }}"{% endif %}{% if t.text == navTitle %}
-        	class="active{% endif %}">{{ t.text }}</a>
-        </li>
-    {% endfor %}
-	</ul>
+	<div class="container">
+        <ul class="nav site-nav">
+            {% for t in page.topnav %}
+                <li>
+                    <a href="{{ t.href }}" {% if t.title %} title="{{ t.title }}"{% endif %}{% if t.text == navTitle %}
+                    class="active{% endif %}">{{ t.text }}</a>
+                </li>
+            {% endfor %}
+        </ul>
+    </div>
 </nav>
