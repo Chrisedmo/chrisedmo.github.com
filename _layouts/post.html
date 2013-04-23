@@ -1,5 +1,6 @@
 ---
 layout: base
+page-class: post
 ---
 
 <header class="blog-post intro {% if page.image %}image{% endif %}" style="background-color: #{{ page.bg }};">
@@ -24,7 +25,7 @@ layout: base
 	{% if page.next.url %} 
 		<a href="{{page.next.url}}" title="Next Post: {{page.next.title}}">
 			<p class="date">Next Post:</p>
-		    <p> &laquo; {{page.next.title}}</p>
+		    <p class="title"> &laquo; {{page.next.title}}</p>
 		</a> 
 	{% endif %} 
 	</div> 
@@ -32,7 +33,7 @@ layout: base
 	{% if page.previous.url %} 
 		<a href="{{page.previous.url}}" title="Previous Post: {{page.previous.title}}">
 			<p class="date">Previous Post:</p>
-		    <p>{{page.previous.title}} &raquo; </p>
+		    <p class="title">{{page.previous.title}} &raquo; </p>
 		</a> 
 	{% endif %} 
 	</div> 

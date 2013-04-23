@@ -12,6 +12,7 @@ $serif: "ff-tisa-web-pro-1","ff-tisa-web-pro-2", palatino, serif;
 $base: 18px; 
 
 $size1: ($base - 6px);
+$size2: ($base + ($base / 2));
 
 $padding: ($base * 2);
 
@@ -101,7 +102,19 @@ body {
 
 /* HEADERS */
 
-h1, h2, h3, h4, h5, h6 {
+// TYPEKIT FADES
+.wf-loading {
+    h1,h2,h3,p,li,.head {
+      opacity: 0;
+    }
+}
+h1,h2,h3,p,li,.head {
+  opacity: 1;
+  visibility: visible;
+  @include transition(opacity 0.24s ease-in-out);
+}
+
+h1, h2, h3, h4, h5, h6, h2.post-title, p.title {
     font-family: $gothic;    
     text-transform: uppercase;    
 	text-rendering: optimizeLegibility;
@@ -109,9 +122,8 @@ h1, h2, h3, h4, h5, h6 {
 	-ms-font-feature-settings: "kern" 1;
 }
 
-h2.post-title {
-    font-family: $gothic;
-    text-transform: uppercase;
+p.title {
+    font-size: $size2;
 }
 
 .head {
@@ -144,18 +156,26 @@ h2.post-title {
 .intro {
     background-color: #000;
     z-index: 0;
-    height: 40vh;
+    height: 50vh;
     position: relative;
-    min-height: 310px;
+    min-height: ($base * 20);
     &.image {
         height: 80vh;
+        min-height: ($base * 30);
     }
     h1, h2, h3 {
         margin-top: 0;
         font-family: $gothic;
     }
     h1, h2 {
-        font-size: 5vw;
+        font-size: 8vw;
+        margin-bottom: 0;
+        line-height: 0.8;
+        letter-spacing: -2px;
+
+        .home & {
+            margin-bottom: $padding;
+        }
     }
     h3 {
         display: inline;
@@ -164,7 +184,9 @@ h2.post-title {
     .inner {
         position: absolute;
         bottom: $padding;
-        width: 50%;
+        .home & { 
+            width: 794px;
+        }
     }
 }
 
@@ -222,8 +244,8 @@ header {
         a {
             display: block;
             text-decoration: none;
-            height: 80vh;
-            padding: 16px;
+            height: 60vh;
+            padding: 16px 13%;
         }
     }
 }
