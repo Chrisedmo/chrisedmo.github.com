@@ -1,16 +1,20 @@
-<div class="container">
-    <h2>My blog:</h2>
-</div>
-<div class="posts">
-    <ul class="block-list">
-        {% for post in site.posts %}
-        <li style="{% if post.image %} background: url('{{ post.image }}') no-repeat center; background-size: cover;{% else %} background-color: #{{ post.bg }}{% endif %}">
-            <a href="{{ post.url }}" title="{{ post.title }}">
-                <p class="date">{{ post.date | date: "%d %B, %Y" }}</p>
-                <h2 class="post-title">{{ post.title }}</h2>
-                <p>{{ post.short }}</p>
-            </a>
-        </li>
-        {% endfor %}
-    </ul>
+<div class="blog-feed">
+    <div class="divider">
+        <div class="container">
+            <h2>My blog:</h2>
+        </div>
+    </div>
+    <div class="posts">
+        <ul class="block-list">
+            {% for post in site.posts %}
+            <li style="{% if post.image %} background: url('{{ post.image }}') no-repeat center; background-size: cover;{% else %} background-color: #{{ post.bg }}{% endif %}">
+                <a href="{{ post.url }}" title="{{ post.title }}">
+                    <p class="date">{{ post.date | date: "%d %B, %Y" }}</p>
+                    <h2 class="post-title">{{ post.title }}</h2>
+                    <p>{{ post.short }}</p>
+                </a>
+            </li>
+            {% endfor %}
+        </ul>
+    </div>
 </div>
