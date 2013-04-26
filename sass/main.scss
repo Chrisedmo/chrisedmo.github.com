@@ -160,7 +160,7 @@ p.title {
     position: relative;
     min-height: ($base * 20);
     &.image {
-        height: 80vh;
+        height: 98vh;
         min-height: ($base * 30);
     }
     h1, h2, h3 {
@@ -178,14 +178,18 @@ p.title {
         }
     }
     h3 {
-        display: inline;
         background-color: rgba(0,0,0,0.75);
+        margin-bottom: 0;
+        padding: 5px 10px;
+        float: left;
     }
     .inner {
         position: absolute;
         bottom: $padding;
         .home & { 
             width: 794px;
+            top: ($padding * 6);
+            bottom: auto;
         }
     }
 }
@@ -196,6 +200,19 @@ header {
     text-transform: uppercase;
 }
 
+.divider {
+    background-color: #fff;
+    // border-bottom: 1px solid rgba(0,0,0,0.75);
+    padding: $padding 0;
+}
+
+.blog-feed {
+    h2 {
+        margin: 0;
+        // text-align: center;
+    }
+}
+
 .date {
     text-transform: uppercase;
     letter-spacing: 3px;
@@ -204,9 +221,9 @@ header {
 
 .posts {
     ul {
-        margin: none;
+        margin: 0;
         padding: 0;
-        text-align: center;
+        // text-align: center;
     }
     li {
         list-style: none;
