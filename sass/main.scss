@@ -157,11 +157,13 @@ p.title {
     background-color: #000;
     z-index: 0;
     height: 50vh;
+    // TODO: create retina fallback? Half height?
     position: relative;
     min-height: ($base * 20);
     &.image {
         height: 98vh;
         min-height: ($base * 30);
+        // TODO: create retina fallback? Half height?
     }
     h1, h2, h3 {
         margin-top: 0;
@@ -267,6 +269,7 @@ header {
     }
 }
 
+// TODO: Need to style h3 or blockquote's in the post area to break outside container: width 140% etc.
 
 // PAGINATION
 
