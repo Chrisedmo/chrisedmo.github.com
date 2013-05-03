@@ -303,6 +303,16 @@ header {
     }
 }
 
+// SOCIAL ICONS
+
+.icon {
+    font-family: "SocialicoRegular";
+    &:before {
+      content: attr(data-icon);
+      speak: none;
+    }
+}
+
 
 /* ==========================================================================
    Helper classes
