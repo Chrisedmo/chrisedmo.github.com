@@ -31,6 +31,8 @@ $padding: ($base * 2);
 // COLOURS
 
 $lGray: #eee;
+$link: #2C3D49;
+$accent: #FF8324;
 
 //  HELPERS
 
@@ -126,6 +128,10 @@ p.title {
     font-size: $size2;
 }
 
+a, a:visited {
+    color: $link;
+}
+
 .head {
     position: absolute;
     width: 100%;
@@ -189,10 +195,13 @@ p.title {
         position: absolute;
         bottom: $padding;
         .home & { 
-            width: 794px;
+            width: 50%;;
             top: ($padding * 6);
             bottom: auto;
         }
+    }
+    a {
+        color: $accent;
     }
 }
 
@@ -269,7 +278,9 @@ header {
     }
 }
 
+// POST LAYOUT
 // TODO: Need to style h3 or blockquote's in the post area to break outside container: width 140% etc.
+
 
 // PAGINATION
 
@@ -312,6 +323,7 @@ header {
       speak: none;
     }
 }
+
 
 
 /* ==========================================================================
