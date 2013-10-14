@@ -14,9 +14,11 @@ page-class: post
 	</div>
 </header>
 <article class="content-body">
-	<p class="date">
-		<time datetime="{{page.date | date:"%Y-%m-%d"}}">Posted on: {{ page.date | date_to_long_string }}</time>
-	</p>
+	<aside>
+		<p class="date">
+			<time datetime="{{page.date | date:"%Y-%m-%d"}}">Posted on: {{ page.date | date_to_long_string }}</time>
+		</p>
+	</aside>
 	{{ content }}
 </article>
 
