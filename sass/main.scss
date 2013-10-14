@@ -1,6 +1,7 @@
 /* HTML5BP Stuff */
 @import "normalize";
 @import "compass/css3";
+@import "grids";
 // Dont actually need this…
 // @import "csswizardry-grids";
 
@@ -250,18 +251,6 @@ header {
     }
 }
 
-.container {
-    width: 90%;
-    margin: 0 auto;
-    max-width: 1180px;
-}
-
-.content-body {
-    width: 50%;
-    max-width: 600px;
-    margin: 0 auto;
-}
-
 // HOME PAGE BLOG POSTS
 
 .block-list {
@@ -312,6 +301,29 @@ header {
             }
         }
     }
+}
+
+// QUOTES
+
+blockquote {
+    margin: 0;
+    padding: 0;
+}
+
+blockquote p {
+    margin-right: -49%;
+    margin-top: .5em;
+    margin-bottom: .5em;
+    font-family: $gothic;
+    font-weight: normal;
+    font-size: 51px;
+    line-height: 57px;
+    text-transform: uppercase;
+}
+blockquote.alt p {
+    margin-right: 0;
+    margin-left: -49%;
+    text-align: right;
 }
 
 // SOCIAL ICONS
