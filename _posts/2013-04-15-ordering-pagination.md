@@ -11,7 +11,7 @@ I am featuring my blog posts on my home page as a horizontal feed. With this app
 
 However, whilst doing my research for this redesign, I saw a few blogs and news sites that feature pagination in the form of a 'next' / 'prev' post, which are either pinned to the edge of the screen, or are left and right aligned, inline, similar to how I am paginating posts (see the end of this page).
 
-###Now here's the interesting part, most of the site feature the 'new posts' link to the right, with the 'older posts' linking to the left as I guess this is how books have been for years… you 'turn' to the new page. 
+>Now here's the interesting part, most of the site feature the 'new posts' link to the right, with the 'older posts' linking to the left as I guess this is how books have been for years… you 'turn' to the new page. 
 
 However, digital pagination has always been the other way round. (Think of all those sites that feature 'page x of x'. Or my aforementioned blog example.)
 
