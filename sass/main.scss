@@ -11,6 +11,7 @@ $gothic: "franklin-gothic-urw-cond-1","franklin-gothic-urw-cond-2", sans-serif;
 $serif: "ff-tisa-web-pro-1","ff-tisa-web-pro-2", palatino, serif;
 
 $base: 18px; 
+$line-height: ($base * 1.55);
 
 $size1: ($base - 6px);
 $size2: ($base + ($base / 2));
@@ -97,6 +98,7 @@ textarea {
 body {
     font-family: $serif;
     font-size: $base;
+    line-height: $line-height;
 	// -webkit-font-smoothing: antialiased;
     // &.home {
     //     padding-top: 100px;
@@ -123,6 +125,7 @@ h1, h2, h3, h4, h5, h6, h2.post-title, p.title {
 	text-rendering: optimizeLegibility;
 	-moz-font-feature-settings: "kern=1"; 
 	-ms-font-feature-settings: "kern" 1;
+    margin-top: 0;
 }
 
 p.title {
@@ -131,6 +134,7 @@ p.title {
 
 a, a:visited {
     color: $link;
+    text-decoration: none;
 }
 
 .head {
@@ -171,6 +175,9 @@ a, a:visited {
         height: 98vh;
         min-height: ($base * 30);
         // TODO: create retina fallback? Half height?
+        h1 {
+            text-shadow: 0px 0px 50px rgba(0,0,0,.3);
+        }
     }
     h1, h2, h3 {
         margin-top: 0;
@@ -193,7 +200,7 @@ a, a:visited {
         float: left;
     }
     .inner {
-        position: absolute;
+        position: fixed;
         bottom: $padding;
         .home & { 
             width: 50%;;
@@ -219,8 +226,9 @@ header {
 }
 
 .blog-feed {
+    position: relative;
     h2 {
-        margin: 0;
+        margin:  0 0 $base 0;
         // text-align: center;
     }
 }
@@ -229,6 +237,16 @@ header {
     text-transform: uppercase;
     letter-spacing: 3px;
     font-size: $size1;
+    line-height: ($size1 * 1.333333333);
+    color: #999;
+    span {
+        display: block;
+        color: #444;
+    }
+    .blog-feed & {
+        color: #fff;
+        margin-bottom: $base;
+    }
 }
 
 .posts {
@@ -251,6 +269,19 @@ header {
     }
 }
 
+.content {
+    position: relative;
+    background-color: #fff;
+    p {
+        margin-top: 0;
+    }
+}
+
+.content-body {
+    padding-top: ($base * 3);
+    padding-bottom: ($base * 3);
+}
+
 // HOME PAGE BLOG POSTS
 
 .block-list {
@@ -262,7 +293,7 @@ header {
             display: block;
             text-decoration: none;
             height: 60vh;
-            padding: 16px 13%;
+            padding: ($base * 2) 13%;
         }
     }
 }
@@ -334,6 +365,11 @@ blockquote.alt p {
       content: attr(data-icon);
       speak: none;
     }
+}
+
+.main-footer {
+    background-color: #ddd;
+    padding: ($base * 3) 0;
 }
 
 
