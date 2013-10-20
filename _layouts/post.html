@@ -3,40 +3,43 @@ layout: base
 page-class: post
 ---
 
-<header class="blog-post intro {% if page.image %}image{% endif %}" style="background-color: #{{ page.bg }};">
+<header class="blog-post intro {% if page.image %}image" style="background: url('{{ page.image }}') no-repeat center; background-size: cover;"{% endif %}{% if page.bg %}" style="background-color: #{{ page.bg }};"{% endif %}>
 	<div class="container">
 		<div class="inner">
 			<h1>{{page.title}}</h1>
 		</div>
-		{% if page.image %}
+		<!-- {% if page.image %}
 			<img src="{{ page.image }}" alt="">
-		{% endif %}
+		{% endif %} -->
 	</div>
 </header>
-<article class="content-body">
-	<aside>
-		<p class="date">
-			<time datetime="{{page.date | date:"%Y-%m-%d"}}">Posted on: {{ page.date | date_to_long_string }}</time>
-		</p>
-	</aside>
-	{{ content }}
-</article>
-
-<nav class="pagination clearfix" role="navigation">
-	<div class="arrow-wrapper next"> 
-	{% if page.next.url %} 
-		<a href="{{page.next.url}}" title="Next Post: {{page.next.title}}">
-			<p class="date">Next Post:</p>
-		    <p class="title"> &laquo; {{page.next.title}}</p>
-		</a> 
-	{% endif %} 
-	</div> 
-	<div class="arrow-wrapper prev"> 
-	{% if page.previous.url %} 
-		<a href="{{page.previous.url}}" title="Previous Post: {{page.previous.title}}">
-			<p class="date">Previous Post:</p>
-		    <p class="title">{{page.previous.title}} &raquo; </p>
-		</a> 
-	{% endif %} 
-	</div> 
-</nav>
+<div class="content">
+	<article class="content-body">
+		<aside>
+			<p class="date">
+				<time datetime="{{page.date | date:"%Y-%m-%d"}}">Posted on: <span>{{ page.date | date_to_long_string }}</span></time>
+			</p>
+		</aside>
+		{{ content }}
+	</article>
+	
+	<nav class="pagination clearfix" role="navigation">
+		<div class="arrow-wrapper next"> 
+		{% if page.next.url %} 
+			<a href="{{page.next.url}}" title="Next Post: {{page.next.title}}">
+				<p class="date">Next Post:</p>
+			    <p class="title"> &laquo; {{page.next.title}}</p>
+			</a> 
+		{% endif %} 
+		</div> 
+		<div class="arrow-wrapper prev"> 
+		{% if page.previous.url %} 
+			<a href="{{page.previous.url}}" title="Previous Post: {{page.previous.title}}">
+				<p class="date">Previous Post:</p>
+			    <p class="title">{{page.previous.title}} &raquo; </p>
+			</a> 
+		{% endif %} 
+		</div> 
+	</nav>
+	{% include footer.html %}
+</div>
