@@ -19,6 +19,11 @@ page-class: post
 			<p class="date">
 				<time datetime="{{page.date | date:"%Y-%m-%d"}}">Posted on: <span>{{ page.date | date_to_long_string }}</span></time>
 			</p>
+			{% if page.comments %}
+			<p class="comments">
+				Comments: <a href="#disqus_thread">25 comments</a>
+			</p>
+			{% endif %}
 		</aside>
 		{{ content }}
 	</article>
