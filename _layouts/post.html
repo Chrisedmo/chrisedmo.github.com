@@ -22,6 +22,9 @@ page-class: post
 		</aside>
 		{{ content }}
 	</article>
+	{% if page.comments %}
+		{% include disqus.html %}
+	{% endif %}
 	
 	<nav class="pagination clearfix" role="navigation">
 		<div class="arrow-wrapper next"> 

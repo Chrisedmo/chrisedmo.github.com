@@ -35,6 +35,14 @@ $padding: ($base * 2);
 $lGray: #eee;
 $link: #2C3D49;
 $accent: #FF8324;
+$orange: #e67e22;
+
+$nav-colour: #f39c12;
+$nav-colour-1: #d35400;
+$nav-colour-2: $orange;
+
+// Circle Nav
+@import "c-nav";
 
 //  HELPERS
 
@@ -498,6 +506,11 @@ blockquote.alt p {
 @media only screen and (-webkit-min-device-pixel-ratio: 1.5),
        only screen and (min-resolution: 144dpi) {
     /* Style adjustments for viewports that meet the condition */
+    .intro {
+        &.image {
+            height: 100%;
+        }
+    }
 }
 
 @media print,
