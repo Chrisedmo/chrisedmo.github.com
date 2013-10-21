@@ -257,6 +257,18 @@ header {
     }
 }
 
+.comments {
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    font-size: $size1;
+    line-height: ($size1 * 1.333333333);
+    color: #999;
+    a {
+        display: block;
+        color: #444;
+    }
+}
+
 .posts {
     ul {
         margin: 0;
