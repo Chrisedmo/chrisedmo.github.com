@@ -289,6 +289,10 @@ header {
     }
 }
 
+section[role="content"] {
+    border-bottom: ($base * 3) solid #444;
+}
+
 .content {
     position: relative;
     background-color: #fff;
