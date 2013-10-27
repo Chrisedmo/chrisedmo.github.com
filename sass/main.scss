@@ -102,7 +102,9 @@ textarea {
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
-
+html,body {
+    height: 100%;
+}
 body {
     font-family: $serif;
     font-size: $base;
@@ -290,7 +292,9 @@ header {
 }
 
 section[role="content"] {
-    border-bottom: ($base * 3) solid #444;
+    // border-bottom: ($base * 3) solid #444;
+    min-height: 100%;
+    padding-bottom: 200px /* or whatever the footer height is */
 }
 
 .content {
@@ -394,6 +398,12 @@ blockquote.alt p {
 .main-footer {
     background-color: #ddd;
     padding: ($base * 3) 0;
+    // STICKY FOOTER
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: -1;
 }
 
 
