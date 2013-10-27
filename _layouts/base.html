@@ -41,10 +41,7 @@
 	    var h=document.getElementsByTagName("html")[0];h.className+=" wf-loading";var t=setTimeout(function(){h.className=h.className.replace(/(\s|^)wf-loading(\s|$)/g," ");h.className+=" wf-inactive"},config.scriptTimeout);var tk=document.createElement("script"),d=false;tk.src='//use.typekit.net/'+config.kitId+'.js';tk.type="text/javascript";tk.async="true";tk.onload=tk.onreadystatechange=function(){var a=this.readyState;if(d||a&&a!="complete"&&a!="loaded")return;d=true;clearTimeout(t);try{Typekit.load(config)}catch(b){}};var s=document.getElementsByTagName("script")[0];s.parentNode.insertBefore(tk,s)
 	  })();
 	</script>
-	<!-- TODO: REMOVE GRIDSET LINKING -->
-	<link href="https://get.gridsetapp.com/23991/" rel="stylesheet" />
 	<link rel="stylesheet" href="/css/main.css">
-	
 	<script src="/js/modernizr.custom.js"></script>
 </head>
 <body class="page {{ page.page-class }}">
@@ -58,6 +55,8 @@
 {{ content }}	
 
 </section>
+{% include footer.html %}
+{% include circle-nav.html %}
 
 <script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
 <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.7.2.min.js"><\/script>')</script>
