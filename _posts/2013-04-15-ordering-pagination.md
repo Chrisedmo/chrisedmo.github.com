@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: blog-post
 title: "Which way round?!"
 short: "Digital pagination, is the opposite of physical books…"
 bg: 9F565E
