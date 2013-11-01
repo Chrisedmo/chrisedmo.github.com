@@ -294,7 +294,6 @@ header {
 section[role="content"] {
     // border-bottom: ($base * 3) solid #444;
     min-height: 100%;
-    padding-bottom: 200px /* or whatever the footer height is */
 }
 
 .content {
@@ -399,11 +398,13 @@ blockquote.alt p {
     background-color: #ddd;
     padding: ($base * 3) 0;
     // STICKY FOOTER
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    z-index: -1;
+    .js & {
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        z-index: -1;
+    }
 }
 
 
