@@ -210,7 +210,8 @@ a, a:visited {
         float: left;
     }
     .inner {
-        position: fixed;
+        // TODO: Make this fixed
+        position: absolute;
         bottom: $padding;
         .home & { 
             width: 50%;;
@@ -340,12 +341,29 @@ section[role="content"] {
         float: left;
         text-align: center;
         @include box-sizing(border-box);
+        overflow-x: hidden;
+
         &.prev {
             float: right;
             border-left: 1px solid $lGray;
+            a:hover {
+                p {
+                    right: -20px;
+                }
+            }
+        }
+        &.next {
+            a:hover {
+                p {
+                    left: -20px;
+                }
+            }
         }
         p {
             margin: 0;
+            position: relative;
+            @include transition-property(left, right);
+            @include transition-duration(0.35s, 0.35s);
         }
         a{
             display: block;
