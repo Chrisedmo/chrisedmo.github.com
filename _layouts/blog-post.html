@@ -46,60 +46,62 @@
 	<script src="/js/modernizr.custom.js"></script>
 </head>
 <body class="blog-post {{ page.page-class }}">
-<header class="head">
-	<a href="/">Chris Mousdale<br />
-		<span class="info">Designer | Web Geek | Jersey | 19.05.83 </span>
-	</a>
-</header>	
-<section role="content" id="main-content">
-
-<header class="blog-post intro {% if page.image %}image" style="background: url('{{ page.image }}') no-repeat center; background-size: cover;"{% endif %}{% if page.bg %}" style="background-color: #{{ page.bg }};"{% endif %}>
-	<div class="container">
-		<div class="inner">
-			<h1>{{page.title}}</h1>
-		</div>
-		<!-- {% if page.image %}
-			<img src="{{ page.image }}" alt="">
-		{% endif %} -->
-	</div>
-</header>
-<div class="content">
-	<article class="content-body">
-		<aside>
-			<p class="date">
-				<time datetime="{{page.date | date:"%Y-%m-%d"}}">Posted on: <span>{{ page.date | date_to_long_string }}</span></time>
-			</p>
-			{% if page.comments %}
-			<p class="comments">
-				Comments: <a href="#disqus_thread">25 comments</a>
-			</p>
-			{% endif %}
-		</aside>
-		{{ content }}
-	</article>
+<div id="b-container">
+	<header class="head">
+		<a href="/">Chris Mousdale<br />
+			<span class="info">Designer | Web Geek | Jersey | 19.05.83 </span>
+		</a>
+	</header>	
+	<section role="content" id="main-content">
 	
-	<nav class="pagination clearfix" role="navigation">
-		<div class="arrow-wrapper next"> 
-		{% if page.next.url %} 
-			<a href="{{page.next.url}}" title="Next Post: {{page.next.title}}">
-				<p class="date">Next Post:</p>
-			    <p class="title"> &laquo; {{page.next.title}}</p>
-			</a> 
-		{% endif %} 
-		</div> 
-		<div class="arrow-wrapper prev"> 
-		{% if page.previous.url %} 
-			<a href="{{page.previous.url}}" title="Previous Post: {{page.previous.title}}">
-				<p class="date">Previous Post:</p>
-			    <p class="title">{{page.previous.title}} &raquo; </p>
-			</a> 
-		{% endif %} 
-		</div> 
-	</nav>
+	<header {% if page.image %} class="blog-post intro image" style="background: url('{{ page.image }}') no-repeat center; background-size: cover;">{% else %} class="blog-post intro" style="background-color: #{{ page.bg }};">{% endif %}
+		<div class="container">
+			<div class="inner">
+				<h1>{{page.title}}</h1>
+			</div>
+			<!-- {% if page.image %}
+				<img src="{{ page.image }}" alt="">
+			{% endif %} -->
+		</div>
+	</header>
+	<div class="content">
+		<article class="content-body">
+			<aside>
+				<p class="date">
+					<time datetime="{{page.date | date:"%Y-%m-%d"}}">Posted on: <span>{{ page.date | date_to_long_string }}</span></time>
+				</p>
+				{% if page.comments %}
+				<p class="comments">
+					Comments: <a href="#disqus_thread">25 comments</a>
+				</p>
+				{% endif %}
+			</aside>
+			{{ content }}
+		</article>
+		
+		<nav class="pagination clearfix" role="navigation">
+			<div class="arrow-wrapper next"> 
+			{% if page.next.url %} 
+				<a href="{{page.next.url}}" title="Next Post: {{page.next.title}}">
+					<p class="date">Next Post:</p>
+				    <p class="title"> &laquo; {{page.next.title}}</p>
+				</a> 
+			{% endif %} 
+			</div> 
+			<div class="arrow-wrapper prev"> 
+			{% if page.previous.url %} 
+				<a href="{{page.previous.url}}" title="Previous Post: {{page.previous.title}}">
+					<p class="date">Previous Post:</p>
+				    <p class="title">{{page.previous.title}} &raquo; </p>
+				</a> 
+			{% endif %} 
+			</div> 
+		</nav>
+	</div>
+	
+	</section>
+	{% include footer.html %}
 </div>
-
-</section>
-{% include footer.html %}
 {% include circle-nav.html %}
 
 <script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
