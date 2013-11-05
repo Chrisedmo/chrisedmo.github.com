@@ -296,6 +296,19 @@ header {
     }
 }
 
+.date-container, .post-container {
+    display: block;
+    float: left;
+}
+
+.date-container {
+    width: 20%;
+}
+.post-container {
+    width: 75%;
+    margin-left: 5%;
+}
+
 section[role="content"] {
     // border-bottom: ($base * 3) solid #444;
     min-height: 100%;
