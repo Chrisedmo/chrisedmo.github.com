@@ -115,6 +115,10 @@ body {
     // }
 }
 
+.blur {
+    @include filter(blur(5px));
+}
+
 /* HEADERS */
 
 // TYPEKIT FADES

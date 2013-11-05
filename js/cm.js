@@ -156,6 +156,7 @@
 	    classie.add(overlay, 'on-overlay');
 	    classie.add(wrapper, 'opened-nav');
 	    $('#menu-help').addClass('open');
+	    $('#b-container').addClass('blur');
 	}
 	function closeNav(){
 		open = false;
@@ -163,11 +164,11 @@
 		classie.remove(overlay, 'on-overlay');
 		classie.remove(wrapper, 'opened-nav');
 		$('#menu-help').removeClass('open');
+		$('#b-container').removeClass('blur');
 	}
 	document.addEventListener('click', closeNav);
 
 })();
-
 $('.cn-wrapper a').hover(function(){
 	$('#menu-help').text($(this).data('hovertext'));
 	// TODO: Make the text dissapear when the menu disapears.
