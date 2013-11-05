@@ -2,8 +2,6 @@
 @import "normalize";
 @import "compass/css3";
 @import "grids";
-// Dont actually need this…
-// @import "csswizardry-grids";
 
 /* ====== BASE TYPE ====== */
 
@@ -81,16 +79,6 @@ img {
 }
 
 /*
- * Remove default fieldset styles.
- */
-
-fieldset {
-    border: 0;
-    margin: 0;
-    padding: 0;
-}
-
-/*
  * Allow only vertical resizing of textareas.
  */
 
@@ -152,14 +140,22 @@ a, a:visited {
 }
 
 .head {
-    position: absolute;
+    position: relative;
     width: 100%;
-    top: 0;
-    z-index: 1;
     text-align: center;
     padding-bottom: 16px;
+    background-color: #444;
     .home & {
         background-color: rgba(255,255,255,0.9);
+        position: absolute;
+        top: 0;
+        z-index: 1;
+    }
+    .blog-post & {
+        background-color: transparent;
+        position: absolute;
+        top: 0;
+        z-index: 1;        
     }
     span {
         font-family: $serif;
@@ -259,7 +255,7 @@ header {
         color: #444;
     }
     .blog-feed & {
-        color: #fff;
+        // color: #fff;
         margin-bottom: $base;
     }
 }
@@ -285,14 +281,22 @@ header {
     li {
         list-style: none;
         padding: 0;
+        background-color: #fff;
+        // border-top: 2px solid rgba(0,0,0,0.35);
 
     }
     a {
+        // color: #fff;
+        // background-color: rgba(0,0,0,0.35);
+        // &:hover {
+        //     background-color: transparent;
+        // }
+    }
+}
+// COLOUR OVERRIDE
+.wt {
+    p, h2 {
         color: #fff;
-        background-color: rgba(0,0,0,0.35);
-        &:hover {
-            background-color: transparent;
-        }
     }
 }
 
@@ -330,15 +334,21 @@ section[role="content"] {
 // HOME PAGE BLOG POSTS
 
 .block-list {
-    display: -webkit-box;
-    overflow-x: scroll;
+    // display: -webkit-box;
+    // overflow-x: scroll;
     li {
-        width: 33.3333%;
+        // width: 33.3333%;
+        position: -webkit-sticky;
+        position: -moz-sticky;
+        position: -ms-sticky;
+        position: -o-sticky;
+        position: sticky;
+        top: 15px;
         a {
             display: block;
             text-decoration: none;
-            height: 60vh;
-            padding: ($base * 2) 13%;
+            height: 20vh;
+            padding: ($base * 2) 0;
         }
     }
 }
@@ -447,72 +457,6 @@ blockquote.alt p {
 /* ==========================================================================
    Helper classes
    ========================================================================== */
-
-/*
- * Image replacement
- */
-
-.ir {
-    background-color: transparent;
-    border: 0;
-    overflow: hidden;
-    /* IE 6/7 fallback */
-    *text-indent: -9999px;
-}
-
-.ir:before {
-    content: "";
-    display: block;
-    width: 0;
-    height: 150%;
-}
-
-/*
- * Hide from both screenreaders and browsers: h5bp.com/u
- */
-
-.hidden {
-    display: none !important;
-    visibility: hidden;
-}
-
-/*
- * Hide only visually, but have it available for screenreaders: h5bp.com/v
- */
-
-.visuallyhidden {
-    border: 0;
-    clip: rect(0 0 0 0);
-    height: 1px;
-    margin: -1px;
-    overflow: hidden;
-    padding: 0;
-    position: absolute;
-    width: 1px;
-}
-
-/*
- * Extends the .visuallyhidden class to allow the element to be focusable
- * when navigated to via the keyboard: h5bp.com/p
- */
-
-.visuallyhidden.focusable:active,
-.visuallyhidden.focusable:focus {
-    clip: auto;
-    height: auto;
-    margin: 0;
-    overflow: visible;
-    position: static;
-    width: auto;
-}
-
-/*
- * Hide visually and from screenreaders, but maintain layout
- */
-
-.invisible {
-    visibility: hidden;
-}
 
 /*
  * Clearfix: contain floats
