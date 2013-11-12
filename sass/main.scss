@@ -5,6 +5,28 @@
 
 /* ====== BASE TYPE ====== */
 
+@include font-face("Mono Social Icons Font", font-files("MonoSocialIconsFont-1.10.woff", "MonoSocialIconsFont-1.10.ttf", "MonoSocialIconsFont-1.10.svg#MonoSocialIconsFont"), "MonoSocialIconsFont-1.10.eot", normal, normal);
+
+.symbol, a.symbol:before {
+    font-family: 'Mono Social Icons Font';
+    -webkit-text-rendering: optimizeLegibility;
+    -moz-text-rendering: optimizeLegibility;
+    -ms-text-rendering: optimizeLegibility;
+    -o-text-rendering: optimizeLegibility;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-font-smoothing: antialiased;
+    -ms-font-smoothing: antialiased;
+    -o-font-smoothing: antialiased;
+    font-smoothing: antialiased;
+}
+
+a.symbol:before {
+    content: attr(data-icon);
+    margin-right: 0.3em;
+    // font-size: 130%;
+}
+
 $gothic: "franklin-gothic-urw-cond-1","franklin-gothic-urw-cond-2", sans-serif;
 $serif: "ff-tisa-web-pro-1","ff-tisa-web-pro-2", palatino, serif;
 
