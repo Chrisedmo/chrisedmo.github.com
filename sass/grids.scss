@@ -1,0 +1,47 @@
+// GRIDS + STRUCTURE
+
+.container {
+    width: 90%;
+    margin: 0 auto;
+    max-width: 1180px;
+    display: block;
+}
+
+.content-body {
+    width: 50%;
+    max-width: 600px;
+    margin: 0 auto;
+    position: relative;
+}
+
+aside {
+	position: absolute;
+	width: 37%;
+	left: -37%;
+	margin-left: -20px;
+	padding-right: 20px;
+	// color: #777;
+	// box-shadow: 1px 0px 0px rgba(0,0,0,.04), inset -1px 0px 0px rgba(255,255,255,.5);
+}
+
+//  PHOTO SIZING
+.two-thirds {
+	width: 150%;
+	&.alt {
+		margin-left: -50%;
+	}
+}
+
+.double {
+	width: 200%;
+	margin-left: -50%;
+}
+
+.margin {
+	position: absolute;
+	width: 42.9%;
+	right: -42.9%;
+	&.alt {
+		left: -42.9%;
+	}
+}

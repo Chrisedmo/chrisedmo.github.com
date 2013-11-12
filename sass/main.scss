@@ -1,15 +1,38 @@
 /* HTML5BP Stuff */
 @import "normalize";
 @import "compass/css3";
-// Dont actually need this…
-// @import "csswizardry-grids";
+@import "grids";
 
 /* ====== BASE TYPE ====== */
+
+@include font-face("Mono Social Icons Font", font-files("MonoSocialIconsFont-1.10.woff", "MonoSocialIconsFont-1.10.ttf", "MonoSocialIconsFont-1.10.svg#MonoSocialIconsFont"), "MonoSocialIconsFont-1.10.eot", normal, normal);
+
+.symbol, a.symbol:before {
+    font-family: 'Mono Social Icons Font';
+    -webkit-text-rendering: optimizeLegibility;
+    -moz-text-rendering: optimizeLegibility;
+    -ms-text-rendering: optimizeLegibility;
+    -o-text-rendering: optimizeLegibility;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-font-smoothing: antialiased;
+    -ms-font-smoothing: antialiased;
+    -o-font-smoothing: antialiased;
+    font-smoothing: antialiased;
+}
+
+a.symbol:before {
+    content: attr(data-icon);
+    margin-right: 0.3em;
+    // font-size: 130%;
+}
+
 
 $gothic: "franklin-gothic-urw-cond-1","franklin-gothic-urw-cond-2", sans-serif;
 $serif: "ff-tisa-web-pro-1","ff-tisa-web-pro-2", palatino, serif;
 
 $base: 18px; 
+$line-height: ($base * 1.55);
 
 $size1: ($base - 6px);
 $size2: ($base + ($base / 2));
@@ -31,6 +54,16 @@ $padding: ($base * 2);
 // COLOURS
 
 $lGray: #eee;
+$link: #2C3D49;
+$accent: #FF8324;
+$orange: #e67e22;
+
+$nav-colour: #f39c12;
+$nav-colour-1: #d35400;
+$nav-colour-2: $orange;
+
+// Circle Nav
+@import "c-nav";
 
 //  HELPERS
 
@@ -69,16 +102,6 @@ img {
 }
 
 /*
- * Remove default fieldset styles.
- */
-
-fieldset {
-    border: 0;
-    margin: 0;
-    padding: 0;
-}
-
-/*
  * Allow only vertical resizing of textareas.
  */
 
@@ -90,14 +113,21 @@ textarea {
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
-
+html,body {
+    height: 100%;
+}
 body {
     font-family: $serif;
     font-size: $base;
+    line-height: $line-height;
 	// -webkit-font-smoothing: antialiased;
     // &.home {
     //     padding-top: 100px;
     // }
+}
+
+.blur {
+    @include filter(blur(5px));
 }
 
 /* HEADERS */
@@ -120,21 +150,35 @@ h1, h2, h3, h4, h5, h6, h2.post-title, p.title {
 	text-rendering: optimizeLegibility;
 	-moz-font-feature-settings: "kern=1"; 
 	-ms-font-feature-settings: "kern" 1;
+    margin-top: 0;
 }
 
 p.title {
     font-size: $size2;
 }
 
+a, a:visited {
+    color: $link;
+    text-decoration: none;
+}
+
 .head {
-    position: absolute;
+    position: relative;
     width: 100%;
-    top: 0;
-    z-index: 1;
     text-align: center;
     padding-bottom: 16px;
+    background-color: #444;
     .home & {
         background-color: rgba(255,255,255,0.9);
+        position: absolute;
+        top: 0;
+        z-index: 1;
+    }
+    .blog-post & {
+        background-color: transparent;
+        position: absolute;
+        top: 0;
+        z-index: 1;        
     }
     span {
         font-family: $serif;
@@ -153,15 +197,50 @@ p.title {
     }
 }
 
+aside.social-links {
+    margin: 0;
+    top: 0;
+    right: 0;
+    left: auto;
+    li {
+        display: inline;
+    }
+    span {
+        display: none;
+    }
+    a{
+        opacity: 0.35;
+        &:hover {
+            opacity: 1;
+        }
+    }
+    &.social-share {
+        position: relative;
+        text-align: center;
+        width: 100%;
+        font-size: 3em;
+        margin: 0;
+        padding: 0;
+        ul {
+            padding: 0;
+        }
+    }
+}
+
 .intro {
     background-color: #000;
     z-index: 0;
     height: 50vh;
+    // TODO: create retina fallback? Half height?
     position: relative;
     min-height: ($base * 20);
     &.image {
         height: 98vh;
         min-height: ($base * 30);
+        // TODO: create retina fallback? Half height?
+        h1 {
+            text-shadow: 0px 0px 50px rgba(0,0,0,.3);
+        }
     }
     h1, h2, h3 {
         margin-top: 0;
@@ -184,13 +263,17 @@ p.title {
         float: left;
     }
     .inner {
+        // TODO: Make this fixed
         position: absolute;
         bottom: $padding;
         .home & { 
-            width: 794px;
+            width: 50%;;
             top: ($padding * 6);
             bottom: auto;
         }
+    }
+    a {
+        color: $accent;
     }
 }
 
@@ -207,8 +290,9 @@ header {
 }
 
 .blog-feed {
+    position: relative;
     h2 {
-        margin: 0;
+        margin:  0 0 $base 0;
         // text-align: center;
     }
 }
@@ -217,6 +301,28 @@ header {
     text-transform: uppercase;
     letter-spacing: 3px;
     font-size: $size1;
+    line-height: ($size1 * 1.333333333);
+    color: #999;
+    span {
+        display: block;
+        color: #444;
+    }
+    .blog-feed & {
+        // color: #fff;
+        margin-bottom: $base;
+    }
+}
+
+.comments {
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    font-size: $size1;
+    line-height: ($size1 * 1.333333333);
+    color: #999;
+    a {
+        display: block;
+        color: #444;
+    }
 }
 
 .posts {
@@ -228,44 +334,86 @@ header {
     li {
         list-style: none;
         padding: 0;
+        background-color: #fff;
+        // border-top: 2px solid rgba(0,0,0,0.35);
 
     }
     a {
+        // color: #fff;
+        // background-color: rgba(0,0,0,0.35);
+        // &:hover {
+        //     background-color: transparent;
+        // }
+    }
+}
+// COLOUR OVERRIDE
+.wt {
+    p, h2 {
         color: #fff;
-        background-color: rgba(0,0,0,0.35);
-        &:hover {
-            background-color: transparent;
-        }
     }
 }
 
-.container {
-    width: 90%;
-    margin: 0 auto;
-    max-width: 1180px;
+.date-container, .post-container {
+    display: block;
+    float: left;
+}
+
+.date-container {
+    width: 20%;
+}
+.post-container {
+    width: 75%;
+    margin-left: 5%;
+}
+
+#main-content {
+    // border-bottom: ($base * 3) solid #444;
+    min-height: 100%;
+}
+
+.breaker {
+    width: 100%;    
+    position: absolute;
+    z-index: -1;
+}
+
+.content {
+    position: relative;
+    background-color: #fff;
+    p {
+        margin-top: 0;
+    }
 }
 
 .content-body {
-    width: 50%;
-    max-width: 600px;
-    margin: 0 auto;
+    padding-top: ($base * 3);
+    padding-bottom: ($base * 3);
 }
 
 // HOME PAGE BLOG POSTS
 
 .block-list {
-    display: -webkit-box;
-    overflow-x: scroll;
+    // display: -webkit-box;
+    // overflow-x: scroll;
     li {
-        width: 33.3333%;
+        // width: 33.3333%;
+        position: -webkit-sticky;
+        position: -moz-sticky;
+        position: -ms-sticky;
+        position: -o-sticky;
+        position: sticky;
+        top: 15px;
         a {
             display: block;
             text-decoration: none;
-            height: 60vh;
-            padding: 16px 13%;
+            height: 20vh;
+            padding: ($base * 2) 0;
         }
     }
 }
+
+// POST LAYOUT
+// TODO: Need to style h3 or blockquote's in the post area to break outside container: width 140% etc.
 
 
 // PAGINATION
@@ -279,12 +427,29 @@ header {
         float: left;
         text-align: center;
         @include box-sizing(border-box);
+        overflow-x: hidden;
+
         &.prev {
             float: right;
             border-left: 1px solid $lGray;
+            a:hover {
+                p {
+                    right: -20px;
+                }
+            }
+        }
+        &.next {
+            a:hover {
+                p {
+                    left: -20px;
+                }
+            }
         }
         p {
             margin: 0;
+            position: relative;
+            @include transition-property(left, right);
+            @include transition-duration(0.35s, 0.35s);
         }
         a{
             display: block;
@@ -300,76 +465,57 @@ header {
     }
 }
 
+// QUOTES
+
+blockquote {
+    margin: 0;
+    padding: 0;
+}
+
+blockquote p {
+    margin-right: -49%;
+    margin-top: .5em;
+    margin-bottom: .5em;
+    font-family: $gothic;
+    font-weight: normal;
+    font-size: 51px;
+    line-height: 57px;
+    text-transform: uppercase;
+}
+blockquote.alt p {
+    margin-right: 0;
+    margin-left: -49%;
+    text-align: right;
+}
+
+// SOCIAL ICONS
+
+.icon {
+    font-family: "SocialicoRegular";
+    &:before {
+      content: attr(data-icon);
+      speak: none;
+    }
+}
+
+.main-footer {
+    background-color: #ddd;
+    padding: ($base * 3) 0;
+    // STICKY FOOTER
+    .js & {
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        z-index: -1;
+    }
+}
+
+
 
 /* ==========================================================================
    Helper classes
    ========================================================================== */
-
-/*
- * Image replacement
- */
-
-.ir {
-    background-color: transparent;
-    border: 0;
-    overflow: hidden;
-    /* IE 6/7 fallback */
-    *text-indent: -9999px;
-}
-
-.ir:before {
-    content: "";
-    display: block;
-    width: 0;
-    height: 150%;
-}
-
-/*
- * Hide from both screenreaders and browsers: h5bp.com/u
- */
-
-.hidden {
-    display: none !important;
-    visibility: hidden;
-}
-
-/*
- * Hide only visually, but have it available for screenreaders: h5bp.com/v
- */
-
-.visuallyhidden {
-    border: 0;
-    clip: rect(0 0 0 0);
-    height: 1px;
-    margin: -1px;
-    overflow: hidden;
-    padding: 0;
-    position: absolute;
-    width: 1px;
-}
-
-/*
- * Extends the .visuallyhidden class to allow the element to be focusable
- * when navigated to via the keyboard: h5bp.com/p
- */
-
-.visuallyhidden.focusable:active,
-.visuallyhidden.focusable:focus {
-    clip: auto;
-    height: auto;
-    margin: 0;
-    overflow: visible;
-    position: static;
-    width: auto;
-}
-
-/*
- * Hide visually and from screenreaders, but maintain layout
- */
-
-.invisible {
-    visibility: hidden;
-}
 
 /*
  * Clearfix: contain floats
@@ -425,6 +571,11 @@ header {
 @media only screen and (-webkit-min-device-pixel-ratio: 1.5),
        only screen and (min-resolution: 144dpi) {
     /* Style adjustments for viewports that meet the condition */
+    .intro {
+        &.image {
+            height: 100%;
+        }
+    }
 }
 
 @media print,

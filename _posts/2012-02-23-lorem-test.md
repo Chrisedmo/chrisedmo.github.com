@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: blog-post
 title: NEW NEW WHAT??
 short: Lorem ipsum dolor sit amet, consectetur adipisicing elit.
 bg: 3B2F5A

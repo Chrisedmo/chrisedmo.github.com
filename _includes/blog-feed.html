@@ -7,11 +7,17 @@
     <div class="posts">
         <ul class="block-list">
             {% for post in site.posts %}
-            <li style="{% if post.image %} background: url('{{ post.image }}') no-repeat center; background-size: cover;{% else %} background-color: #{{ post.bg }}{% endif %}">
+            <li {% if post.image %} class="wt" style="background: url('{{ post.image }}') no-repeat center; background-size: cover;"{% endif %}{% if post.bg %}class="wt" style="background-color: #{{ post.bg }}"{% endif %}>
                 <a href="{{ post.url }}" title="{{ post.title }}">
-                    <p class="date">{{ post.date | date: "%d %B, %Y" }}</p>
-                    <h2 class="post-title">{{ post.title }}</h2>
-                    <p>{{ post.short }}</p>
+                    <span class="container">
+                        <span class="date-container">
+                            <p class="date">{{ post.date | date: "%d %B, %Y" }}</p>
+                        </span>
+                        <span class="post-container">
+                            <h2 class="post-title">{{ post.title }}</h2>
+                            <p>{{ post.short }}</p>
+                        </span>
+                    </span>
                 </a>
             </li>
             {% endfor %}

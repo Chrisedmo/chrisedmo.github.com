@@ -1,0 +1,11 @@
+<form action="http://getsimpleform.com/messages?form_api_token={{site.form-api}}" method="post">
+
+    <!-- the redirect_to is optional, the form will redirect to the referrer on submission -->
+    <input type='hidden' name='redirect_to' value='<the complete return url e.g. http://fooey.com/thank-you.html>' />
+
+    <input type='text' name='name' placeholder="Enter your name"/>
+    <input type='email' name='email' placeholder="Enter your email address"/>
+    <textarea name="message" placeholder="How can i help you?"></textarea>
+
+    <input type='submit' value='Submit' />
+</form>

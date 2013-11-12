@@ -1,0 +1,10 @@
+<footer id="main-footer" class="main-footer clearfix" role="footer">
+	<div class="container">
+		{% include share.html %}
+		{% if page.comments %}
+			{% include disqus.html %}
+		{% endif %}
+		<p>&copy; {{ 'now' | date: "%Y" }} Chris Mousdale.
+		<a href="/built-with.html">For the geeks…</a></p>
+	</div>
+</footer>

@@ -1,56 +1,18 @@
 {
   "CodeKitInfo" : "This is a CodeKit project configuration file. It is designed to sync project settings across multiple machines. Modifying the contents of this file can be a poor life decision if you don't know what you're doing. This file is not useful unless accompanied by the project that created it in CodeKit. For more information, see: http:\/\/incident57.com\/codekit",
-  "creatorBuild" : "8283",
+  "creatorBuild" : "8376",
   "files" : {
-    "\/_includes\/blog-feed.html" : {
-      "ignoreWasSetByUser" : 1,
-      "ignore" : 1,
-      "hidden" : 0,
-      "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/_includes\/blog-feed.html",
-      "outputAbbreviatedPath" : "No Output Path",
-      "fileType" : 2048
-    },
-    "\/_site\/photography\/index.html" : {
-      "ignoreWasSetByUser" : 0,
-      "ignore" : 1,
-      "hidden" : 1,
-      "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/_site\/photography\/index.html",
-      "outputAbbreviatedPath" : "No Output Path",
-      "fileType" : 2048
-    },
-    "\/css\/main.css" : {
+    "\/sass\/normalize.scss" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 1,
       "hidden" : 0,
       "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/css\/main.css",
-      "outputAbbreviatedPath" : "No Output Path",
-      "fileType" : 16
-    },
-    "\/_site\/sass\/normalize.scss" : {
-      "ignoreWasSetByUser" : 0,
-      "ignore" : 1,
-      "hidden" : 1,
-      "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/_site\/sass\/normalize.scss",
+      "inputAbbreviatedPath" : "\/sass\/normalize.scss",
       "outputStyle" : 0,
       "shouldRunBless" : 0,
       "outputAbbreviatedPath" : "\/css\/normalize.css",
       "fileType" : 4,
       "debugStyle" : 0
-    },
-    "\/img\/bikes.jpg" : {
-      "ignoreWasSetByUser" : 0,
-      "ignore" : 0,
-      "hidden" : 0,
-      "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/img\/bikes.jpg",
-      "processed" : 0,
-      "outputAbbreviatedPath" : "\/img\/bikes.jpg",
-      "initialSize" : 64536,
-      "fileType" : 4096
     },
     "\/_layouts\/base.html" : {
       "ignoreWasSetByUser" : 1,
@@ -61,21 +23,30 @@
       "outputAbbreviatedPath" : "No Output Path",
       "fileType" : 2048
     },
+    "\/_includes\/blog-feed.html" : {
+      "ignoreWasSetByUser" : 1,
+      "ignore" : 1,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/_includes\/blog-feed.html",
+      "outputAbbreviatedPath" : "No Output Path",
+      "fileType" : 2048
+    },
+    "\/_layouts\/blog-post.html" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 0,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/_layouts\/blog-post.html",
+      "outputAbbreviatedPath" : "No Output Path",
+      "fileType" : 2048
+    },
     "\/_layouts\/photo.html" : {
       "ignoreWasSetByUser" : 1,
       "ignore" : 1,
       "hidden" : 0,
       "outputPathIsSetByUser" : 0,
       "inputAbbreviatedPath" : "\/_layouts\/photo.html",
-      "outputAbbreviatedPath" : "No Output Path",
-      "fileType" : 2048
-    },
-    "\/_site\/blog\/index.html" : {
-      "ignoreWasSetByUser" : 0,
-      "ignore" : 1,
-      "hidden" : 1,
-      "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/_site\/blog\/index.html",
       "outputAbbreviatedPath" : "No Output Path",
       "fileType" : 2048
     },
@@ -90,6 +61,33 @@
       "outputAbbreviatedPath" : "\/js\/modernizr.custom.min.js",
       "fileType" : 64
     },
+    "\/_includes\/circle-nav.html" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 0,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/_includes\/circle-nav.html",
+      "outputAbbreviatedPath" : "No Output Path",
+      "fileType" : 2048
+    },
+    "\/_includes\/social.html" : {
+      "ignoreWasSetByUser" : 1,
+      "ignore" : 1,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/_includes\/social.html",
+      "outputAbbreviatedPath" : "No Output Path",
+      "fileType" : 2048
+    },
+    "\/_includes\/disqus.html" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 0,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/_includes\/disqus.html",
+      "outputAbbreviatedPath" : "No Output Path",
+      "fileType" : 2048
+    },
     "\/_site\/sass\/main.scss" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 1,
@@ -102,14 +100,34 @@
       "fileType" : 4,
       "debugStyle" : 0
     },
-    "\/_layouts\/post.html" : {
-      "ignoreWasSetByUser" : 1,
+    "\/css\/main.css" : {
+      "ignoreWasSetByUser" : 0,
       "ignore" : 1,
       "hidden" : 0,
       "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/_layouts\/post.html",
+      "inputAbbreviatedPath" : "\/css\/main.css",
       "outputAbbreviatedPath" : "No Output Path",
-      "fileType" : 2048
+      "fileType" : 16
+    },
+    "\/js\/cm.min.js" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 1,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/js\/cm.min.js",
+      "outputStyle" : 1,
+      "syntaxCheckerStyle" : 1,
+      "outputAbbreviatedPath" : "\/js\/cm.min.min.js",
+      "fileType" : 64
+    },
+    "\/config.rb" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 0,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/config.rb",
+      "outputAbbreviatedPath" : "No Output Path",
+      "fileType" : 32768
     },
     "\/sass\/main.scss" : {
       "ignoreWasSetByUser" : 0,
@@ -123,64 +141,6 @@
       "fileType" : 4,
       "debugStyle" : 0
     },
-    "\/img\/shoes.jpg" : {
-      "ignoreWasSetByUser" : 0,
-      "ignore" : 0,
-      "hidden" : 0,
-      "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/img\/shoes.jpg",
-      "processed" : 0,
-      "outputAbbreviatedPath" : "\/img\/shoes.jpg",
-      "initialSize" : 789481,
-      "fileType" : 4096
-    },
-    "\/config.rb" : {
-      "ignoreWasSetByUser" : 0,
-      "ignore" : 0,
-      "hidden" : 0,
-      "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/config.rb",
-      "outputAbbreviatedPath" : "No Output Path",
-      "fileType" : 32768
-    },
-    "\/_site\/index.html" : {
-      "ignoreWasSetByUser" : 0,
-      "ignore" : 1,
-      "hidden" : 1,
-      "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/_site\/index.html",
-      "outputAbbreviatedPath" : "No Output Path",
-      "fileType" : 2048
-    },
-    "\/_site\/js\/modernizr.custom.js" : {
-      "ignoreWasSetByUser" : 0,
-      "ignore" : 1,
-      "hidden" : 1,
-      "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/_site\/js\/modernizr.custom.js",
-      "outputStyle" : 1,
-      "syntaxCheckerStyle" : 1,
-      "outputAbbreviatedPath" : "\/_site\/js\/modernizr.custom.min.js",
-      "fileType" : 64
-    },
-    "\/_site\/built-with.html" : {
-      "ignoreWasSetByUser" : 0,
-      "ignore" : 1,
-      "hidden" : 1,
-      "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/_site\/built-with.html",
-      "outputAbbreviatedPath" : "No Output Path",
-      "fileType" : 2048
-    },
-    "\/_includes\/social.html" : {
-      "ignoreWasSetByUser" : 1,
-      "ignore" : 1,
-      "hidden" : 0,
-      "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/_includes\/social.html",
-      "outputAbbreviatedPath" : "No Output Path",
-      "fileType" : 2048
-    },
     "\/_site\/portfolio\/index.html" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 1,
@@ -190,12 +150,41 @@
       "outputAbbreviatedPath" : "No Output Path",
       "fileType" : 2048
     },
-    "\/_layouts\/home.html" : {
+    "\/_site\/photography\/index.html" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 1,
+      "hidden" : 1,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/_site\/photography\/index.html",
+      "outputAbbreviatedPath" : "No Output Path",
+      "fileType" : 2048
+    },
+    "\/_layouts\/post.html" : {
+      "ignoreWasSetByUser" : 1,
+      "ignore" : 1,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/_layouts\/post.html",
+      "outputAbbreviatedPath" : "No Output Path",
+      "fileType" : 2048
+    },
+    "\/js\/classie.js" : {
+      "ignoreWasSetByUser" : 1,
+      "ignore" : 1,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/js\/classie.js",
+      "outputStyle" : 1,
+      "syntaxCheckerStyle" : 1,
+      "outputAbbreviatedPath" : "\/js\/classie.min.js",
+      "fileType" : 64
+    },
+    "\/_includes\/contact-form.html" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 0,
       "hidden" : 0,
       "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/_layouts\/home.html",
+      "inputAbbreviatedPath" : "\/_includes\/contact-form.html",
       "outputAbbreviatedPath" : "No Output Path",
       "fileType" : 2048
     },
@@ -208,6 +197,15 @@
       "outputAbbreviatedPath" : "No Output Path",
       "fileType" : 2048
     },
+    "\/blog.html" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 0,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/blog.html",
+      "outputAbbreviatedPath" : "No Output Path",
+      "fileType" : 2048
+    },
     "\/_includes\/nav.html" : {
       "ignoreWasSetByUser" : 1,
       "ignore" : 1,
@@ -217,21 +215,149 @@
       "outputAbbreviatedPath" : "No Output Path",
       "fileType" : 2048
     },
-    "\/sass\/normalize.scss" : {
+    "\/_layouts\/home.html" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 0,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/_layouts\/home.html",
+      "outputAbbreviatedPath" : "No Output Path",
+      "fileType" : 2048
+    },
+    "\/img\/bikes.jpg" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 0,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/img\/bikes.jpg",
+      "processed" : 0,
+      "outputAbbreviatedPath" : "\/img\/bikes.jpg",
+      "initialSize" : 64536,
+      "fileType" : 4096
+    },
+    "\/sass\/c-nav.scss" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 1,
       "hidden" : 0,
       "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/sass\/normalize.scss",
+      "inputAbbreviatedPath" : "\/sass\/c-nav.scss",
+      "outputStyle" : 0,
+      "shouldRunBless" : 0,
+      "outputAbbreviatedPath" : "\/css\/c-nav.css",
+      "fileType" : 4,
+      "debugStyle" : 0
+    },
+    "\/_site\/built-with.html" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 1,
+      "hidden" : 1,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/_site\/built-with.html",
+      "outputAbbreviatedPath" : "No Output Path",
+      "fileType" : 2048
+    },
+    "\/sass\/grids.scss" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 1,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/sass\/grids.scss",
+      "outputStyle" : 0,
+      "shouldRunBless" : 0,
+      "outputAbbreviatedPath" : "\/css\/grids.css",
+      "fileType" : 4,
+      "debugStyle" : 0
+    },
+    "\/js\/cm.js" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 0,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/js\/cm.js",
+      "outputStyle" : 1,
+      "syntaxCheckerStyle" : 1,
+      "outputAbbreviatedPath" : "\/js\/cm.min.js",
+      "fileType" : 64
+    },
+    "\/img\/shoes.jpg" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 0,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/img\/shoes.jpg",
+      "processed" : 0,
+      "outputAbbreviatedPath" : "\/img\/shoes.jpg",
+      "initialSize" : 789481,
+      "fileType" : 4096
+    },
+    "\/_site\/js\/modernizr.custom.js" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 1,
+      "hidden" : 1,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/_site\/js\/modernizr.custom.js",
+      "outputStyle" : 1,
+      "syntaxCheckerStyle" : 1,
+      "outputAbbreviatedPath" : "\/_site\/js\/modernizr.custom.min.js",
+      "fileType" : 64
+    },
+    "\/_includes\/home-intro.html" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 0,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/_includes\/home-intro.html",
+      "outputAbbreviatedPath" : "No Output Path",
+      "fileType" : 2048
+    },
+    "\/_site\/blog\/index.html" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 1,
+      "hidden" : 1,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/_site\/blog\/index.html",
+      "outputAbbreviatedPath" : "No Output Path",
+      "fileType" : 2048
+    },
+    "\/_site\/index.html" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 1,
+      "hidden" : 1,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/_site\/index.html",
+      "outputAbbreviatedPath" : "No Output Path",
+      "fileType" : 2048
+    },
+    "\/_site\/sass\/normalize.scss" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 1,
+      "hidden" : 1,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/_site\/sass\/normalize.scss",
       "outputStyle" : 0,
       "shouldRunBless" : 0,
       "outputAbbreviatedPath" : "\/css\/normalize.css",
       "fileType" : 4,
       "debugStyle" : 0
+    },
+    "\/_includes\/footer.html" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 0,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/_includes\/footer.html",
+      "outputAbbreviatedPath" : "No Output Path",
+      "fileType" : 2048
     }
   },
   "manualImportLinks" : [
-
+    {
+      "type" : 0,
+      "position" : 0,
+      "linkedFileAbbreviatedPath" : "\/js\/classie.js",
+      "baseFileAbbreviatedPath" : "\/js\/cm.js",
+      "followForSyntaxChecking" : 1
+    }
   ],
   "projectSettings" : {
     "hamlNoEscapeInAttributes" : 0,
@@ -248,7 +374,10 @@
     "sassAutoOutputPathStyle" : 2,
     "stylusAutoOutputPathReplace2" : "css",
     "lessAutoOutputPathStyle" : 2,
+    "lessIECompatibility" : 1,
     "genericWebpageFileExtensionsString" : "html, htm, shtml, shtm, xhtml, php, jsp, asp, aspx, erb, ctp",
+    "lessStrictUnits" : 0,
+    "lessStrictMath" : 0,
     "coffeeMinifyOutput" : 1,
     "javascriptOutputSuffix" : ".min",
     "jadeOutputStyle" : 0,
@@ -302,28 +431,27 @@
       "curly" : 1,
       "trailing" : 1,
       "nonew" : 1,
-      "withstmt" : 0,
+      "es3" : false,
+      "freeze" : true,
       "yui" : 0,
       "mootools" : 0,
       "proto" : 0,
       "boss" : 0,
       "funcscope" : 0,
-      "regexdash" : 0,
       "jquery" : 1,
       "esnext" : 0,
       "camelcase" : 0,
-      "es5" : 0,
       "dojo" : 0,
       "strict" : 0,
       "devel" : 0,
-      "onecase" : 0,
       "wsh" : 0,
       "nonstandard" : 0,
       "asi" : 0,
-      "smarttabs" : 0,
+      "moz" : false,
       "rhino" : 0,
-      "noempty" : 0,
+      "smarttabs" : 0,
       "lastsemic" : 0,
+      "noempty" : 0,
       "eqnull" : 0,
       "eqeqeq" : 1,
       "couch" : 0,
@@ -340,6 +468,7 @@
       "unused" : 1,
       "debug" : 0,
       "bitwise" : 1,
+      "notypeof" : true,
       "white" : 0,
       "browser" : 1,
       "worker" : 0,
@@ -347,43 +476,36 @@
       "multistr" : 0,
       "shadow" : 0,
       "sub" : 0,
-      "regexp" : 1,
+      "plusplus" : 0,
       "scripturl" : 0,
       "forin" : 0,
       "loopfunc" : 0,
-      "laxbreak" : 0,
-      "plusplus" : 0
+      "laxbreak" : 0
     },
     "jsLintFlags" : {
       "white" : 0,
-      "bitwise" : 0,
+      "unparam" : 0,
       "regexp" : 0,
+      "nomen" : 0,
       "vars" : 0,
-      "anon" : 0,
       "sub" : 0,
       "stupid" : 0,
-      "nomen" : 0,
-      "unparam" : 0,
+      "continue" : false,
+      "bitwise" : 0,
       "newcap" : 0,
-      "'continue'" : 0,
       "sloppy" : 0,
-      "fragment" : 0,
-      "undef" : 0,
-      "es5" : 0,
+      "closure" : false,
       "browser" : 1,
       "properties" : 0,
-      "forin" : 0,
       "plusplus" : 0,
       "debug" : 0,
+      "forin" : 0,
       "eqeq" : 0,
-      "confusion" : 0,
       "evil" : 0,
-      "on" : 0,
-      "windows" : 0,
-      "devel" : 0,
-      "rhino" : 0,
       "node" : 0,
-      "css" : 0
+      "rhino" : 0,
+      "devel" : 0,
+      "ass" : false
     },
     "uglifyFlags" : {
       "no-mangle-functions" : 0,
@@ -405,6 +527,7 @@
     "jadeCompileDebug" : 1,
     "slimRailsCompatible" : 0,
     "kitAutoOutputPathReplace2" : "",
+    "lessRelativeURLS" : 0,
     "lessDebugStyle" : 0,
     "javascriptAutoOutputPathRelativePath" : "",
     "slimAutoOutputPathStyle" : 0
