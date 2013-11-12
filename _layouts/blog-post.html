@@ -9,21 +9,27 @@
 	<title> {% if page.title %} {{ page.title }} | {% endif %} Chris Mousdale :: Designer &amp; Developer</title>
 	{% if page.description %}
 	<meta name="description" content="{{ page.description }}">
+	<meta name="og:description" content="{{ page.description }}">
 	{% else %}
 	<meta name="description" content="{{ site.description }}">
+	<meta name="og:description" content="{{ site.description }}">
 	{% endif %}
 	{% if page.categories %}
 	<meta name="keywords" content="{{page.categories | join: ','}}" />
 	{% else %}
 	<meta name="keywords" content="{{site.keywords | join: ','}}" />
 	{% endif %}
+	<meta property="og:title" content="{{page.title}}" />
+	{% if page.image %}
+	<meta property="og:image" content="{{page.image}}" />
+	{% endif %}
+
 	<meta name="author" content="Chris Mousdale">
 	<meta name="publisher" content="Chris Mousdale"/>
 	<meta name="copyright" content="Chris Mousdale"/>
 	<meta name="HandheldFriendly" content="True">
 	<meta name="viewport" content="width=device-width,initial-scale=1">
 	<meta http-equiv="cleartype" content="on">	
-
 	<!-- Prefetch DNS for external assets (Twitter widgets etc). -->
 	<link rel="dns-prefetch" href="//fonts.googleapis.com">
     <link rel="dns-prefetch" href="//use.typekit.net/">
@@ -101,6 +107,7 @@
 	</div>
 	
 	</section>
+	<div class="breaker"></div>
 	{% include footer.html %}
 </div>
 {% include circle-nav.html %}
@@ -110,7 +117,7 @@
 <script src="/js/cm.min.js"></script>
 <script>
 	$(window).bind("load", function(){
-		$('#main-content').css('paddingBottom', $('#main-footer').outerHeight()+'px');
+		$('.breaker').css('height', $('#main-footer').outerHeight()+'px');
 	});
 </script>
 <script>

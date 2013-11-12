@@ -366,9 +366,15 @@ header {
     margin-left: 5%;
 }
 
-section[role="content"] {
+#main-content {
     // border-bottom: ($base * 3) solid #444;
     min-height: 100%;
+}
+
+.breaker {
+    width: 100%;    
+    position: absolute;
+    z-index: -1;
 }
 
 .content {
