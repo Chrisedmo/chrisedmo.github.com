@@ -210,6 +210,7 @@ aside.social-links {
     }
     a{
         opacity: 0.35;
+        font-size: 2em;
         &:hover {
             opacity: 1;
         }
@@ -223,6 +224,12 @@ aside.social-links {
         padding: 0;
         ul {
             padding: 0;
+        }
+        a {
+            font-size: 1.25em;
+            &:hover {
+                color: #fff;
+            }
         }
     }
 }
@@ -501,6 +508,8 @@ blockquote.alt p {
 .main-footer {
     background-color: #ddd;
     padding: ($base * 3) 0;
+    @include transition-property(background-color);
+    @include transition-duration(0.2s);
     // STICKY FOOTER
     .js & {
         position: fixed;
