@@ -27,6 +27,7 @@ a.symbol:before {
     // font-size: 130%;
 }
 
+
 $gothic: "franklin-gothic-urw-cond-1","franklin-gothic-urw-cond-2", sans-serif;
 $serif: "ff-tisa-web-pro-1","ff-tisa-web-pro-2", palatino, serif;
 
@@ -192,6 +193,36 @@ a, a:visited {
         font-size: 3em;
         .home & {
             color: #000;
+        }
+    }
+}
+
+aside.social-links {
+    margin: 0;
+    top: 0;
+    right: 0;
+    left: auto;
+    li {
+        display: inline;
+    }
+    span {
+        display: none;
+    }
+    a{
+        opacity: 0.35;
+        &:hover {
+            opacity: 1;
+        }
+    }
+    &.social-share {
+        position: relative;
+        text-align: center;
+        width: 100%;
+        font-size: 3em;
+        margin: 0;
+        padding: 0;
+        ul {
+            padding: 0;
         }
     }
 }
