@@ -53,12 +53,8 @@
 </head>
 <body class="blog-post {{ page.page-class }}">
 <div id="b-container">
-	<header class="head">
-		<a href="/">Chris Mousdale<br />
-			<span class="info">Designer | Web Geek | Jersey | 19.05.83 </span>
-		</a>
-		{% include social.html %}
-	</header>	
+	
+	{% include header-b.html %}	
 	<section role="content" id="main-content">
 	
 	<header {% if page.image %} class="blog-post intro image" style="background: url('{{ page.image }}') no-repeat center; background-size: cover;">{% else %} class="blog-post intro" style="background-color: #{{ page.bg }};">{% endif %}
@@ -82,6 +78,7 @@
 					Comments: <a href="#disqus_thread">25 comments</a>
 				</p>
 				{% endif %}
+				{% include profile.md %}
 			</aside>
 			{{ content }}
 		</article>
