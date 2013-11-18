@@ -213,6 +213,25 @@ a, a:visited {
     }
 }
 
+.profile {
+    padding: 0 20px 0 0;
+    font-size: 0.75em;
+    line-height: 1.5;
+    margin: 20px 0;
+    opacity: 0.35;
+    @include transition(opacity 0.25s ease-in-out);
+    &:hover {
+        opacity: 1;
+    }
+    img {
+        margin-bottom: 20px
+    }
+}
+
+.img-circle {
+    @include border-radius(50%);
+}
+
 aside.social-links {
     margin: 0;
     top: 0;
