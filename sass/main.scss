@@ -508,6 +508,8 @@ blockquote.alt p {
 .main-footer {
     background-color: #ddd;
     padding: ($base * 3) 0;
+    padding: ($base * 2) 0 0;
+    text-align: center;
     @include transition-property(background-color);
     @include transition-duration(0.2s);
     // STICKY FOOTER
@@ -517,6 +519,18 @@ blockquote.alt p {
         left: 0;
         right: 0;
         z-index: -1;
+    }
+    p {
+        font-size: ($base - 4);
+    }
+}
+
+.bottom-footer {
+    background-color: #444;
+    padding: ($base) 0 ($base * 3);
+    color: #fff;
+    a {
+        color: #999;
     }
 }
 
