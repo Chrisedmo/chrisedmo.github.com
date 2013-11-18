@@ -1,6 +1,8 @@
 ---
-layout: default
-published: false
+layout: blog-post
+title: "To create or not create"
+short: "A creative person needs to create"
+bg: 3EABC1
 ---
 
 # A creative must create…
