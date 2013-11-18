@@ -155,6 +155,15 @@ h1, h2, h3, h4, h5, h6, h2.post-title, p.title {
     margin-top: 0;
 }
 
+p {
+    margin-top: 0;
+}
+
+h4 {
+    line-height: 1;
+    margin-bottom: ($base * 2);
+}
+
 p.title {
     font-size: $size2;
 }
@@ -170,6 +179,9 @@ a, a:visited {
     text-align: center;
     padding-bottom: 16px;
     background-color: #444;
+    .container {
+        position: relative;
+    }
     .home & {
         background-color: rgba(255,255,255,0.9);
         position: absolute;
@@ -210,6 +222,12 @@ a, a:visited {
         .home & {
             color: #000;
         }
+    }
+}
+
+aside {
+    img {
+        max-width: 100%;
     }
 }
 
@@ -262,14 +280,16 @@ aside.social-links {
         width: 100%;
         font-size: 3em;
         margin: 0;
-        padding: 0;
+        padding: 0 0 40px 0;
         ul {
             padding: 0;
         }
         a {
             font-size: 1.25em;
-            &:hover {
-                color: #fff;
+            .js & {
+                &:hover {
+                    color: #fff;
+                }
             }
         }
     }
@@ -278,14 +298,20 @@ aside.social-links {
 .intro {
     background-color: #000;
     z-index: 0;
-    height: 50vh;
+    height: 50%;
     // TODO: create retina fallback? Half height?
     position: relative;
     min-height: ($base * 20);
     &.image {
-        height: 98vh;
-        min-height: ($base * 30);
-        // TODO: create retina fallback? Half height?
+        height: 100%;
+        height: 100vh;
+        .home & {
+            position: fixed;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+        }
         h1 {
             text-shadow: 0px 0px 50px rgba(0,0,0,.3);
         }
@@ -318,6 +344,14 @@ aside.social-links {
             width: 50%;;
             top: ($padding * 6);
             bottom: auto;
+            @media screen and (max-width: 400px) {
+                @include box-sizing(border-box);
+                width: 90%;  
+                left: 5%;
+                right: 5%;
+                bottom: 20%;
+                top: auto;
+            }
         }
     }
     a {
@@ -341,6 +375,7 @@ header {
     position: relative;
     h2 {
         margin:  0 0 $base 0;
+        font-size: 3em;
         // text-align: center;
     }
 }
@@ -454,9 +489,19 @@ header {
         a {
             display: block;
             text-decoration: none;
-            height: 20vh;
+            // height: 20%;
+            min-height: 200px;
             padding: ($base * 2) 0;
+            @include transition-property(translateX);
+            @include transition-duration(0.2s);           
+            &:hover {
+                @include translateX(20px);
+            }
         }
+    }
+    h2 {
+        line-height: 1;
+
     }
 }
 
@@ -548,7 +593,6 @@ blockquote.alt p {
 
 .main-footer {
     background-color: #ddd;
-    padding: ($base * 3) 0;
     padding: ($base * 2) 0 0;
     text-align: center;
     @include transition-property(background-color);
