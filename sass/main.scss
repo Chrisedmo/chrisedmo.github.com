@@ -30,6 +30,7 @@ a.symbol:before {
 
 $gothic: "franklin-gothic-urw-cond-1","franklin-gothic-urw-cond-2", sans-serif;
 $serif: "ff-tisa-web-pro-1","ff-tisa-web-pro-2", palatino, serif;
+$italic: "Playfair Display", palatino, serif;
 
 $base: 18px; 
 $line-height: ($base * 1.55);
@@ -162,6 +163,15 @@ p {
 h4 {
     line-height: 1;
     margin-bottom: ($base * 2);
+}
+
+.italic {
+    font-family: $italic;
+    font-weight: 400;
+    font-style: italic;
+    &.bold {
+        font-weight: 800;
+    }
 }
 
 p.title {
@@ -369,10 +379,21 @@ header {
     background-color: #fff;
     // border-bottom: 1px solid rgba(0,0,0,0.75);
     padding: $padding 0;
+    height: 50px;
+    overflow: hidden;
 }
 
 .blog-feed {
     position: relative;
+    h3 {
+        text-align: center;
+        text-transform: none;
+        margin-bottom: 0;
+        color: #ddd;
+        // font-size: ($base * 2);
+        color: #eee;
+        font-size: 140px;
+    }
     h2 {
         margin:  0 0 $base 0;
         font-size: 3em;
