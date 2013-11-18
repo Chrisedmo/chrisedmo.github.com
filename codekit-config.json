@@ -32,24 +32,6 @@
       "outputAbbreviatedPath" : "No Output Path",
       "fileType" : 2048
     },
-    "\/_layouts\/blog-post.html" : {
-      "ignoreWasSetByUser" : 0,
-      "ignore" : 0,
-      "hidden" : 0,
-      "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/_layouts\/blog-post.html",
-      "outputAbbreviatedPath" : "No Output Path",
-      "fileType" : 2048
-    },
-    "\/_layouts\/photo.html" : {
-      "ignoreWasSetByUser" : 1,
-      "ignore" : 1,
-      "hidden" : 0,
-      "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/_layouts\/photo.html",
-      "outputAbbreviatedPath" : "No Output Path",
-      "fileType" : 2048
-    },
     "\/js\/modernizr.custom.js" : {
       "ignoreWasSetByUser" : 1,
       "ignore" : 1,
@@ -61,12 +43,41 @@
       "outputAbbreviatedPath" : "\/js\/modernizr.custom.min.js",
       "fileType" : 64
     },
+    "\/_layouts\/photo.html" : {
+      "ignoreWasSetByUser" : 1,
+      "ignore" : 1,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/_layouts\/photo.html",
+      "outputAbbreviatedPath" : "No Output Path",
+      "fileType" : 2048
+    },
+    "\/img\/chrismousdale.jpg" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 0,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/img\/chrismousdale.jpg",
+      "processed" : 0,
+      "outputAbbreviatedPath" : "\/img\/chrismousdale.jpg",
+      "initialSize" : 49305,
+      "fileType" : 4096
+    },
     "\/_includes\/circle-nav.html" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 0,
       "hidden" : 0,
       "outputPathIsSetByUser" : 0,
       "inputAbbreviatedPath" : "\/_includes\/circle-nav.html",
+      "outputAbbreviatedPath" : "No Output Path",
+      "fileType" : 2048
+    },
+    "\/_layouts\/blog-post.html" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 0,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/_layouts\/blog-post.html",
       "outputAbbreviatedPath" : "No Output Path",
       "fileType" : 2048
     },
@@ -120,6 +131,15 @@
       "outputAbbreviatedPath" : "\/js\/cm.min.min.js",
       "fileType" : 64
     },
+    "\/_includes\/header.html" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 0,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/_includes\/header.html",
+      "outputAbbreviatedPath" : "No Output Path",
+      "fileType" : 2048
+    },
     "\/config.rb" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 0,
@@ -150,12 +170,12 @@
       "outputAbbreviatedPath" : "No Output Path",
       "fileType" : 2048
     },
-    "\/_site\/photography\/index.html" : {
+    "\/_includes\/contact-form.html" : {
       "ignoreWasSetByUser" : 0,
-      "ignore" : 1,
-      "hidden" : 1,
+      "ignore" : 0,
+      "hidden" : 0,
       "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/_site\/photography\/index.html",
+      "inputAbbreviatedPath" : "\/_includes\/contact-form.html",
       "outputAbbreviatedPath" : "No Output Path",
       "fileType" : 2048
     },
@@ -179,15 +199,6 @@
       "outputAbbreviatedPath" : "\/js\/classie.min.js",
       "fileType" : 64
     },
-    "\/_includes\/contact-form.html" : {
-      "ignoreWasSetByUser" : 0,
-      "ignore" : 0,
-      "hidden" : 0,
-      "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/_includes\/contact-form.html",
-      "outputAbbreviatedPath" : "No Output Path",
-      "fileType" : 2048
-    },
     "\/_site\/about\/index.html" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 1,
@@ -197,12 +208,21 @@
       "outputAbbreviatedPath" : "No Output Path",
       "fileType" : 2048
     },
-    "\/blog.html" : {
+    "\/_includes\/share.html" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 0,
       "hidden" : 0,
       "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/blog.html",
+      "inputAbbreviatedPath" : "\/_includes\/share.html",
+      "outputAbbreviatedPath" : "No Output Path",
+      "fileType" : 2048
+    },
+    "\/_includes\/header-b.html" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 0,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/_includes\/header-b.html",
       "outputAbbreviatedPath" : "No Output Path",
       "fileType" : 2048
     },
@@ -215,6 +235,15 @@
       "outputAbbreviatedPath" : "No Output Path",
       "fileType" : 2048
     },
+    "\/_site\/photography\/index.html" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 1,
+      "hidden" : 1,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/_site\/photography\/index.html",
+      "outputAbbreviatedPath" : "No Output Path",
+      "fileType" : 2048
+    },
     "\/_layouts\/home.html" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 0,
@@ -223,17 +252,6 @@
       "inputAbbreviatedPath" : "\/_layouts\/home.html",
       "outputAbbreviatedPath" : "No Output Path",
       "fileType" : 2048
-    },
-    "\/img\/bikes.jpg" : {
-      "ignoreWasSetByUser" : 0,
-      "ignore" : 0,
-      "hidden" : 0,
-      "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/img\/bikes.jpg",
-      "processed" : 0,
-      "outputAbbreviatedPath" : "\/img\/bikes.jpg",
-      "initialSize" : 64536,
-      "fileType" : 4096
     },
     "\/sass\/c-nav.scss" : {
       "ignoreWasSetByUser" : 0,
@@ -256,17 +274,16 @@
       "outputAbbreviatedPath" : "No Output Path",
       "fileType" : 2048
     },
-    "\/sass\/grids.scss" : {
+    "\/img\/bikes.jpg" : {
       "ignoreWasSetByUser" : 0,
-      "ignore" : 1,
+      "ignore" : 0,
       "hidden" : 0,
       "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/sass\/grids.scss",
-      "outputStyle" : 0,
-      "shouldRunBless" : 0,
-      "outputAbbreviatedPath" : "\/css\/grids.css",
-      "fileType" : 4,
-      "debugStyle" : 0
+      "inputAbbreviatedPath" : "\/img\/bikes.jpg",
+      "processed" : 0,
+      "outputAbbreviatedPath" : "\/img\/bikes.jpg",
+      "initialSize" : 64536,
+      "fileType" : 4096
     },
     "\/js\/cm.js" : {
       "ignoreWasSetByUser" : 0,
@@ -278,6 +295,18 @@
       "syntaxCheckerStyle" : 1,
       "outputAbbreviatedPath" : "\/js\/cm.min.js",
       "fileType" : 64
+    },
+    "\/sass\/grids.scss" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 1,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/sass\/grids.scss",
+      "outputStyle" : 0,
+      "shouldRunBless" : 0,
+      "outputAbbreviatedPath" : "\/css\/grids.css",
+      "fileType" : 4,
+      "debugStyle" : 0
     },
     "\/img\/shoes.jpg" : {
       "ignoreWasSetByUser" : 0,
