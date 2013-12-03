@@ -52,6 +52,28 @@
 	<script src="/js/modernizr.custom.js"></script>
 </head>
 <body class="blog-post {{ page.page-class }}">
+<!-- TODO: MAKE OFFSCREEN NAV -->
+<!-- <div class="blog-feed-mini">
+    <div class="posts">
+        <ul class="block-list">
+            {% for post in site.posts %}
+            <li {% if post.image %} class="wt" style="background: url('{{ post.image }}') no-repeat center; background-size: cover;"{% endif %}{% if post.bg %}class="wt" style="background-color: #{{ post.bg }}"{% endif %}>
+                <a href="{{ post.url }}" title="{{ post.title }}">
+                    <span class="container">
+                        <span class="date-container">
+                            <p class="date">{{ post.date | date: "%d %B, %Y" }}</p>
+                        </span>
+                        <span class="post-container">
+                            <h2 class="post-title">{{ post.title }}</h2>
+                            <p>{{ post.short }}</p>
+                        </span>
+                    </span>
+                </a>
+            </li>
+            {% endfor %}
+        </ul>
+    </div>
+</div>	 -->
 <div id="b-container">
 	
 	{% include header-b.html %}	
