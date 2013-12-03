@@ -46,17 +46,12 @@
 </head>
 <body class="home {{ page.page-class }}">
 <div id="b-container">
-	<header class="head">
-		<a href="/">Chris Mousdale<br />
-			<span class="info">Designer | Web Geek | Jersey | 19.05.83 </span>
-		</a>
-		{% include social.html %}
-	</header>	
+	{% include header.html %}
 	<section role="content">
 		{% include home-intro.html %}
 	</section>
+	{% include blog-feed.html %}
 </div>
-{% include circle-nav.html %}
 
 <script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
 <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.7.2.min.js"><\/script>')</script>

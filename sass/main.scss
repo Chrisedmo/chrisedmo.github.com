@@ -39,6 +39,8 @@ $size2: ($base + ($base / 2));
 
 $padding: ($base * 2);
 
+$headerHeight: 60px;
+
 @font-face {
     font-family: 'SocialicoRegular';
     src: url('socialico-webfont.eot');
@@ -153,6 +155,15 @@ h1, h2, h3, h4, h5, h6, h2.post-title, p.title {
     margin-top: 0;
 }
 
+p {
+    margin-top: 0;
+}
+
+h4 {
+    line-height: 1;
+    margin-bottom: ($base * 2);
+}
+
 p.title {
     font-size: $size2;
 }
@@ -168,7 +179,11 @@ a, a:visited {
     text-align: center;
     padding-bottom: 16px;
     background-color: #444;
+    .container {
+        position: relative;
+    }
     .home & {
+        background-color: #fff;
         background-color: rgba(255,255,255,0.9);
         position: absolute;
         top: 0;
@@ -179,6 +194,20 @@ a, a:visited {
         position: absolute;
         top: 0;
         z-index: 1;        
+    }
+    .b-link {
+        position: absolute;
+        z-index: 99999;
+        font-size: $base;
+        line-height: 1;
+        position: absolute;
+        left: 0;
+        line-height: $headerHeight;
+        opacity: 0.5;
+        @include transition(opacity 0.25 ease-in-out);
+        &:hover {
+            opacity: 1;
+        }
     }
     span {
         font-family: $serif;
@@ -197,11 +226,46 @@ a, a:visited {
     }
 }
 
+#b-container {
+    height: 100%;
+}
+
+aside {
+    img {
+        max-width: 100%;
+    }
+}
+
+.profile {
+    padding: 0 20px 0 0;
+    font-size: 0.75em;
+    line-height: 1.5;
+    margin: 20px 0;
+    opacity: 0.35;
+    @include transition(opacity 0.25s ease-in-out);
+    &:hover {
+        opacity: 1;
+    }
+    img {
+        margin-bottom: 20px;
+        max-width: 100%;
+    }
+}
+
+.img-circle {
+    @include border-radius(50%);
+}
+
 aside.social-links {
     margin: 0;
     top: 0;
     right: 0;
     left: auto;
+    position: absolute;
+    ul {
+        margin: 0;
+        padding: 0;
+    }
     li {
         display: inline;
     }
@@ -211,6 +275,7 @@ aside.social-links {
     a{
         opacity: 0.35;
         font-size: 2em;
+        line-height: $headerHeight;
         &:hover {
             opacity: 1;
         }
@@ -221,14 +286,16 @@ aside.social-links {
         width: 100%;
         font-size: 3em;
         margin: 0;
-        padding: 0;
+        padding: 0 0 40px 0;
         ul {
             padding: 0;
         }
         a {
             font-size: 1.25em;
-            &:hover {
-                color: #fff;
+            .js & {
+                &:hover {
+                    color: #fff;
+                }
             }
         }
     }
@@ -237,14 +304,20 @@ aside.social-links {
 .intro {
     background-color: #000;
     z-index: 0;
-    height: 50vh;
+    height: 50%;
     // TODO: create retina fallback? Half height?
     position: relative;
     min-height: ($base * 20);
     &.image {
-        height: 98vh;
-        min-height: ($base * 30);
-        // TODO: create retina fallback? Half height?
+        height: 100%;
+        // height: 100vh;
+        .home & {
+            // position: fixed;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+        }
         h1 {
             text-shadow: 0px 0px 50px rgba(0,0,0,.3);
         }
@@ -277,6 +350,14 @@ aside.social-links {
             width: 50%;;
             top: ($padding * 6);
             bottom: auto;
+            @media screen and (max-width: 400px) {
+                @include box-sizing(border-box);
+                width: 90%;  
+                left: 5%;
+                right: 5%;
+                bottom: 20%;
+                top: auto;
+            }
         }
     }
     a {
@@ -294,12 +375,21 @@ header {
     background-color: #fff;
     // border-bottom: 1px solid rgba(0,0,0,0.75);
     padding: $padding 0;
+    height: 50px;
+    overflow: hidden;
 }
 
 .blog-feed {
     position: relative;
+    h3 {
+        text-align: center;
+        margin-bottom: 0;
+        color: #444;
+        font-size: 300px;
+    }
     h2 {
         margin:  0 0 $base 0;
+        font-size: 3em;
         // text-align: center;
     }
 }
@@ -330,6 +420,11 @@ header {
         display: block;
         color: #444;
     }
+}
+
+#disqus_thread {
+    width: 60%;
+    margin: 0 auto;
 }
 
 .posts {
@@ -373,6 +468,10 @@ header {
     margin-left: 5%;
 }
 
+.home section[role="content"] {
+    height: 100%;
+}
+
 #main-content {
     // border-bottom: ($base * 3) solid #444;
     min-height: 100%;
@@ -413,9 +512,19 @@ header {
         a {
             display: block;
             text-decoration: none;
-            height: 20vh;
+            // height: 20%;
+            min-height: 200px;
             padding: ($base * 2) 0;
+            @include transition-property(translateX);
+            @include transition-duration(0.2s);           
+            &:hover {
+                @include translateX(20px);
+            }
         }
+    }
+    h2 {
+        line-height: 1;
+
     }
 }
 
@@ -507,7 +616,8 @@ blockquote.alt p {
 
 .main-footer {
     background-color: #ddd;
-    padding: ($base * 3) 0;
+    padding: ($base * 2) 0 0;
+    text-align: center;
     @include transition-property(background-color);
     @include transition-duration(0.2s);
     // STICKY FOOTER
@@ -517,6 +627,18 @@ blockquote.alt p {
         left: 0;
         right: 0;
         z-index: -1;
+    }
+    p {
+        font-size: ($base - 4);
+    }
+}
+
+.bottom-footer {
+    background-color: #444;
+    padding: ($base) 0 ($base * 3);
+    color: #fff;
+    a {
+        color: #999;
     }
 }
 

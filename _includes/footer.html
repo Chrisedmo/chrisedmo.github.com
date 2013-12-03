@@ -4,7 +4,13 @@
 		{% if page.comments %}
 			{% include disqus.html %}
 		{% endif %}
-		<p>&copy; {{ 'now' | date: "%Y" }} Chris Mousdale.
-		<a href="/built-with.html">For the geeks…</a></p>
+	</div>
+	<div class="bottom-footer clearfix">
+		<div class="container">
+			<p>&copy; {{ site.time | date: '%Y' }} <a href="http://twitter.com/chrisedmo">Chris Mousdale</a>.
+			           Built with <a href="http://jekyllrb.com/">Jekyll</a>.
+			           The source code of this blog is <a href="https://github.com/chrisedmo/chrisedmo.github.com">hosted on GitHub</a>.<br>
+			           You should <a href="http://www.mousdale.com/rss.xml">grab the RSS feed</a> and <a href="http://twitter.com/chrisedmo">follow me on Twitter</a>.</p>
+		</div>
 	</div>
 </footer>
