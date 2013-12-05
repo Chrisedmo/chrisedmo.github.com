@@ -699,6 +699,32 @@ blockquote.alt p {
     }
 }
 
+@media only screen and (max-width: 35em) {
+    a.logo {
+        // position: relative;
+        // top: -45px;
+        font-size: 40px;
+        line-height: 18px;
+    }
+    aside.social-links {
+        position: relative;
+    }
+    aside.social-links a {
+        line-height: 1;
+    }
+    .date-container, .post-container {
+        width: 100%;
+        margin-left: 0;
+        float: none;
+    }
+    .blog-feed h2 {
+        margin-bottom: 0;
+    }
+    .block-list li a {
+        min-height: 0;
+    }
+}
+
 @media only screen and (-webkit-min-device-pixel-ratio: 1.5),
        only screen and (min-resolution: 144dpi) {
     /* Style adjustments for viewports that meet the condition */
