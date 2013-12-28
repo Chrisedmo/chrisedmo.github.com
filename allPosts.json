@@ -1,0 +1,11 @@
+---
+---
+{
+	"jsMenu" :
+	[
+	  {% for post in site.posts %}
+	    {% include posts.json %},
+	  {% endfor %}
+	  null
+	]
+}
