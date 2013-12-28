@@ -130,8 +130,20 @@
 	<div class="breaker"></div>
 	{% include footer.html %}
 </div>
+<div id="test"></div>
+<script id="mobileNav" type="text/template">
+{% raw %}
+		<ul>
+				<a href="{{href}}" title="{{title}}"><h3>{{title}}</h3></a>
+			</li>
+		</ul>
+	{{/jsMenu}}
+{% endraw %}
+</script>
+
 
 <script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+<script src="/js/min/mustache.min.js"></script>
 <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.7.2.min.js"><\/script>')</script>
 <script src="/js/cm.min.js"></script>
 <script>
