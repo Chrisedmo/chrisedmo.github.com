@@ -12,6 +12,9 @@
     max-width: 600px;
     margin: 0 auto;
     position: relative;
+    @media screen and (max-width: 480px) {
+    	width: 90%;
+    }
 }
 
 .content aside {
@@ -22,6 +25,13 @@
 	padding-right: 20px;
 	// color: #777;
 	// box-shadow: 1px 0px 0px rgba(0,0,0,.04), inset -1px 0px 0px rgba(255,255,255,.5);
+	@media screen and (max-width: 480px) {
+		position: relative;
+		width: 100%;
+		margin-left: 0;
+		padding-right: 0;
+		left: 0;
+	} 
 }
 
 //  PHOTO SIZING
@@ -29,6 +39,12 @@
 	width: 150%;
 	&.alt {
 		margin-left: -50%;
+		@media screen and (max-width: 480px) {
+			margin-left: 0;
+		}
+	}
+	@media screen and (max-width: 480px) {
+		width: 100%;
 	}
 }
 
