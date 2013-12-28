@@ -53,28 +53,6 @@
 	<script src="/js/modernizr.custom.js"></script>
 </head>
 <body class="blog-post {{ page.page-class }}">
-<!-- TODO: MAKE OFFSCREEN NAV -->
-<!-- <div class="blog-feed-mini">
-    <div class="posts">
-        <ul class="block-list">
-            {% for post in site.posts %}
-            <li {% if post.image %} class="wt" style="background: url('{{ post.image }}') no-repeat center; background-size: cover;"{% endif %}{% if post.bg %}class="wt" style="background-color: #{{ post.bg }}"{% endif %}>
-                <a href="{{ post.url }}" title="{{ post.title }}">
-                    <span class="container">
-                        <span class="date-container">
-                            <p class="date">{{ post.date | date: "%d %B, %Y" }}</p>
-                        </span>
-                        <span class="post-container">
-                            <h2 class="post-title">{{ post.title }}</h2>
-                            <p>{{ post.short }}</p>
-                        </span>
-                    </span>
-                </a>
-            </li>
-            {% endfor %}
-        </ul>
-    </div>
-</div>	 -->
 <div id="b-container">
 	
 	{% include header-b.html %}	
@@ -133,7 +111,9 @@
 <div id="test"></div>
 <script id="mobileNav" type="text/template">
 {% raw %}
+	{{#jsMenu}}
 		<ul>
+			<li>
 				<a href="{{href}}" title="{{title}}"><h3>{{title}}</h3></a>
 			</li>
 		</ul>
@@ -142,14 +122,24 @@
 </script>
 
 
-<script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
 <script src="/js/min/mustache.min.js"></script>
 <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.7.2.min.js"><\/script>')</script>
-<script src="/js/cm.min.js"></script>
+<script src="/js/min/cm.min.js"></script>
 <script>
 	$(window).bind("load", function(){
 		$('.breaker').css('height', $('#main-footer').outerHeight()+'px');
 	});
+</script>
+<script>
+$(document).ready(function() {
+	$.getJSON('/allPosts.json', function(data)	{
+		var template = '<ul>{% raw %}{{#jsMenu}}<li><a href="{{href}}" title="{{title}}"><h3>{{title}}</h3></a></li>{{/jsMenu}}{% endraw %}</ul>';
+		var html = Mustache.to_html(template, data);
+		$('#test').html(html);
+		// console.log(html);
+	});
+});
 </script>
 <script>
     var _gaq=[['_setAccount','UA-XXXXX-X'],['_trackPageview']];
