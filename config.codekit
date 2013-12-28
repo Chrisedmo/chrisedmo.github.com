@@ -1,0 +1,662 @@
+{
+  "CodeKitInfo" : "This is a CodeKit 2.x project configuration file. It is designed to sync project settings across multiple machines. MODIFYING THE CONTENTS OF THIS FILE IS A POOR LIFE DECISION. If you do so, you will likely cause CodeKit to crash. This file is not useful unless accompanied by the project that created it in CodeKit 2. This file is not backwards-compatible with CodeKit 1.x. For more information, see: http:\/\/incident57.com\/codekit",
+  "settingsFileVersion" : "2",
+  "projectSettings" : {
+    "externalServerAddress" : "http:\/\/localhost",
+    "autoprefixerBrowserString" : "> 1%, last 2 versions, ff 17, opera 12.1",
+    "uglifyFlags2" : {
+      "drop_debugger" : {
+        "flagValue" : -1,
+        "active" : 1
+      },
+      "booleans" : {
+        "flagValue" : -1,
+        "active" : 1
+      },
+      "bracketize" : {
+        "flagValue" : -1,
+        "active" : 0
+      },
+      "inline-script" : {
+        "flagValue" : -1,
+        "active" : 0
+      },
+      "hoist_vars" : {
+        "flagValue" : -1,
+        "active" : 0
+      },
+      "loops" : {
+        "flagValue" : -1,
+        "active" : 1
+      },
+      "toplevel" : {
+        "flagValue" : -1,
+        "active" : 0
+      },
+      "mangle" : {
+        "flagValue" : -1,
+        "active" : 1
+      },
+      "sequences" : {
+        "flagValue" : -1,
+        "active" : 1
+      },
+      "comments" : {
+        "flagValue" : -1,
+        "active" : 1
+      },
+      "space-colon" : {
+        "flagValue" : -1,
+        "active" : 1
+      },
+      "sort" : {
+        "flagValue" : -1,
+        "active" : 0
+      },
+      "cascade" : {
+        "flagValue" : -1,
+        "active" : 1
+      },
+      "unused" : {
+        "flagValue" : -1,
+        "active" : 0
+      },
+      "dead_code" : {
+        "flagValue" : -1,
+        "active" : 0
+      },
+      "indent-start" : {
+        "flagValue" : 0,
+        "active" : 0
+      },
+      "compress" : {
+        "flagValue" : -1,
+        "active" : 1
+      },
+      "conditionals" : {
+        "flagValue" : -1,
+        "active" : 1
+      },
+      "ascii-only" : {
+        "flagValue" : -1,
+        "active" : 0
+      },
+      "evaluate" : {
+        "flagValue" : -1,
+        "active" : 1
+      },
+      "comparisons" : {
+        "flagValue" : -1,
+        "active" : 1
+      },
+      "quote-keys" : {
+        "flagValue" : -1,
+        "active" : 0
+      },
+      "warnings" : {
+        "flagValue" : -1,
+        "active" : 0
+      },
+      "join_vars" : {
+        "flagValue" : -1,
+        "active" : 1
+      },
+      "properties" : {
+        "flagValue" : -1,
+        "active" : 1
+      },
+      "screw-ie8" : {
+        "flagValue" : -1,
+        "active" : 0
+      },
+      "indent-level" : {
+        "flagValue" : 4,
+        "active" : 0
+      },
+      "if_return" : {
+        "flagValue" : -1,
+        "active" : 1
+      },
+      "unsafe" : {
+        "flagValue" : -1,
+        "active" : 0
+      },
+      "max-line-len" : {
+        "flagValue" : 32000,
+        "active" : 1
+      },
+      "eval" : {
+        "flagValue" : -1,
+        "active" : 0
+      },
+      "hoist_funs" : {
+        "flagValue" : -1,
+        "active" : 1
+      },
+      "width" : {
+        "flagValue" : 80,
+        "active" : 1
+      },
+      "semicolons" : {
+        "flagValue" : -1,
+        "active" : 1
+      }
+    },
+    "coffeeAutoOutputPathStyle" : 0,
+    "javascriptCreateSourceMap" : 1,
+    "javascriptOutputSuffix" : "-ck",
+    "typescriptDisallowBool" : 0,
+    "jsLintFlags2" : {
+
+    },
+    "hamlOutputFormat" : 2,
+    "slimAutoOutputPathStyle" : 0,
+    "kitAutoOutputPathReplace1" : "",
+    "kitAutoOutputPathReplace2" : "",
+    "lessDisableJavascript" : 0,
+    "jadeCompileDebug" : 1,
+    "markdownAutoOutputPathRelativePath" : "",
+    "reloadFileURLs" : 0,
+    "stylusImportCSS" : 0,
+    "sassUseLibsass" : 0,
+    "coffeeLintFlags2" : {
+      "no_tabs" : {
+        "flagValue" : -1,
+        "active" : 1
+      },
+      "no_empty_param_list" : {
+        "flagValue" : -1,
+        "active" : 0
+      },
+      "no_stand_alone_at" : {
+        "flagValue" : -1,
+        "active" : 1
+      },
+      "no_trailing_whitespace" : {
+        "flagValue" : -1,
+        "active" : 1
+      },
+      "no_backticks" : {
+        "flagValue" : -1,
+        "active" : 1
+      },
+      "no_implicit_parens" : {
+        "flagValue" : -1,
+        "active" : 0
+      },
+      "empty_constructor_needs_parens" : {
+        "flagValue" : -1,
+        "active" : 0
+      },
+      "max_line_length" : {
+        "flagValue" : 150,
+        "active" : 0
+      },
+      "no_implicit_braces" : {
+        "flagValue" : -1,
+        "active" : 1
+      },
+      "no_throwing_strings" : {
+        "flagValue" : -1,
+        "active" : 1
+      },
+      "arrow_spacing" : {
+        "flagValue" : -1,
+        "active" : 0
+      },
+      "camel_case_classes" : {
+        "flagValue" : -1,
+        "active" : 1
+      },
+      "duplicate_key" : {
+        "flagValue" : -1,
+        "active" : 0
+      },
+      "line_endings" : {
+        "flagValue" : 0,
+        "active" : 0
+      },
+      "cyclomatic_complexity" : {
+        "flagValue" : 10,
+        "active" : 0
+      },
+      "space_operators" : {
+        "flagValue" : -1,
+        "active" : 0
+      },
+      "newlines_after_classes" : {
+        "flagValue" : 3,
+        "active" : 0
+      },
+      "non_empty_constructor_needs_parens" : {
+        "flagValue" : -1,
+        "active" : 0
+      },
+      "no_plusplus" : {
+        "flagValue" : -1,
+        "active" : 0
+      },
+      "indentation" : {
+        "flagValue" : 2,
+        "active" : 1
+      },
+      "no_trailing_semicolons" : {
+        "flagValue" : -1,
+        "active" : 1
+      }
+    },
+    "kitAutoOutputPathRelativePath" : "",
+    "coffeeCreateSourceMap" : 0,
+    "markdownAutoOutputPathReplace2" : "",
+    "markdownAutoOutputPathStyle" : 0,
+    "lessAutoOutputPathReplace2" : "css",
+    "lessAutoOutputPathReplace1" : "less",
+    "stylusResolveRelativeURLS" : 0,
+    "hamlUseCDATA" : 0,
+    "hamlUseUnixNewlines" : 0,
+    "typescriptCreateSourceMap" : 0,
+    "typescriptAutoOutputPathRelativePath" : "\/js",
+    "typescriptMinifyOutput" : 0,
+    "hamlOutputStyle" : 0,
+    "hamlNoEscapeInAttributes" : 0,
+    "typescriptEmitComments" : 0,
+    "sassCreateSourceMap" : 0,
+    "typescriptModuleType" : 0,
+    "coffeeAutoOutputPathReplace2" : "",
+    "typescriptAutoOutputPathStyle" : 2,
+    "hamlAutoOutputPathStyle" : 0,
+    "hamlAutoOutputPathReplace1" : "",
+    "hamlAutoOutputPathReplace2" : "",
+    "slimAutoOutputPathRelativePath" : "",
+    "markdownAutoOutputPathReplace1" : "",
+    "coffeeAutoOutputPathReplace1" : "",
+    "jadeOutputStyle" : 0,
+    "stylusDebugStyle" : 0,
+    "uglifyReservedNamesString" : "$",
+    "typescriptDisallowImportModule" : 0,
+    "lessOutputStyle" : 0,
+    "stylusAutoOutputPathReplace2" : "css",
+    "externalServerPort" : 4000,
+    "sassDebugStyle" : 0,
+    "stylusAutoOutputPathReplace1" : "stylus",
+    "sassOutputStyle" : 0,
+    "slimLogicless" : 0,
+    "lessIeCompatibility" : 1,
+    "typescriptTargetECMAVersion" : 0,
+    "slimOutputStyle" : 1,
+    "jadeAutoOutputPathReplace2" : "",
+    "jadeAutoOutputPathReplace1" : "",
+    "kitAutoOutputPathStyle" : 0,
+    "animateCSSInjections" : 1,
+    "sassDecimalPrecision" : 5,
+    "skippedItemsString" : ".svn, .git, .hg, log, _hidden, _includes, _layouts, _posts, _site",
+    "genericWebpageFileExtensionsString" : "html, htm, shtml, shtm, xhtml, php, jsp, asp, aspx, erb, ctp, json",
+    "coffeeSyntaxCheckerStyle" : 1,
+    "stylusAutoOutputPathStyle" : 2,
+    "hamlAutoOutputPathRelativePath" : "",
+    "slimCompileOnly" : 0,
+    "alwaysUseExternalServer" : 1,
+    "lessStrictUnits" : 0,
+    "coffeeMinifyOutput" : 1,
+    "jadeAutoOutputPathStyle" : 0,
+    "stylusOutputStyle" : 0,
+    "javascriptOutputStyle" : 1,
+    "lessCreateSourceMap" : 0,
+    "slimRailsCompatible" : 0,
+    "sassAutoOutputPathStyle" : 2,
+    "sassAutoOutputPathRelativePath" : "..\/css",
+    "lessStrictImports" : 0,
+    "lessStrictMath" : 0,
+    "jsHintFlags2" : {
+
+    },
+    "coffeeOutputStyle" : 0,
+    "autoApplyPSLanguageSettingsStyle" : 0,
+    "jsCheckerReservedNamesString" : "",
+    "lessAutoOutputPathRelativePath" : "..\/css",
+    "stylusAutoOutputPathRelativePath" : "..\/css",
+    "javascriptAutoOutputPathRelativePath" : "\/min",
+    "javascriptSyntaxCheckerStyle" : 1,
+    "javascriptAutoOutputPathReplace1" : "",
+    "javascriptAutoOutputPathReplace2" : "",
+    "websiteRelativeRoot" : "",
+    "coffeeAutoOutputPathRelativePath" : "",
+    "typescriptCreateDeclarationFile" : 0,
+    "hamlUseDoubleQuotes" : 0,
+    "lessAllowInsecureImports" : 0,
+    "slimAutoOutputPathReplace1" : "",
+    "slimAutoOutputPathReplace2" : "",
+    "markdownExpandTabs" : 1,
+    "typescriptAutoOutputPathReplace1" : "",
+    "browserRefreshDelay" : 0,
+    "typescriptAutoOutputPathReplace2" : "",
+    "autoSyncProjectSettingsFile" : 1,
+    "javascriptAutoOutputPathStyle" : 2,
+    "lessAutoOutputPathStyle" : 2,
+    "shouldRunBless" : 0,
+    "markdownEnableFootnotes" : 0,
+    "sassAutoOutputPathReplace2" : "css",
+    "sassAutoOutputPathReplace1" : "sass",
+    "jadeAutoOutputPathRelativePath" : "",
+    "shouldRunAutoprefixer" : 0,
+    "uglifyDefinesString" : "",
+    "markdownEnableSmartyPants" : 1,
+    "lessRelativeURLS" : 0,
+    "hamlEscapeHTMLCharacters" : 0
+  },
+  "lastSavedByUser" : "Chris Mousdale",
+  "creatorBuild" : "15773",
+  "manualImportLinks" : {
+
+  },
+  "projectAttributes" : {
+    "displayValueWasSetByUser" : 1,
+    "displayValue" : "chrisedmo.github.com",
+    "bowerAbbreviatedPath" : "",
+    "iconImageName" : "compass_brown"
+  },
+  "hooks" : [
+
+  ],
+  "files" : {
+    "\/nav-feed.html" : {
+      "inputAbbreviatedPath" : "\/nav-feed.html",
+      "outputAbbreviatedPath" : "No Output Path",
+      "outputPathIsSetByUser" : 0,
+      "ignore" : 0,
+      "ignoreWasSetByUser" : 0,
+      "fileType" : 8192
+    },
+    "\/README.md" : {
+      "expandTabs" : 1,
+      "inputAbbreviatedPath" : "\/README.md",
+      "outputAbbreviatedPath" : "\/README.html",
+      "outputPathIsSetByUser" : 0,
+      "ignore" : 0,
+      "enableFootnoteSupport" : 0,
+      "enableSmartyPants" : 1,
+      "ignoreWasSetByUser" : 0,
+      "fileType" : 4096
+    },
+    "\/sass\/normalize.scss" : {
+      "inputAbbreviatedPath" : "\/sass\/normalize.scss",
+      "outputAbbreviatedPath" : "\/css\/normalize.css",
+      "outputPathIsSetByUser" : 0,
+      "shouldRunAutoprefixer" : 0,
+      "ignore" : 1,
+      "createSourceMap" : 0,
+      "decimalPrecision" : 5,
+      "ignoreWasSetByUser" : 0,
+      "debugStyle" : 0,
+      "fileType" : 4,
+      "shouldRunBless" : 0,
+      "outputStyle" : 0,
+      "useLibsass" : 0
+    },
+    "\/cv.md" : {
+      "expandTabs" : 1,
+      "inputAbbreviatedPath" : "\/cv.md",
+      "outputAbbreviatedPath" : "\/cv.html",
+      "outputPathIsSetByUser" : 0,
+      "ignore" : 0,
+      "enableFootnoteSupport" : 0,
+      "enableSmartyPants" : 1,
+      "ignoreWasSetByUser" : 0,
+      "fileType" : 4096
+    },
+    "\/js\/mustache.js" : {
+      "syntaxCheckerStyle" : 1,
+      "inputAbbreviatedPath" : "\/js\/mustache.js",
+      "outputAbbreviatedPath" : "\/js\/min\/mustache.min.js",
+      "outputPathIsSetByUser" : 1,
+      "ignore" : 0,
+      "ignoreWasSetByUser" : 0,
+      "fileType" : 64,
+      "outputStyle" : 1
+    },
+    "\/js\/modernizr.custom.js" : {
+      "syntaxCheckerStyle" : 0,
+      "inputAbbreviatedPath" : "\/js\/modernizr.custom.js",
+      "outputAbbreviatedPath" : "\/js\/min\/modernizr.custom-ck.js",
+      "outputPathIsSetByUser" : 0,
+      "ignore" : 1,
+      "ignoreWasSetByUser" : 1,
+      "fileType" : 64,
+      "outputStyle" : 1
+    },
+    "\/img\/chrismousdale.jpg" : {
+      "inputAbbreviatedPath" : "\/img\/chrismousdale.jpg",
+      "outputAbbreviatedPath" : "\/img\/chrismousdale.jpg",
+      "outputPathIsSetByUser" : 0,
+      "processed" : 0,
+      "ignore" : 0,
+      "initialSize" : 49305,
+      "ignoreWasSetByUser" : 0,
+      "fileType" : 16384
+    },
+    "\/css\/main.css" : {
+      "inputAbbreviatedPath" : "\/css\/main.css",
+      "outputAbbreviatedPath" : "No Output Path",
+      "outputPathIsSetByUser" : 0,
+      "ignore" : 1,
+      "ignoreWasSetByUser" : 0,
+      "fileType" : 16
+    },
+    "\/js\/cm.min.js" : {
+      "syntaxCheckerStyle" : 1,
+      "inputAbbreviatedPath" : "\/js\/cm.min.js",
+      "outputAbbreviatedPath" : "\/js\/min\/cm.min-ck.js",
+      "outputPathIsSetByUser" : 0,
+      "ignore" : 1,
+      "ignoreWasSetByUser" : 0,
+      "fileType" : 64,
+      "outputStyle" : 1
+    },
+    "\/js\/glitch.js" : {
+      "syntaxCheckerStyle" : 0,
+      "inputAbbreviatedPath" : "\/js\/glitch.js",
+      "outputAbbreviatedPath" : "\/js\/min\/glitch-ck.js",
+      "outputPathIsSetByUser" : 0,
+      "ignore" : 1,
+      "ignoreWasSetByUser" : 1,
+      "fileType" : 64,
+      "outputStyle" : 1
+    },
+    "\/blog\/index.md" : {
+      "expandTabs" : 1,
+      "inputAbbreviatedPath" : "\/blog\/index.md",
+      "outputAbbreviatedPath" : "\/blog\/index.html",
+      "outputPathIsSetByUser" : 0,
+      "ignore" : 0,
+      "enableFootnoteSupport" : 0,
+      "enableSmartyPants" : 1,
+      "ignoreWasSetByUser" : 0,
+      "fileType" : 4096
+    },
+    "\/config.rb" : {
+      "inputAbbreviatedPath" : "\/config.rb",
+      "outputAbbreviatedPath" : "\/config.rb",
+      "outputPathIsSetByUser" : 0,
+      "ignore" : 0,
+      "ignoreWasSetByUser" : 0,
+      "fileType" : 131072
+    },
+    "\/sass\/main.scss" : {
+      "inputAbbreviatedPath" : "\/sass\/main.scss",
+      "outputAbbreviatedPath" : "\/css\/main.css",
+      "outputPathIsSetByUser" : 0,
+      "shouldRunAutoprefixer" : 0,
+      "ignore" : 0,
+      "createSourceMap" : 0,
+      "decimalPrecision" : 5,
+      "ignoreWasSetByUser" : 0,
+      "debugStyle" : 0,
+      "fileType" : 4,
+      "shouldRunBless" : 0,
+      "outputStyle" : 0,
+      "useLibsass" : 0
+    },
+    "\/js\/min\/mustache.min.js" : {
+      "syntaxCheckerStyle" : 1,
+      "inputAbbreviatedPath" : "\/js\/min\/mustache.min.js",
+      "outputAbbreviatedPath" : "\/js\/min\/min\/mustache.min-ck.js",
+      "outputPathIsSetByUser" : 0,
+      "ignore" : 1,
+      "ignoreWasSetByUser" : 0,
+      "fileType" : 64,
+      "outputStyle" : 1
+    },
+    "\/js\/classie.js" : {
+      "syntaxCheckerStyle" : 0,
+      "inputAbbreviatedPath" : "\/js\/classie.js",
+      "outputAbbreviatedPath" : "\/js\/min\/classie-ck.js",
+      "outputPathIsSetByUser" : 0,
+      "ignore" : 1,
+      "ignoreWasSetByUser" : 1,
+      "fileType" : 64,
+      "outputStyle" : 1
+    },
+    "\/portfolio\/index.md" : {
+      "expandTabs" : 1,
+      "inputAbbreviatedPath" : "\/portfolio\/index.md",
+      "outputAbbreviatedPath" : "\/portfolio\/index.html",
+      "outputPathIsSetByUser" : 0,
+      "ignore" : 0,
+      "enableFootnoteSupport" : 0,
+      "enableSmartyPants" : 1,
+      "ignoreWasSetByUser" : 0,
+      "fileType" : 4096
+    },
+    "\/built-with.md" : {
+      "expandTabs" : 1,
+      "inputAbbreviatedPath" : "\/built-with.md",
+      "outputAbbreviatedPath" : "\/built-with.html",
+      "outputPathIsSetByUser" : 0,
+      "ignore" : 0,
+      "enableFootnoteSupport" : 0,
+      "enableSmartyPants" : 1,
+      "ignoreWasSetByUser" : 0,
+      "fileType" : 4096
+    },
+    "\/contact.md" : {
+      "expandTabs" : 1,
+      "inputAbbreviatedPath" : "\/contact.md",
+      "outputAbbreviatedPath" : "\/contact.html",
+      "outputPathIsSetByUser" : 0,
+      "ignore" : 0,
+      "enableFootnoteSupport" : 0,
+      "enableSmartyPants" : 1,
+      "ignoreWasSetByUser" : 0,
+      "fileType" : 4096
+    },
+    "\/img\/bikes.jpg" : {
+      "inputAbbreviatedPath" : "\/img\/bikes.jpg",
+      "outputAbbreviatedPath" : "\/img\/bikes.jpg",
+      "outputPathIsSetByUser" : 0,
+      "processed" : 0,
+      "ignore" : 0,
+      "initialSize" : 64536,
+      "ignoreWasSetByUser" : 0,
+      "fileType" : 16384
+    },
+    "\/sass\/c-nav.scss" : {
+      "inputAbbreviatedPath" : "\/sass\/c-nav.scss",
+      "outputAbbreviatedPath" : "\/css\/c-nav.css",
+      "outputPathIsSetByUser" : 0,
+      "shouldRunAutoprefixer" : 0,
+      "ignore" : 1,
+      "createSourceMap" : 0,
+      "decimalPrecision" : 5,
+      "ignoreWasSetByUser" : 0,
+      "debugStyle" : 0,
+      "fileType" : 4,
+      "shouldRunBless" : 0,
+      "outputStyle" : 0,
+      "useLibsass" : 0
+    },
+    "\/sass\/grids.scss" : {
+      "inputAbbreviatedPath" : "\/sass\/grids.scss",
+      "outputAbbreviatedPath" : "\/css\/grids.css",
+      "outputPathIsSetByUser" : 0,
+      "shouldRunAutoprefixer" : 0,
+      "ignore" : 1,
+      "createSourceMap" : 0,
+      "decimalPrecision" : 5,
+      "ignoreWasSetByUser" : 0,
+      "debugStyle" : 0,
+      "fileType" : 4,
+      "shouldRunBless" : 0,
+      "outputStyle" : 0,
+      "useLibsass" : 0
+    },
+    "\/js\/cm.js" : {
+      "syntaxCheckerStyle" : 1,
+      "inputAbbreviatedPath" : "\/js\/cm.js",
+      "outputAbbreviatedPath" : "\/js\/min\/cm.min.js",
+      "outputPathIsSetByUser" : 1,
+      "ignore" : 0,
+      "ignoreWasSetByUser" : 0,
+      "fileType" : 64,
+      "outputStyle" : 1
+    },
+    "\/img\/shoes.jpg" : {
+      "inputAbbreviatedPath" : "\/img\/shoes.jpg",
+      "outputAbbreviatedPath" : "\/img\/shoes.jpg",
+      "outputPathIsSetByUser" : 0,
+      "processed" : 0,
+      "ignore" : 0,
+      "initialSize" : 789481,
+      "ignoreWasSetByUser" : 0,
+      "fileType" : 16384
+    },
+    "\/allPosts.json" : {
+      "inputAbbreviatedPath" : "\/allPosts.json",
+      "outputAbbreviatedPath" : "No Output Path",
+      "outputPathIsSetByUser" : 0,
+      "ignore" : 0,
+      "ignoreWasSetByUser" : 0,
+      "fileType" : 8192
+    },
+    "\/about\/index.md" : {
+      "expandTabs" : 1,
+      "inputAbbreviatedPath" : "\/about\/index.md",
+      "outputAbbreviatedPath" : "\/about\/index.html",
+      "outputPathIsSetByUser" : 0,
+      "ignore" : 0,
+      "enableFootnoteSupport" : 0,
+      "enableSmartyPants" : 1,
+      "ignoreWasSetByUser" : 0,
+      "fileType" : 4096
+    },
+    "\/photography\/index.md" : {
+      "expandTabs" : 1,
+      "inputAbbreviatedPath" : "\/photography\/index.md",
+      "outputAbbreviatedPath" : "\/photography\/index.html",
+      "outputPathIsSetByUser" : 0,
+      "ignore" : 0,
+      "enableFootnoteSupport" : 0,
+      "enableSmartyPants" : 1,
+      "ignoreWasSetByUser" : 0,
+      "fileType" : 4096
+    },
+    "\/index.md" : {
+      "expandTabs" : 1,
+      "inputAbbreviatedPath" : "\/index.md",
+      "outputAbbreviatedPath" : "\/index.html",
+      "outputPathIsSetByUser" : 0,
+      "ignore" : 0,
+      "enableFootnoteSupport" : 0,
+      "enableSmartyPants" : 1,
+      "ignoreWasSetByUser" : 0,
+      "fileType" : 4096
+    },
+    "\/codekit-config.json" : {
+      "inputAbbreviatedPath" : "\/codekit-config.json",
+      "outputAbbreviatedPath" : "No Output Path",
+      "outputPathIsSetByUser" : 0,
+      "ignore" : 0,
+      "ignoreWasSetByUser" : 0,
+      "fileType" : 8192
+    }
+  }
+}
