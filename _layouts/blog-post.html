@@ -53,7 +53,13 @@
 	<script src="/js/modernizr.custom.js"></script>
 </head>
 <body class="blog-post {{ page.page-class }}">
-<div id="b-container">
+<div id="offNav" class="outer-nav left vertical">
+	<div class="container">
+		<h2>More of my blog posts:</h2>
+		<div id="blogNav"></div>
+	</div>
+</div>
+<div id="b-container" class="perspective effect-airbnb">
 	
 	{% include header-b.html %}	
 	<section role="content" id="main-content">
@@ -108,17 +114,18 @@
 	<div class="breaker"></div>
 	{% include footer.html %}
 </div>
-<div id="test"></div>
 <script id="mobileNav" type="text/template">
-{% raw %}
-	{{#jsMenu}}
+	<div class="container">
 		<ul>
-			<li>
-				<a href="{{href}}" title="{{title}}"><h3>{{title}}</h3></a>
-			</li>
+		{% raw %}
+			{{#jsMenu}}
+				<li>
+					<a href="{{href}}" title="{{title}}"><h3>{{title}}</h3></a>
+				</li>
+			{{/jsMenu}}
+		{% endraw %}		
 		</ul>
-	{{/jsMenu}}
-{% endraw %}
+	</div>
 </script>
 
 
@@ -134,10 +141,14 @@
 <script>
 $(document).ready(function() {
 	$.getJSON('/allPosts.json', function(data)	{
-		var template = '<ul>{% raw %}{{#jsMenu}}<li><a href="{{href}}" title="{{title}}"><h3>{{title}}</h3></a></li>{{/jsMenu}}{% endraw %}</ul>';
+		var template = '<ul>{% raw %}{{#jsMenu}}<li><a href="{{href}}" title="{{title}}"><h2>{{title}}</h2><p class="date">{{#date}}{{day}} {{month}} {{year}}{{/date}}</p><p>{{short}}</p></a></li>{{/jsMenu}}{% endraw %}</ul>';
 		var html = Mustache.to_html(template, data);
-		$('#test').html(html);
-		// console.log(html);
+		$('#b-link').click(function(event){
+			event.preventDefault();
+			$('#blogNav').html(html);
+			$('#offNav').addClass('open');
+			$('#b-container').addClass('blur no-scroll');
+		})
 	});
 });
 </script>
