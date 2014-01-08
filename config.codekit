@@ -345,7 +345,7 @@
     "hamlEscapeHTMLCharacters" : 0
   },
   "lastSavedByUser" : "Chris Mousdale",
-  "creatorBuild" : "15773",
+  "creatorBuild" : "15860",
   "manualImportLinks" : {
 
   },
@@ -359,18 +359,21 @@
 
   ],
   "files" : {
-    "\/nav-feed.html" : {
-      "inputAbbreviatedPath" : "\/nav-feed.html",
-      "outputAbbreviatedPath" : "No Output Path",
-      "outputPathIsSetByUser" : 0,
-      "ignore" : 0,
-      "ignoreWasSetByUser" : 0,
-      "fileType" : 8192
-    },
     "\/README.md" : {
       "expandTabs" : 1,
       "inputAbbreviatedPath" : "\/README.md",
       "outputAbbreviatedPath" : "\/README.html",
+      "outputPathIsSetByUser" : 0,
+      "ignore" : 0,
+      "enableFootnoteSupport" : 0,
+      "enableSmartyPants" : 1,
+      "ignoreWasSetByUser" : 0,
+      "fileType" : 4096
+    },
+    "\/cv.md" : {
+      "expandTabs" : 1,
+      "inputAbbreviatedPath" : "\/cv.md",
+      "outputAbbreviatedPath" : "\/cv.html",
       "outputPathIsSetByUser" : 0,
       "ignore" : 0,
       "enableFootnoteSupport" : 0,
@@ -393,16 +396,25 @@
       "outputStyle" : 0,
       "useLibsass" : 0
     },
-    "\/cv.md" : {
-      "expandTabs" : 1,
-      "inputAbbreviatedPath" : "\/cv.md",
-      "outputAbbreviatedPath" : "\/cv.html",
+    "\/js\/min\/menu-ck.js" : {
+      "syntaxCheckerStyle" : 1,
+      "inputAbbreviatedPath" : "\/js\/min\/menu-ck.js",
+      "outputAbbreviatedPath" : "\/js\/min\/min\/menu-ck-ck.js",
       "outputPathIsSetByUser" : 0,
-      "ignore" : 0,
-      "enableFootnoteSupport" : 0,
-      "enableSmartyPants" : 1,
+      "ignore" : 1,
       "ignoreWasSetByUser" : 0,
-      "fileType" : 4096
+      "fileType" : 64,
+      "outputStyle" : 1
+    },
+    "\/img\/IMG_4045.jpg" : {
+      "inputAbbreviatedPath" : "\/img\/IMG_4045.jpg",
+      "outputAbbreviatedPath" : "\/img\/IMG_4045.jpg",
+      "outputPathIsSetByUser" : 0,
+      "processed" : 0,
+      "ignore" : 0,
+      "initialSize" : 3063248,
+      "ignoreWasSetByUser" : 0,
+      "fileType" : 16384
     },
     "\/js\/mustache.js" : {
       "syntaxCheckerStyle" : 1,
@@ -434,6 +446,16 @@
       "ignoreWasSetByUser" : 0,
       "fileType" : 16384
     },
+    "\/js\/menu.js" : {
+      "syntaxCheckerStyle" : 1,
+      "inputAbbreviatedPath" : "\/js\/menu.js",
+      "outputAbbreviatedPath" : "\/js\/min\/menu-ck.js",
+      "outputPathIsSetByUser" : 0,
+      "ignore" : 0,
+      "ignoreWasSetByUser" : 0,
+      "fileType" : 64,
+      "outputStyle" : 1
+    },
     "\/css\/main.css" : {
       "inputAbbreviatedPath" : "\/css\/main.css",
       "outputAbbreviatedPath" : "No Output Path",
@@ -441,16 +463,6 @@
       "ignore" : 1,
       "ignoreWasSetByUser" : 0,
       "fileType" : 16
-    },
-    "\/js\/cm.min.js" : {
-      "syntaxCheckerStyle" : 1,
-      "inputAbbreviatedPath" : "\/js\/cm.min.js",
-      "outputAbbreviatedPath" : "\/js\/min\/cm.min-ck.js",
-      "outputPathIsSetByUser" : 0,
-      "ignore" : 1,
-      "ignoreWasSetByUser" : 0,
-      "fileType" : 64,
-      "outputStyle" : 1
     },
     "\/js\/glitch.js" : {
       "syntaxCheckerStyle" : 0,
@@ -549,6 +561,16 @@
       "ignoreWasSetByUser" : 0,
       "fileType" : 4096
     },
+    "\/js\/min\/cm.min.js" : {
+      "syntaxCheckerStyle" : 1,
+      "inputAbbreviatedPath" : "\/js\/min\/cm.min.js",
+      "outputAbbreviatedPath" : "\/js\/min\/cm.min-ck.js",
+      "outputPathIsSetByUser" : 0,
+      "ignore" : 1,
+      "ignoreWasSetByUser" : 0,
+      "fileType" : 64,
+      "outputStyle" : 1
+    },
     "\/img\/bikes.jpg" : {
       "inputAbbreviatedPath" : "\/img\/bikes.jpg",
       "outputAbbreviatedPath" : "\/img\/bikes.jpg",
@@ -644,10 +666,10 @@
       "inputAbbreviatedPath" : "\/index.md",
       "outputAbbreviatedPath" : "\/index.html",
       "outputPathIsSetByUser" : 0,
-      "ignore" : 0,
+      "ignore" : 1,
       "enableFootnoteSupport" : 0,
       "enableSmartyPants" : 1,
-      "ignoreWasSetByUser" : 0,
+      "ignoreWasSetByUser" : 1,
       "fileType" : 4096
     },
     "\/codekit-config.json" : {
