@@ -1,9 +1,7 @@
-<header class="intro {% if page.image %}image" style="background: url('{{ page.image }}') center fixed; background-size: cover;" {% else %} style="background-color: #{{ page.bg }};" {% endif %} data-adaptive-background='1'>	
+<header class="intro {% if page.image %}image" style="background: url('{{ page.image }}') center fixed; background-size: cover;" data-adaptive-background='1' data-ab-css-background='1' {% else %} style="background-color: #{{ page.bg }};" {% endif %}>	
 	<div class="container">
 		<div class="inner">{{ content }}</div>
 	</div>
 	<div class="panel p1"></div>
 	<div class="panel p2"></div>
-	<!-- TODO: Avoid having to pull this in as in image? -->
-	<img src="{{ page.image }}" alt="" data-adaptive-background='1' style="display: none;">
 </header>
