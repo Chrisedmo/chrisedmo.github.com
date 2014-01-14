@@ -347,7 +347,14 @@
   "lastSavedByUser" : "Chris Mousdale",
   "creatorBuild" : "15860",
   "manualImportLinks" : {
-
+    "\/js\/cm.js" : [
+      {
+        "position" : 0,
+        "linkedFileAbbreviatedPath" : "\/js\/jquery.adaptive-backgrounds.js",
+        "type" : 0,
+        "followForSyntaxChecking" : 1
+      }
+    ]
   },
   "projectAttributes" : {
     "displayValueWasSetByUser" : 1,
@@ -370,17 +377,6 @@
       "ignoreWasSetByUser" : 0,
       "fileType" : 4096
     },
-    "\/cv.md" : {
-      "expandTabs" : 1,
-      "inputAbbreviatedPath" : "\/cv.md",
-      "outputAbbreviatedPath" : "\/cv.html",
-      "outputPathIsSetByUser" : 0,
-      "ignore" : 0,
-      "enableFootnoteSupport" : 0,
-      "enableSmartyPants" : 1,
-      "ignoreWasSetByUser" : 0,
-      "fileType" : 4096
-    },
     "\/sass\/normalize.scss" : {
       "inputAbbreviatedPath" : "\/sass\/normalize.scss",
       "outputAbbreviatedPath" : "\/css\/normalize.css",
@@ -396,6 +392,16 @@
       "outputStyle" : 0,
       "useLibsass" : 0
     },
+    "\/img\/IMG_4045.jpg" : {
+      "inputAbbreviatedPath" : "\/img\/IMG_4045.jpg",
+      "outputAbbreviatedPath" : "\/img\/IMG_4045.jpg",
+      "outputPathIsSetByUser" : 0,
+      "processed" : 0,
+      "ignore" : 0,
+      "initialSize" : 3063248,
+      "ignoreWasSetByUser" : 0,
+      "fileType" : 16384
+    },
     "\/js\/min\/menu-ck.js" : {
       "syntaxCheckerStyle" : 1,
       "inputAbbreviatedPath" : "\/js\/min\/menu-ck.js",
@@ -406,15 +412,16 @@
       "fileType" : 64,
       "outputStyle" : 1
     },
-    "\/img\/IMG_4045.jpg" : {
-      "inputAbbreviatedPath" : "\/img\/IMG_4045.jpg",
-      "outputAbbreviatedPath" : "\/img\/IMG_4045.jpg",
+    "\/cv.md" : {
+      "expandTabs" : 1,
+      "inputAbbreviatedPath" : "\/cv.md",
+      "outputAbbreviatedPath" : "\/cv.html",
       "outputPathIsSetByUser" : 0,
-      "processed" : 0,
       "ignore" : 0,
-      "initialSize" : 3063248,
+      "enableFootnoteSupport" : 0,
+      "enableSmartyPants" : 1,
       "ignoreWasSetByUser" : 0,
-      "fileType" : 16384
+      "fileType" : 4096
     },
     "\/js\/mustache.js" : {
       "syntaxCheckerStyle" : 1,
@@ -561,26 +568,6 @@
       "ignoreWasSetByUser" : 0,
       "fileType" : 4096
     },
-    "\/js\/min\/cm.min.js" : {
-      "syntaxCheckerStyle" : 1,
-      "inputAbbreviatedPath" : "\/js\/min\/cm.min.js",
-      "outputAbbreviatedPath" : "\/js\/min\/cm.min-ck.js",
-      "outputPathIsSetByUser" : 0,
-      "ignore" : 1,
-      "ignoreWasSetByUser" : 0,
-      "fileType" : 64,
-      "outputStyle" : 1
-    },
-    "\/img\/bikes.jpg" : {
-      "inputAbbreviatedPath" : "\/img\/bikes.jpg",
-      "outputAbbreviatedPath" : "\/img\/bikes.jpg",
-      "outputPathIsSetByUser" : 0,
-      "processed" : 0,
-      "ignore" : 0,
-      "initialSize" : 64536,
-      "ignoreWasSetByUser" : 0,
-      "fileType" : 16384
-    },
     "\/sass\/c-nav.scss" : {
       "inputAbbreviatedPath" : "\/sass\/c-nav.scss",
       "outputAbbreviatedPath" : "\/css\/c-nav.css",
@@ -595,6 +582,26 @@
       "shouldRunBless" : 0,
       "outputStyle" : 0,
       "useLibsass" : 0
+    },
+    "\/img\/bikes.jpg" : {
+      "inputAbbreviatedPath" : "\/img\/bikes.jpg",
+      "outputAbbreviatedPath" : "\/img\/bikes.jpg",
+      "outputPathIsSetByUser" : 0,
+      "processed" : 0,
+      "ignore" : 0,
+      "initialSize" : 64536,
+      "ignoreWasSetByUser" : 0,
+      "fileType" : 16384
+    },
+    "\/js\/min\/cm.min.js" : {
+      "syntaxCheckerStyle" : 1,
+      "inputAbbreviatedPath" : "\/js\/min\/cm.min.js",
+      "outputAbbreviatedPath" : "\/js\/min\/cm.min-ck.js",
+      "outputPathIsSetByUser" : 0,
+      "ignore" : 1,
+      "ignoreWasSetByUser" : 0,
+      "fileType" : 64,
+      "outputStyle" : 1
     },
     "\/sass\/grids.scss" : {
       "inputAbbreviatedPath" : "\/sass\/grids.scss",
@@ -660,6 +667,26 @@
       "enableSmartyPants" : 1,
       "ignoreWasSetByUser" : 0,
       "fileType" : 4096
+    },
+    "\/img\/1401663_762449377115531_1101893934_o.jpg" : {
+      "inputAbbreviatedPath" : "\/img\/1401663_762449377115531_1101893934_o.jpg",
+      "outputAbbreviatedPath" : "\/img\/1401663_762449377115531_1101893934_o.jpg",
+      "outputPathIsSetByUser" : 0,
+      "processed" : 0,
+      "ignore" : 0,
+      "initialSize" : 0,
+      "ignoreWasSetByUser" : 0,
+      "fileType" : 16384
+    },
+    "\/js\/jquery.adaptive-backgrounds.js" : {
+      "syntaxCheckerStyle" : 1,
+      "inputAbbreviatedPath" : "\/js\/jquery.adaptive-backgrounds.js",
+      "outputAbbreviatedPath" : "\/js\/min\/jquery.adaptive-backgrounds-ck.js",
+      "outputPathIsSetByUser" : 0,
+      "ignore" : 1,
+      "ignoreWasSetByUser" : 0,
+      "fileType" : 64,
+      "outputStyle" : 1
     },
     "\/index.md" : {
       "expandTabs" : 1,
