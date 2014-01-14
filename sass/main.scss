@@ -470,6 +470,21 @@ aside.social-links {
     }
 }
 
+// ABOUT PANEL 
+
+.about {
+    background-color: #111;
+    color: #fff;
+    img {
+        width: 20%;
+        float: left;
+    }
+    .columns {
+        width: 78%;
+        float: left;
+    }
+}
+
 // PANELS
 
 .panel {
