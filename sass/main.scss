@@ -223,7 +223,7 @@ a, a:visited {
     }
 }
 
-#b-link {
+a.top-link {
     position: absolute;
     z-index: 99999;
     font-size: $base;
@@ -404,6 +404,7 @@ aside.social-links {
     height: 50%;
     // TODO: create retina fallback? Half height?
     position: relative;
+    overflow: hidden;
     min-height: ($base * 20);
     &.image {
         height: 100%;
@@ -439,7 +440,7 @@ aside.social-links {
         padding: 5px 10px;
         float: left;
     }
-    p {
+    p.lead {
         font-size: 50px; 
         margin-bottom: $padding;
     }
@@ -465,7 +466,7 @@ aside.social-links {
         }
     }
     a {
-        color: $accent;
+        color: #fff;
     }
 }
 
@@ -660,6 +661,13 @@ header {
 // POST LAYOUT
 // TODO: Need to style h3 or blockquote's in the post area to break outside container: width 140% etc.
 
+// BUTTONS
+.btn {
+    border: 2px solid #fff;
+    border-radius: 5px;
+    color: #fff;
+    padding: ($padding / 2) $padding;
+}
 
 // PAGINATION
 
