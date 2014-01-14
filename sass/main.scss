@@ -131,6 +131,11 @@ body {
 .blur {
     @include filter(blur(5px));
 }
+.no-scroll {
+    position: fixed;
+    left: 0;
+    right: 0;
+}
 
 /* HEADERS */
 
@@ -173,6 +178,12 @@ a, a:visited {
     text-decoration: none;
 }
 
+.italic {
+    font-family: "ff-tisa-web-pro-1","ff-tisa-web-pro-2",palatino,serif;
+    text-transform: none;
+    font-style: italic;
+}
+
 .head {
     position: relative;
     width: 100%;
@@ -195,20 +206,6 @@ a, a:visited {
         top: 0;
         z-index: 1;        
     }
-    .b-link {
-        position: absolute;
-        z-index: 99999;
-        font-size: $base;
-        line-height: 1;
-        position: absolute;
-        left: 0;
-        line-height: $headerHeight;
-        opacity: 0.5;
-        @include transition(opacity 0.25 ease-in-out);
-        &:hover {
-            opacity: 1;
-        }
-    }
     span {
         font-family: $serif;
         font-size: 0.3em;
@@ -226,6 +223,88 @@ a, a:visited {
     }
 }
 
+a.top-link {
+    position: absolute;
+    z-index: 99999;
+    font-size: $base;
+    line-height: 1;
+    position: absolute;
+    left: 0;
+    line-height: $headerHeight;
+    @include opacity(0.5);
+    @include transition(opacity 0.25 ease-in-out);
+    &:hover {
+        @include opacity(1);
+    }
+}
+
+//  OFFSCREEN BLOG POSTS 
+
+#offNav {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: -100%;
+    width: 100%;
+    z-index: 9;
+    background: rgba(25,25,25,0.9);
+    .lt-ie9 & {
+        background: #333;
+        @include opacity(0.85);
+    }
+    color: #fff;
+    overflow-y: scroll;
+    -webkit-overflow-scrolling: touch;
+    a {
+        color: #fff;
+    }
+    // @include transition(transform 0.25 ease-in-out);
+    ul {
+        margin: 0;
+        padding: 0;
+        li {
+            list-style: none;
+            margin-left: 0;
+            border: 2px solid #fff;
+            padding: $padding;
+            text-align: center;
+            margin-bottom: $padding;
+            position: relative;
+            overflow-x: hidden;
+            &:after {
+                content: 'Read more »';
+                position: absolute;
+                right: -20%;
+                bottom: 0;
+                top: 0;
+                opacity: 0;
+                font-family: "ff-tisa-web-pro-1","ff-tisa-web-pro-2",palatino,serif;
+                @include rotate(-90deg);
+                @include transition(all);
+                @include transition-duration(0.25s);
+            }
+            &:hover {
+                &:after {
+                    // bottom: 50%;
+                    right: -8%;
+                    opacity: 1;
+                }
+            }
+            &:last-child {
+                display: none;
+            }
+        }
+    }
+    &.open {
+        left: 0;
+    }
+}
+
+// .blur {
+//     -webkit-filter: blur(10px);
+//     filter: blur(10px);
+// }
+
 #b-container {
     height: 100%;
 }
@@ -241,14 +320,32 @@ aside {
     font-size: 0.75em;
     line-height: 1.5;
     margin: 20px 0;
-    opacity: 0.35;
+    @include opacity(0.35);
     @include transition(opacity 0.25s ease-in-out);
     &:hover {
-        opacity: 1;
+        @include opacity(1);
     }
     img {
         margin-bottom: 20px;
         max-width: 100%;
+        @media screen and (max-width: 480px) {
+            width: 50%;
+            position: relative;
+            left: -20%;
+            float: left;
+        }
+    }
+    @media screen and (max-width: 480px) {
+        width: 100%;
+        padding: 0;
+        text-align: center;
+        // TODO: CLearfix this section? 
+    }
+    p {
+        @media screen and (max-width: 480px) {
+            width: 50%;
+            float: left;
+        }
     }
 }
 
@@ -273,11 +370,11 @@ aside.social-links {
         display: none;
     }
     a{
-        opacity: 0.35;
+        @include opacity(0.35);
         font-size: 2em;
         line-height: $headerHeight;
         &:hover {
-            opacity: 1;
+            @include opacity(1);
         }
     }
     &.social-share {
@@ -307,6 +404,7 @@ aside.social-links {
     height: 50%;
     // TODO: create retina fallback? Half height?
     position: relative;
+    overflow: hidden;
     min-height: ($base * 20);
     &.image {
         height: 100%;
@@ -342,12 +440,19 @@ aside.social-links {
         padding: 5px 10px;
         float: left;
     }
+    p.lead {
+        font-size: 50px; 
+        margin-bottom: $padding;
+    }
     .inner {
         // TODO: Make this fixed
         position: absolute;
         bottom: $padding;
         .home & { 
-            width: 50%;;
+            width: 90%;
+            left: auto;
+            right: auto;
+            text-align: center;
             top: ($padding * 6);
             bottom: auto;
             @media screen and (max-width: 400px) {
@@ -361,8 +466,33 @@ aside.social-links {
         }
     }
     a {
-        color: $accent;
+        color: #fff;
     }
+}
+
+// PANELS
+
+.panel {
+    position: absolute;
+    z-index: -1;
+    opacity: 0.4;
+    -webkit-transform: rotate(25deg);
+}
+.p1 {
+    background: #333;
+    top: -30%;
+    left:-10%;
+    right: 50%;
+    bottom: -10%;
+}
+
+.p2 {
+    background: #333;
+    top: -30%;
+    right:-10%;
+    left: 50%;
+    bottom: -10%;
+    -webkit-transform: rotate(-25deg);
 }
 
 header {
@@ -375,7 +505,7 @@ header {
     background-color: #fff;
     // border-bottom: 1px solid rgba(0,0,0,0.75);
     padding: $padding 0;
-    height: 50px;
+    // height: 50px;
     overflow: hidden;
 }
 
@@ -385,7 +515,7 @@ header {
         text-align: center;
         margin-bottom: 0;
         color: #444;
-        font-size: 300px;
+        // font-size: 300px;
     }
     h2 {
         margin:  0 0 $base 0;
@@ -508,7 +638,7 @@ header {
         position: -ms-sticky;
         position: -o-sticky;
         position: sticky;
-        top: 15px;
+        top: 0;
         a {
             display: block;
             text-decoration: none;
@@ -531,6 +661,13 @@ header {
 // POST LAYOUT
 // TODO: Need to style h3 or blockquote's in the post area to break outside container: width 140% etc.
 
+// BUTTONS
+.btn {
+    border: 2px solid #fff;
+    border-radius: 5px;
+    color: #fff;
+    padding: ($padding / 2) $padding;
+}
 
 // PAGINATION
 
@@ -696,6 +833,32 @@ blockquote.alt p {
                 border-top: 1px solid $lGray;
             }
         }
+    }
+}
+
+@media only screen and (max-width: 35em) {
+    a.logo {
+        // position: relative;
+        // top: -45px;
+        font-size: 40px;
+        line-height: 18px;
+    }
+    aside.social-links {
+        position: relative;
+    }
+    aside.social-links a {
+        line-height: 1;
+    }
+    .date-container, .post-container {
+        width: 100%;
+        margin-left: 0;
+        float: none;
+    }
+    .blog-feed h2 {
+        margin-bottom: 0;
+    }
+    .block-list li a {
+        min-height: 0;
     }
 }
 

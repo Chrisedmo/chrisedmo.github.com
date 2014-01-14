@@ -1,6 +1,7 @@
-<header class="intro {% if page.image %}image" style="background: url('{{ page.image }}') center; background-size: cover;" {% else %} style="background-color: #{{ page.bg }};" {% endif %}>
+<header class="intro {% if page.image %}image" style="background: url('{{ page.image }}') center fixed; background-size: cover;" {% else %} style="background-color: #{{ page.bg }};" {% endif %}>
 	<div class="container">
-		<!-- <canvas id="stage" data-text="HI THERE, I'M CHRIS…"></canvas> -->
 		<div class="inner">{{ content }}</div>
 	</div>
+	<div class="panel p1"></div>
+	<div class="panel p2"></div>
 </header>
