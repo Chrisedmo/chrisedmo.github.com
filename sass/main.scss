@@ -768,6 +768,10 @@ blockquote.alt p {
     p {
         font-size: ($base - 4);
     }
+    .home & {
+        position: static;
+        padding: 0;
+    }
 }
 
 .bottom-footer {
