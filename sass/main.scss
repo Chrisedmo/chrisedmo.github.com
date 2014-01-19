@@ -335,7 +335,15 @@ aside {
             float: left;
         }
     }
+    @media only screen
+    and (max-width: 768px),
+    (min-device-width: 768px)
+    and (max-device-width: 1024px)
+    and (orientation: portrait) {
+        display: none;
+    }
     @media screen and (max-width: 480px) {
+        display: block;
         width: 100%;
         padding: 0;
         text-align: center;
@@ -749,6 +757,18 @@ blockquote p {
     font-size: 51px;
     line-height: 57px;
     text-transform: uppercase;
+    color: #555;
+    @media only screen
+    and (max-width: 768px),
+    (min-device-width: 768px)
+    and (max-device-width: 1024px)
+    and (orientation: portrait) {
+        font-size: ($base * 2);
+        line-height: ($base * 2);
+        margin-right: -25%;
+        margin-top: ($base);
+        margin-bottom: ($base);
+    }
 }
 blockquote.alt p {
     margin-right: 0;
@@ -841,6 +861,16 @@ blockquote.alt p {
    Modify as content requires.
    ========================================================================== */
 
+@media only screen 
+and (max-width: 48em),
+(max-device-wdith: 768px)
+and (max-device-width: 1024px)
+and (orientation: portrait)  {
+    body {
+        font-size: ($base - 2);
+        line-height: 1.5;
+    } 
+}
 @media only screen and (max-width: 35em) {
     .pagination {
         .arrow-wrapper {

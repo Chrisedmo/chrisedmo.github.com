@@ -12,8 +12,13 @@
     max-width: 600px;
     margin: 0 auto;
     position: relative;
-    @media screen and (max-width: 480px) {
-    	width: 90%;
+    @media only screen
+	and (max-width: 768px),
+	(min-device-width: 768px)
+	and (max-device-width: 1024px)
+	and (orientation: portrait) {
+    	width: 70%;
+    	margin-left: 5%;
     }
 }
 
@@ -23,15 +28,17 @@
 	left: -37%;
 	margin-left: -20px;
 	padding-right: 20px;
-	// color: #777;
-	// box-shadow: 1px 0px 0px rgba(0,0,0,.04), inset -1px 0px 0px rgba(255,255,255,.5);
-	@media screen and (max-width: 480px) {
+	@media only screen
+	and (max-width: 768px),
+	(min-device-width: 768px)
+	and (max-device-width: 1024px)
+	and (orientation: portrait) {
 		position: relative;
 		width: 100%;
 		margin-left: 0;
 		padding-right: 0;
 		left: 0;
-	} 
+	}
 }
 
 //  PHOTO SIZING
