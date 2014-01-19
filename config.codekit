@@ -401,7 +401,7 @@
       "outputPathIsSetByUser" : 0,
       "processed" : 0,
       "ignore" : 0,
-      "initialSize" : 3063248,
+      "initialSize" : 1040753,
       "ignoreWasSetByUser" : 0,
       "fileType" : 16384
     },
@@ -667,16 +667,6 @@
       "ignoreWasSetByUser" : 0,
       "fileType" : 64,
       "outputStyle" : 1
-    },
-    "\/img\/shoes.jpg" : {
-      "inputAbbreviatedPath" : "\/img\/shoes.jpg",
-      "outputAbbreviatedPath" : "\/img\/shoes.jpg",
-      "outputPathIsSetByUser" : 0,
-      "processed" : 0,
-      "ignore" : 0,
-      "initialSize" : 789481,
-      "ignoreWasSetByUser" : 0,
-      "fileType" : 16384
     },
     "\/allPosts.json" : {
       "inputAbbreviatedPath" : "\/allPosts.json",
