@@ -1,6 +1,6 @@
 <footer id="main-footer" class="main-footer clearfix" role="footer">
 	<div class="container">
-		{% if layout "blog-post" %}
+		{% if page.path contains '_posts' %}
 			{% include share.html %}
 		{% endif %}
 		{% if page.comments %}
