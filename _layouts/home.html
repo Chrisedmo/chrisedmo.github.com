@@ -73,20 +73,6 @@
 <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.7.2.min.js"><\/script>')</script>
 <script src="/js/min/cm.min.js"></script>
 <script>
-$(document).ready(function() {
-	$.getJSON('/allPosts.json', function(data)	{
-		var template = '<ul>{% raw %}{{#jsMenu}}<li><a href="{{href}}" title="{{title}}"><h2>{{title}}</h2><p class="date">{{#date}}{{day}} {{month}} {{year}}{{/date}}</p><p>{{short}}</p></a></li>{{/jsMenu}}{% endraw %}</ul>';
-		var html = Mustache.to_html(template, data);
-		$('#b-link').click(function(event){
-			event.preventDefault();
-			$('#blogNav').html(html);
-			$('#offNav').addClass('open');
-			$('#b-container').addClass('blur no-scroll');
-		})
-	});
-});
-</script>
-<script>
     var _gaq=[['_setAccount','UA-XXXXX-X'],['_trackPageview']];
     (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
     g.src=('https:'==location.protocol?'//ssl':'//www')+'.google-analytics.com/ga.js';
