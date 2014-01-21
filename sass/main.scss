@@ -302,6 +302,7 @@ a.top-link {
             left: 0;
             right: 0;
             border: 0px solid;
+            z-index: -1;
             @include transition(all);
             @include transition-duration(0.25s);
         }
