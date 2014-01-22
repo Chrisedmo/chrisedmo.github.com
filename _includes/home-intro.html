@@ -1,4 +1,4 @@
-<header class="intro {% if page.image %}image" style="background: url('{{ page.image }}') center fixed; background-size: cover;" {% else %} style="background-color: #{{ page.bg }};" {% endif %}>
+<header class="intro {% if page.image %}image" style="background: url('{{ page.image }}') center fixed; background-size: cover;" data-adaptive-background='1' data-ab-css-background='1' {% else %} style="background-color: #{{ page.bg }};" {% endif %}>	
 	<div class="container">
 		<div class="inner">{{ content }}</div>
 	</div>

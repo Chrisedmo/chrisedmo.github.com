@@ -45,18 +45,13 @@
 	<script src="/js/modernizr.custom.js"></script>
 </head>
 <body class="home {{ page.page-class }}">
-	<div id="offNav" class="outer-nav left vertical">
-	<div class="container">
-		<h2>More of my blog posts:</h2>
-		<div id="blogNav"></div>
-	</div>
-</div>
+{% include pop-nav.html %}
 <div id="b-container">
 	{% include header.html %}
 	<section role="content">
 		{% include home-intro.html %}
 	</section>
-	<!-- {% include blog-feed.html %} -->
+	{% include footer.html %}
 </div>
 <script id="mobileNav" type="text/template">
 	<div class="container">
@@ -76,20 +71,6 @@
 <script src="/js/min/mustache.min.js"></script>
 <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.7.2.min.js"><\/script>')</script>
 <script src="/js/min/cm.min.js"></script>
-<script>
-$(document).ready(function() {
-	$.getJSON('/allPosts.json', function(data)	{
-		var template = '<ul>{% raw %}{{#jsMenu}}<li><a href="{{href}}" title="{{title}}"><h2>{{title}}</h2><p class="date">{{#date}}{{day}} {{month}} {{year}}{{/date}}</p><p>{{short}}</p></a></li>{{/jsMenu}}{% endraw %}</ul>';
-		var html = Mustache.to_html(template, data);
-		$('#b-link').click(function(event){
-			event.preventDefault();
-			$('#blogNav').html(html);
-			$('#offNav').addClass('open');
-			$('#b-container').addClass('blur no-scroll');
-		})
-	});
-});
-</script>
 <script>
     var _gaq=[['_setAccount','UA-XXXXX-X'],['_trackPageview']];
     (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];

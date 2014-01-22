@@ -164,6 +164,10 @@ p {
     margin-top: 0;
 }
 
+h2 {
+    line-height: 1.2;
+}
+
 h4 {
     line-height: 1;
     margin-bottom: ($base * 2);
@@ -248,6 +252,7 @@ a.top-link {
     width: 100%;
     z-index: 9;
     background: rgba(25,25,25,0.9);
+    padding: $headerHeight 0;
     .lt-ie9 & {
         background: #333;
         @include opacity(0.85);
@@ -259,42 +264,74 @@ a.top-link {
         color: #fff;
     }
     // @include transition(transform 0.25 ease-in-out);
+    aside {
+        float: left;
+        width: 30%;
+        position: fixed;
+        max-width: 350px;
+        @media only screen and (max-width: 45em) {
+            width: 100%;
+            position: static;
+        }
+    }
     ul {
         margin: 0;
         padding: 0;
-        li {
-            list-style: none;
+        width: 60%;
+        float: right;
+        @media only screen and (max-width: 45em) {
+            width: 100%;
             margin-left: 0;
-            border: 2px solid #fff;
-            padding: $padding;
-            text-align: center;
-            margin-bottom: $padding;
-            position: relative;
-            overflow-x: hidden;
-            &:after {
-                content: 'Read more »';
-                position: absolute;
-                right: -20%;
-                bottom: 0;
-                top: 0;
-                opacity: 0;
-                font-family: "ff-tisa-web-pro-1","ff-tisa-web-pro-2",palatino,serif;
-                @include rotate(-90deg);
-                @include transition(all);
-                @include transition-duration(0.25s);
-            }
-            &:hover {
-                &:after {
-                    // bottom: 50%;
-                    right: -8%;
-                    opacity: 1;
-                }
-            }
-            &:last-child {
-                display: none;
-            }
         }
     }
+    li {
+        list-style: none;
+        margin-left: 0;
+        border: 2px solid #fff;
+        padding: $padding;
+        text-align: center;
+        margin-bottom: $padding;
+        position: relative;
+        overflow-x: hidden;
+        &:after {
+            content: 'Read more »';
+            position: absolute;
+            right: -20%;
+            bottom: 0;
+            top: 0;
+            opacity: 0;
+            font-family: $gothic;
+            text-transform: uppercase;
+            @include rotate(-90deg);
+            @include transition(all);
+            @include transition-duration(0.25s);
+        }
+        &:before {
+            content: '';
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            border: 0px solid;
+            z-index: -1;
+            @include transition(all);
+            @include transition-duration(0.25s);
+        }
+        &:hover {
+            &:before {
+                border: 5px solid;
+            }
+            &:after {
+                // bottom: 50%;
+                right: -12%;
+                opacity: 1;
+            }
+        }
+        &:last-child {
+            display: none;
+        }
+    }    
     &.open {
         left: 0;
     }
@@ -335,11 +372,12 @@ aside {
             float: left;
         }
     }
-    @media screen and (max-width: 480px) {
-        width: 100%;
-        padding: 0;
-        text-align: center;
-        // TODO: CLearfix this section? 
+    @media only screen
+    and (max-width: 768px),
+    (min-device-width: 768px)
+    and (max-device-width: 1024px)
+    and (orientation: portrait) {
+        display: none;
     }
     p {
         @media screen and (max-width: 480px) {
@@ -467,6 +505,21 @@ aside.social-links {
     }
     a {
         color: #fff;
+    }
+}
+
+// ABOUT PANEL 
+
+.about {
+    background-color: #111;
+    color: #fff;
+    img {
+        width: 20%;
+        float: left;
+    }
+    .columns {
+        width: 78%;
+        float: left;
     }
 }
 
@@ -734,11 +787,36 @@ blockquote p {
     font-size: 51px;
     line-height: 57px;
     text-transform: uppercase;
+    color: #555;
+    @media only screen
+    and (max-width: 768px),
+    (min-device-width: 768px)
+    and (max-device-width: 1024px)
+    and (orientation: portrait) {
+        font-size: ($base * 2);
+        line-height: ($base * 2);
+        margin-right: -25%;
+        margin-top: ($base);
+        margin-bottom: ($base);
+    }
+        @media only screen and (max-width: 450px) {
+            margin-right: 0;
+    }
 }
 blockquote.alt p {
     margin-right: 0;
     margin-left: -49%;
     text-align: right;
+    @media only screen
+    and (max-width: 768px),
+    (min-device-width: 768px)
+    and (max-device-width: 1024px)
+    and (orientation: portrait) {
+        margin-left: -25%;
+    }
+    @media only screen and (max-width: 450px) {
+        margin-left: 0;
+    }
 }
 
 // SOCIAL ICONS
@@ -767,6 +845,10 @@ blockquote.alt p {
     }
     p {
         font-size: ($base - 4);
+    }
+    .home & {
+        position: static;
+        padding: 0;
     }
 }
 
@@ -822,6 +904,19 @@ blockquote.alt p {
    Modify as content requires.
    ========================================================================== */
 
+@media only screen 
+and (max-width: 48em),
+(max-device-wdith: 768px)
+and (max-device-width: 1024px)
+and (orientation: portrait)  {
+    body {
+        font-size: ($base - 2);
+        line-height: 1.5;
+    } 
+    .intro p.lead {
+        font-size: 6vw;
+    }
+}
 @media only screen and (max-width: 35em) {
     .pagination {
         .arrow-wrapper {

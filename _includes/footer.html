@@ -1,6 +1,8 @@
 <footer id="main-footer" class="main-footer clearfix" role="footer">
 	<div class="container">
-		{% include share.html %}
+		{% if page.path contains '_posts' %}
+			{% include share.html %}
+		{% endif %}
 		{% if page.comments %}
 			{% include disqus.html %}
 		{% endif %}
