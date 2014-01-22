@@ -1,6 +1,10 @@
 _site
 _plugins
 _hidden
+_drafts
+about/*
+photography/*
+portfolio/*
 .DS_Store
 codekit-config.json
 .sass-cache/*
