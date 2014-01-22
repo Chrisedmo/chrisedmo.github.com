@@ -1,6 +1,7 @@
 _site
 _plugins
 _hidden
+_drafts
 .DS_Store
 codekit-config.json
 .sass-cache/*
