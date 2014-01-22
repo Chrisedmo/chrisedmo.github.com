@@ -164,6 +164,10 @@ p {
     margin-top: 0;
 }
 
+h2 {
+    line-height: 1.2;
+}
+
 h4 {
     line-height: 1;
     margin-bottom: ($base * 2);
@@ -264,13 +268,21 @@ a.top-link {
         float: left;
         width: 30%;
         position: fixed;
+        max-width: 350px;
+        @media only screen and (max-width: 45em) {
+            width: 100%;
+            position: static;
+        }
     }
     ul {
         margin: 0;
         padding: 0;
-        width: 65%;
-        float: left;
-        margin-left: 35%;
+        width: 60%;
+        float: right;
+        @media only screen and (max-width: 45em) {
+            width: 100%;
+            margin-left: 0;
+        }
     }
     li {
         list-style: none;
@@ -366,13 +378,6 @@ aside {
     and (max-device-width: 1024px)
     and (orientation: portrait) {
         display: none;
-    }
-    @media screen and (max-width: 480px) {
-        display: block;
-        width: 100%;
-        padding: 0;
-        text-align: center;
-        // TODO: CLearfix this section? 
     }
     p {
         @media screen and (max-width: 480px) {
@@ -794,11 +799,24 @@ blockquote p {
         margin-top: ($base);
         margin-bottom: ($base);
     }
+        @media only screen and (max-width: 450px) {
+            margin-right: 0;
+    }
 }
 blockquote.alt p {
     margin-right: 0;
     margin-left: -49%;
     text-align: right;
+    @media only screen
+    and (max-width: 768px),
+    (min-device-width: 768px)
+    and (max-device-width: 1024px)
+    and (orientation: portrait) {
+        margin-left: -25%;
+    }
+    @media only screen and (max-width: 450px) {
+        margin-left: 0;
+    }
 }
 
 // SOCIAL ICONS
@@ -895,6 +913,9 @@ and (orientation: portrait)  {
         font-size: ($base - 2);
         line-height: 1.5;
     } 
+    .intro p.lead {
+        font-size: 6vw;
+    }
 }
 @media only screen and (max-width: 35em) {
     .pagination {
