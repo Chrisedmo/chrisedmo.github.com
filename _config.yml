@@ -2,6 +2,7 @@ pygments: true
 markdown: rdiscount
 description: Website, Blog and portfolio of Chris Mousdale a designer and developer living in Jersey, Channel Islands
 keywords: Chris Mousdale, web design Jersey, web designer jersey, mousdale, design blog, web design blog, photography, html5, css3
+analytics: UA-15920114-1
 permalink: /blog/:categories/:year/:month/:day/:title.html
 url: "http://www.mousdale.com"
 excerpt_separator: "\n\n"
