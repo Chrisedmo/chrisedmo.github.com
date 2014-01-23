@@ -529,7 +529,7 @@ aside.social-links {
     position: absolute;
     z-index: -1;
     opacity: 0.4;
-    -webkit-transform: rotate(25deg);
+    @include transform(rotate(25deg));
 }
 .p1 {
     background: #333;
@@ -545,7 +545,7 @@ aside.social-links {
     right:-10%;
     left: 50%;
     bottom: -10%;
-    -webkit-transform: rotate(-25deg);
+    @include transform(rotate(-25deg));
 }
 
 header {
