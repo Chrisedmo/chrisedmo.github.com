@@ -18,7 +18,10 @@ layout: nil
         <title>{{ post.title }}</title>
         <link>http://www.mousdale.com{{ post.url }}</link>
         <pubDate>{{ post.date | date: "%a, %d %b %Y %H:%M:%S %Z" }}</pubDate>
-        <author>chris@mousdale.com</author>
+        <author>
+          <name>Chris Mousdale</name>
+          <email>chris@mousdale.com</email>
+        </author>
         <guid>{{ site.url }}{{ post.url }}</guid>
         <description>{{ post.content | xml_escape }}</description>
       </item>
