@@ -8,8 +8,8 @@ layout: nil
     <title>mousdale.com | Chris Mousdale</title>
     <link>{{ site.url }}</link>
     <atom:link href="{{ site.url }}/feed.xml" rel="self" type="application/rss+xml" />
-    <description>A blog like any other, except this one is mine.</description>
-    <language>en-us</language>
+    <description>A blog like any other, except this one is mine and I'll be talking about design, apple, creativity and a pinch of tech.</description>
+    <language>en-gb</language>
     <pubDate>{{ site.time | date: "%a, %d %b %Y %H:%M:%S %Z" }}</pubDate>
     <lastBuildDate>{{ site.time | date: "%a, %d %b %Y %H:%M:%S %Z" }}</lastBuildDate>
 
