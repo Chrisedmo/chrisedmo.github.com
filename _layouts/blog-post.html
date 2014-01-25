@@ -54,7 +54,7 @@
 </head>
 <body class="blog-post {{ page.page-class }}">
  {% include pop-nav.html %}
-<div id="b-container" class="perspective effect-airbnb">
+<div id="b-container">
 	
 	{% include header-b.html %}	
 	<section role="content" id="main-content">
@@ -76,9 +76,9 @@
 					<time datetime="{{page.date | date:"%Y-%m-%d"}}">Posted on: <span>{{ page.date | date_to_long_string }}</span></time>
 				</p>
 				{% if page.comments %}
-				<p class="comments">
-					Comments: <a href="#disqus_thread">25 comments</a>
-				</p>
+					<p class="comments">
+						Comments: <a href="{{ post.url }}#disqus_thread" data-disqus-identifier="{{ post.path | split:'/' | last | cgi_escape }}" title="View comments for this post"></a>
+					</p>
 				{% endif %}
 				{% include profile.md %}
 			</aside>
