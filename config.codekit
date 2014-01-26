@@ -375,7 +375,7 @@
     "typescriptDisallowImportModule" : 0,
     "lessOutputStyle" : 0,
     "stylusAutoOutputPathReplace2" : "css",
-    "externalServerPort" : 4001,
+    "externalServerPort" : 4000,
     "sassDebugStyle" : 0,
     "stylusAutoOutputPathReplace1" : "stylus",
     "sassOutputStyle" : 0,
@@ -394,7 +394,7 @@
     "stylusAutoOutputPathStyle" : 2,
     "hamlAutoOutputPathRelativePath" : "",
     "slimCompileOnly" : 0,
-    "alwaysUseExternalServer" : 0,
+    "alwaysUseExternalServer" : 1,
     "lessStrictUnits" : 0,
     "coffeeMinifyOutput" : 1,
     "jadeAutoOutputPathStyle" : 0,
@@ -716,72 +716,23 @@
 
   ],
   "files" : {
-    "\/js\/glitch.js" : {
-      "syntaxCheckerStyle" : 0,
-      "inputAbbreviatedPath" : "\/js\/glitch.js",
-      "outputAbbreviatedPath" : "\/js\/min\/glitch-ck.js",
+    "\/README.md" : {
+      "expandTabs" : 1,
+      "inputAbbreviatedPath" : "\/README.md",
+      "outputAbbreviatedPath" : "\/README.html",
       "outputPathIsSetByUser" : 0,
       "ignore" : 1,
+      "enableFootnoteSupport" : 0,
+      "enableSmartyPants" : 1,
       "ignoreWasSetByUser" : 1,
-      "fileType" : 64,
-      "outputStyle" : 1
-    },
-    "\/_includes\/contact-form.html" : {
-      "inputAbbreviatedPath" : "\/_includes\/contact-form.html",
-      "outputAbbreviatedPath" : "No Output Path",
-      "outputPathIsSetByUser" : 0,
-      "ignore" : 0,
-      "ignoreWasSetByUser" : 0,
-      "fileType" : 8192
-    },
-    "\/img\/bikes.jpg" : {
-      "inputAbbreviatedPath" : "\/img\/bikes.jpg",
-      "outputAbbreviatedPath" : "\/img\/bikes.jpg",
-      "outputPathIsSetByUser" : 0,
-      "processed" : 0,
-      "ignore" : 0,
-      "initialSize" : 64536,
-      "ignoreWasSetByUser" : 0,
-      "fileType" : 16384
-    },
-    "\/js\/mustache.js" : {
-      "syntaxCheckerStyle" : 1,
-      "inputAbbreviatedPath" : "\/js\/mustache.js",
-      "outputAbbreviatedPath" : "\/js\/min\/mustache.min.js",
-      "outputPathIsSetByUser" : 1,
-      "ignore" : 0,
-      "ignoreWasSetByUser" : 0,
-      "fileType" : 64,
-      "outputStyle" : 1
-    },
-    "\/_posts\/2013-11-30-Testing-Alfred.md" : {
-      "expandTabs" : 1,
-      "inputAbbreviatedPath" : "\/_posts\/2013-11-30-Testing-Alfred.md",
-      "outputAbbreviatedPath" : "\/_posts\/2013-11-30-Testing-Alfred.html",
-      "outputPathIsSetByUser" : 0,
-      "ignore" : 0,
-      "enableFootnoteSupport" : 0,
-      "enableSmartyPants" : 1,
-      "ignoreWasSetByUser" : 0,
       "fileType" : 4096
     },
-    "\/_posts\/2013-03-28-the-art-of-creation.md" : {
-      "expandTabs" : 1,
-      "inputAbbreviatedPath" : "\/_posts\/2013-03-28-the-art-of-creation.md",
-      "outputAbbreviatedPath" : "\/_posts\/2013-03-28-the-art-of-creation.html",
-      "outputPathIsSetByUser" : 0,
-      "ignore" : 0,
-      "enableFootnoteSupport" : 0,
-      "enableSmartyPants" : 1,
-      "ignoreWasSetByUser" : 0,
-      "fileType" : 4096
-    },
-    "\/js\/cm.js" : {
+    "\/js\/min\/menu-ck.js" : {
       "syntaxCheckerStyle" : 1,
-      "inputAbbreviatedPath" : "\/js\/cm.js",
-      "outputAbbreviatedPath" : "\/js\/min\/cm-ck.js",
+      "inputAbbreviatedPath" : "\/js\/min\/menu-ck.js",
+      "outputAbbreviatedPath" : "\/js\/min\/min\/menu-ck-ck.js",
       "outputPathIsSetByUser" : 0,
-      "ignore" : 0,
+      "ignore" : 1,
       "ignoreWasSetByUser" : 0,
       "fileType" : 64,
       "outputStyle" : 1
@@ -796,6 +747,188 @@
       "enableSmartyPants" : 1,
       "ignoreWasSetByUser" : 1,
       "fileType" : 4096
+    },
+    "\/img\/IMG_4045.jpg" : {
+      "inputAbbreviatedPath" : "\/img\/IMG_4045.jpg",
+      "outputAbbreviatedPath" : "\/img\/IMG_4045.jpg",
+      "outputPathIsSetByUser" : 0,
+      "processed" : 0,
+      "ignore" : 0,
+      "initialSize" : 984545,
+      "ignoreWasSetByUser" : 0,
+      "fileType" : 16384
+    },
+    "\/sass\/normalize.scss" : {
+      "inputAbbreviatedPath" : "\/sass\/normalize.scss",
+      "outputAbbreviatedPath" : "\/css\/normalize.css",
+      "outputPathIsSetByUser" : 0,
+      "shouldRunAutoprefixer" : 0,
+      "ignore" : 1,
+      "createSourceMap" : 0,
+      "decimalPrecision" : 5,
+      "ignoreWasSetByUser" : 0,
+      "debugStyle" : 0,
+      "fileType" : 4,
+      "shouldRunBless" : 0,
+      "outputStyle" : 0,
+      "useLibsass" : 0
+    },
+    "\/js\/mustache.js" : {
+      "syntaxCheckerStyle" : 1,
+      "inputAbbreviatedPath" : "\/js\/mustache.js",
+      "outputAbbreviatedPath" : "\/js\/min\/mustache.min.js",
+      "outputPathIsSetByUser" : 1,
+      "ignore" : 0,
+      "ignoreWasSetByUser" : 0,
+      "fileType" : 64,
+      "outputStyle" : 1
+    },
+    "\/js\/modernizr.custom.js" : {
+      "syntaxCheckerStyle" : 0,
+      "inputAbbreviatedPath" : "\/js\/modernizr.custom.js",
+      "outputAbbreviatedPath" : "\/js\/min\/modernizr.custom-ck.js",
+      "outputPathIsSetByUser" : 0,
+      "ignore" : 1,
+      "ignoreWasSetByUser" : 1,
+      "fileType" : 64,
+      "outputStyle" : 1
+    },
+    "\/_includes\/social.html" : {
+      "inputAbbreviatedPath" : "\/_includes\/social.html",
+      "outputAbbreviatedPath" : "No Output Path",
+      "outputPathIsSetByUser" : 0,
+      "ignore" : 0,
+      "ignoreWasSetByUser" : 0,
+      "fileType" : 8192
+    },
+    "\/_includes\/about.html" : {
+      "inputAbbreviatedPath" : "\/_includes\/about.html",
+      "outputAbbreviatedPath" : "No Output Path",
+      "outputPathIsSetByUser" : 0,
+      "ignore" : 0,
+      "ignoreWasSetByUser" : 0,
+      "fileType" : 8192
+    },
+    "\/_includes\/circle-nav.html" : {
+      "inputAbbreviatedPath" : "\/_includes\/circle-nav.html",
+      "outputAbbreviatedPath" : "No Output Path",
+      "outputPathIsSetByUser" : 0,
+      "ignore" : 0,
+      "ignoreWasSetByUser" : 0,
+      "fileType" : 8192
+    },
+    "\/_layouts\/blog-post.html" : {
+      "inputAbbreviatedPath" : "\/_layouts\/blog-post.html",
+      "outputAbbreviatedPath" : "No Output Path",
+      "outputPathIsSetByUser" : 0,
+      "ignore" : 0,
+      "ignoreWasSetByUser" : 0,
+      "fileType" : 8192
+    },
+    "\/_layouts\/photo.html" : {
+      "inputAbbreviatedPath" : "\/_layouts\/photo.html",
+      "outputAbbreviatedPath" : "No Output Path",
+      "outputPathIsSetByUser" : 0,
+      "ignore" : 0,
+      "ignoreWasSetByUser" : 0,
+      "fileType" : 8192
+    },
+    "\/js\/menu.js" : {
+      "syntaxCheckerStyle" : 1,
+      "inputAbbreviatedPath" : "\/js\/menu.js",
+      "outputAbbreviatedPath" : "\/js\/min\/menu-ck.js",
+      "outputPathIsSetByUser" : 0,
+      "ignore" : 0,
+      "ignoreWasSetByUser" : 0,
+      "fileType" : 64,
+      "outputStyle" : 1
+    },
+    "\/_includes\/disqus.html" : {
+      "inputAbbreviatedPath" : "\/_includes\/disqus.html",
+      "outputAbbreviatedPath" : "No Output Path",
+      "outputPathIsSetByUser" : 0,
+      "ignore" : 0,
+      "ignoreWasSetByUser" : 0,
+      "fileType" : 8192
+    },
+    "\/css\/main.css" : {
+      "inputAbbreviatedPath" : "\/css\/main.css",
+      "outputAbbreviatedPath" : "No Output Path",
+      "outputPathIsSetByUser" : 0,
+      "ignore" : 1,
+      "ignoreWasSetByUser" : 0,
+      "fileType" : 16
+    },
+    "\/_includes\/blog-feed.html" : {
+      "inputAbbreviatedPath" : "\/_includes\/blog-feed.html",
+      "outputAbbreviatedPath" : "No Output Path",
+      "outputPathIsSetByUser" : 0,
+      "ignore" : 0,
+      "ignoreWasSetByUser" : 0,
+      "fileType" : 8192
+    },
+    "\/_includes\/pop-nav.html" : {
+      "inputAbbreviatedPath" : "\/_includes\/pop-nav.html",
+      "outputAbbreviatedPath" : "No Output Path",
+      "outputPathIsSetByUser" : 0,
+      "ignore" : 0,
+      "ignoreWasSetByUser" : 0,
+      "fileType" : 8192
+    },
+    "\/img\/chrismousdale.jpg" : {
+      "inputAbbreviatedPath" : "\/img\/chrismousdale.jpg",
+      "outputAbbreviatedPath" : "\/img\/chrismousdale.jpg",
+      "outputPathIsSetByUser" : 0,
+      "processed" : 0,
+      "ignore" : 0,
+      "initialSize" : 49305,
+      "ignoreWasSetByUser" : 0,
+      "fileType" : 16384
+    },
+    "\/js\/glitch.js" : {
+      "syntaxCheckerStyle" : 0,
+      "inputAbbreviatedPath" : "\/js\/glitch.js",
+      "outputAbbreviatedPath" : "\/js\/min\/glitch-ck.js",
+      "outputPathIsSetByUser" : 0,
+      "ignore" : 1,
+      "ignoreWasSetByUser" : 1,
+      "fileType" : 64,
+      "outputStyle" : 1
+    },
+    "\/_layouts\/base.html" : {
+      "inputAbbreviatedPath" : "\/_layouts\/base.html",
+      "outputAbbreviatedPath" : "No Output Path",
+      "outputPathIsSetByUser" : 0,
+      "ignore" : 0,
+      "ignoreWasSetByUser" : 0,
+      "fileType" : 8192
+    },
+    "\/blog\/index.md" : {
+      "expandTabs" : 1,
+      "inputAbbreviatedPath" : "\/blog\/index.md",
+      "outputAbbreviatedPath" : "\/blog\/index.html",
+      "outputPathIsSetByUser" : 0,
+      "ignore" : 0,
+      "enableFootnoteSupport" : 0,
+      "enableSmartyPants" : 1,
+      "ignoreWasSetByUser" : 0,
+      "fileType" : 4096
+    },
+    "\/_includes\/header.html" : {
+      "inputAbbreviatedPath" : "\/_includes\/header.html",
+      "outputAbbreviatedPath" : "No Output Path",
+      "outputPathIsSetByUser" : 0,
+      "ignore" : 0,
+      "ignoreWasSetByUser" : 0,
+      "fileType" : 8192
+    },
+    "\/config.rb" : {
+      "inputAbbreviatedPath" : "\/config.rb",
+      "outputAbbreviatedPath" : "\/config.rb",
+      "outputPathIsSetByUser" : 0,
+      "ignore" : 0,
+      "ignoreWasSetByUser" : 0,
+      "fileType" : 131072
     },
     "\/sass\/main.scss" : {
       "inputAbbreviatedPath" : "\/sass\/main.scss",
@@ -812,37 +945,113 @@
       "outputStyle" : 0,
       "useLibsass" : 0
     },
-    "\/_includes\/circle-nav.html" : {
-      "inputAbbreviatedPath" : "\/_includes\/circle-nav.html",
+    "\/js\/min\/mustache.min.js" : {
+      "syntaxCheckerStyle" : 1,
+      "inputAbbreviatedPath" : "\/js\/min\/mustache.min.js",
+      "outputAbbreviatedPath" : "\/js\/min\/min\/mustache.min-ck.js",
+      "outputPathIsSetByUser" : 0,
+      "ignore" : 1,
+      "ignoreWasSetByUser" : 0,
+      "fileType" : 64,
+      "outputStyle" : 1
+    },
+    "\/_includes\/contact-form.html" : {
+      "inputAbbreviatedPath" : "\/_includes\/contact-form.html",
       "outputAbbreviatedPath" : "No Output Path",
       "outputPathIsSetByUser" : 0,
       "ignore" : 0,
       "ignoreWasSetByUser" : 0,
       "fileType" : 8192
     },
-    "\/_includes\/header.html" : {
-      "inputAbbreviatedPath" : "\/_includes\/header.html",
-      "outputAbbreviatedPath" : "No Output Path",
-      "outputPathIsSetByUser" : 0,
-      "ignore" : 0,
-      "ignoreWasSetByUser" : 0,
-      "fileType" : 8192
-    },
-    "\/_includes\/home-intro.html" : {
-      "inputAbbreviatedPath" : "\/_includes\/home-intro.html",
-      "outputAbbreviatedPath" : "No Output Path",
-      "outputPathIsSetByUser" : 0,
-      "ignore" : 0,
-      "ignoreWasSetByUser" : 0,
-      "fileType" : 8192
-    },
-    "\/js\/modernizr.custom.js" : {
+    "\/js\/classie.js" : {
       "syntaxCheckerStyle" : 0,
-      "inputAbbreviatedPath" : "\/js\/modernizr.custom.js",
-      "outputAbbreviatedPath" : "\/js\/min\/modernizr.custom-ck.js",
+      "inputAbbreviatedPath" : "\/js\/classie.js",
+      "outputAbbreviatedPath" : "\/js\/min\/classie-ck.js",
       "outputPathIsSetByUser" : 0,
       "ignore" : 1,
       "ignoreWasSetByUser" : 1,
+      "fileType" : 64,
+      "outputStyle" : 1
+    },
+    "\/_layouts\/post.html" : {
+      "inputAbbreviatedPath" : "\/_layouts\/post.html",
+      "outputAbbreviatedPath" : "No Output Path",
+      "outputPathIsSetByUser" : 0,
+      "ignore" : 0,
+      "ignoreWasSetByUser" : 0,
+      "fileType" : 8192
+    },
+    "\/_includes\/share.html" : {
+      "inputAbbreviatedPath" : "\/_includes\/share.html",
+      "outputAbbreviatedPath" : "No Output Path",
+      "outputPathIsSetByUser" : 0,
+      "ignore" : 0,
+      "ignoreWasSetByUser" : 0,
+      "fileType" : 8192
+    },
+    "\/_includes\/header-b.html" : {
+      "inputAbbreviatedPath" : "\/_includes\/header-b.html",
+      "outputAbbreviatedPath" : "No Output Path",
+      "outputPathIsSetByUser" : 0,
+      "ignore" : 0,
+      "ignoreWasSetByUser" : 0,
+      "fileType" : 8192
+    },
+    "\/_includes\/nav.html" : {
+      "inputAbbreviatedPath" : "\/_includes\/nav.html",
+      "outputAbbreviatedPath" : "No Output Path",
+      "outputPathIsSetByUser" : 0,
+      "ignore" : 0,
+      "ignoreWasSetByUser" : 0,
+      "fileType" : 8192
+    },
+    "\/_layouts\/home.html" : {
+      "inputAbbreviatedPath" : "\/_layouts\/home.html",
+      "outputAbbreviatedPath" : "No Output Path",
+      "outputPathIsSetByUser" : 0,
+      "ignore" : 0,
+      "ignoreWasSetByUser" : 0,
+      "fileType" : 8192
+    },
+    "\/contact.md" : {
+      "expandTabs" : 1,
+      "inputAbbreviatedPath" : "\/contact.md",
+      "outputAbbreviatedPath" : "\/contact.html",
+      "outputPathIsSetByUser" : 0,
+      "ignore" : 1,
+      "enableFootnoteSupport" : 0,
+      "enableSmartyPants" : 1,
+      "ignoreWasSetByUser" : 1,
+      "fileType" : 4096
+    },
+    "\/img\/bikes.jpg" : {
+      "inputAbbreviatedPath" : "\/img\/bikes.jpg",
+      "outputAbbreviatedPath" : "\/img\/bikes.jpg",
+      "outputPathIsSetByUser" : 0,
+      "processed" : 0,
+      "ignore" : 0,
+      "initialSize" : 64536,
+      "ignoreWasSetByUser" : 0,
+      "fileType" : 16384
+    },
+    "\/_includes\/profile.md" : {
+      "expandTabs" : 1,
+      "inputAbbreviatedPath" : "\/_includes\/profile.md",
+      "outputAbbreviatedPath" : "\/_includes\/profile.html",
+      "outputPathIsSetByUser" : 0,
+      "ignore" : 0,
+      "enableFootnoteSupport" : 0,
+      "enableSmartyPants" : 1,
+      "ignoreWasSetByUser" : 0,
+      "fileType" : 4096
+    },
+    "\/js\/min\/cm.min.js" : {
+      "syntaxCheckerStyle" : 1,
+      "inputAbbreviatedPath" : "\/js\/min\/cm.min.js",
+      "outputAbbreviatedPath" : "\/js\/min\/min\/cm.min-ck.js",
+      "outputPathIsSetByUser" : 0,
+      "ignore" : 0,
+      "ignoreWasSetByUser" : 0,
       "fileType" : 64,
       "outputStyle" : 1
     },
@@ -861,97 +1070,23 @@
       "outputStyle" : 0,
       "useLibsass" : 0
     },
-    "\/contact.md" : {
-      "expandTabs" : 1,
-      "inputAbbreviatedPath" : "\/contact.md",
-      "outputAbbreviatedPath" : "\/contact.html",
+    "\/js\/cm.js" : {
+      "syntaxCheckerStyle" : 1,
+      "inputAbbreviatedPath" : "\/js\/cm.js",
+      "outputAbbreviatedPath" : "\/js\/min\/cm-ck.js",
       "outputPathIsSetByUser" : 0,
-      "ignore" : 1,
-      "enableFootnoteSupport" : 0,
-      "enableSmartyPants" : 1,
-      "ignoreWasSetByUser" : 1,
-      "fileType" : 4096
+      "ignore" : 0,
+      "ignoreWasSetByUser" : 0,
+      "fileType" : 64,
+      "outputStyle" : 1
     },
-    "\/_includes\/disqus.html" : {
-      "inputAbbreviatedPath" : "\/_includes\/disqus.html",
+    "\/_includes\/home-intro.html" : {
+      "inputAbbreviatedPath" : "\/_includes\/home-intro.html",
       "outputAbbreviatedPath" : "No Output Path",
       "outputPathIsSetByUser" : 0,
       "ignore" : 0,
       "ignoreWasSetByUser" : 0,
       "fileType" : 8192
-    },
-    "\/js\/jquery.adaptive-backgrounds.js" : {
-      "syntaxCheckerStyle" : 1,
-      "inputAbbreviatedPath" : "\/js\/jquery.adaptive-backgrounds.js",
-      "outputAbbreviatedPath" : "\/js\/min\/jquery.adaptive-backgrounds-ck.js",
-      "outputPathIsSetByUser" : 0,
-      "ignore" : 0,
-      "ignoreWasSetByUser" : 0,
-      "fileType" : 64,
-      "outputStyle" : 1
-    },
-    "\/js\/min\/cm.min.js" : {
-      "syntaxCheckerStyle" : 1,
-      "inputAbbreviatedPath" : "\/js\/min\/cm.min.js",
-      "outputAbbreviatedPath" : "\/js\/min\/min\/cm.min-ck.js",
-      "outputPathIsSetByUser" : 0,
-      "ignore" : 0,
-      "ignoreWasSetByUser" : 0,
-      "fileType" : 64,
-      "outputStyle" : 1
-    },
-    "\/_includes\/blog-feed.html" : {
-      "inputAbbreviatedPath" : "\/_includes\/blog-feed.html",
-      "outputAbbreviatedPath" : "No Output Path",
-      "outputPathIsSetByUser" : 0,
-      "ignore" : 0,
-      "ignoreWasSetByUser" : 0,
-      "fileType" : 8192
-    },
-    "\/js\/menu.js" : {
-      "syntaxCheckerStyle" : 1,
-      "inputAbbreviatedPath" : "\/js\/menu.js",
-      "outputAbbreviatedPath" : "\/js\/min\/menu-ck.js",
-      "outputPathIsSetByUser" : 0,
-      "ignore" : 0,
-      "ignoreWasSetByUser" : 0,
-      "fileType" : 64,
-      "outputStyle" : 1
-    },
-    "\/sass\/normalize.scss" : {
-      "inputAbbreviatedPath" : "\/sass\/normalize.scss",
-      "outputAbbreviatedPath" : "\/css\/normalize.css",
-      "outputPathIsSetByUser" : 0,
-      "shouldRunAutoprefixer" : 0,
-      "ignore" : 1,
-      "createSourceMap" : 0,
-      "decimalPrecision" : 5,
-      "ignoreWasSetByUser" : 0,
-      "debugStyle" : 0,
-      "fileType" : 4,
-      "shouldRunBless" : 0,
-      "outputStyle" : 0,
-      "useLibsass" : 0
-    },
-    "\/img\/IMG_4045.jpg" : {
-      "inputAbbreviatedPath" : "\/img\/IMG_4045.jpg",
-      "outputAbbreviatedPath" : "\/img\/IMG_4045.jpg",
-      "outputPathIsSetByUser" : 0,
-      "processed" : 0,
-      "ignore" : 0,
-      "initialSize" : 984545,
-      "ignoreWasSetByUser" : 0,
-      "fileType" : 16384
-    },
-    "\/js\/classie.js" : {
-      "syntaxCheckerStyle" : 0,
-      "inputAbbreviatedPath" : "\/js\/classie.js",
-      "outputAbbreviatedPath" : "\/js\/min\/classie-ck.js",
-      "outputPathIsSetByUser" : 0,
-      "ignore" : 1,
-      "ignoreWasSetByUser" : 1,
-      "fileType" : 64,
-      "outputStyle" : 1
     },
     "\/index.md" : {
       "expandTabs" : 1,
@@ -964,186 +1099,18 @@
       "ignoreWasSetByUser" : 1,
       "fileType" : 4096
     },
+    "\/js\/jquery.adaptive-backgrounds.js" : {
+      "syntaxCheckerStyle" : 1,
+      "inputAbbreviatedPath" : "\/js\/jquery.adaptive-backgrounds.js",
+      "outputAbbreviatedPath" : "\/js\/min\/jquery.adaptive-backgrounds-ck.js",
+      "outputPathIsSetByUser" : 0,
+      "ignore" : 0,
+      "ignoreWasSetByUser" : 0,
+      "fileType" : 64,
+      "outputStyle" : 1
+    },
     "\/_includes\/footer.html" : {
       "inputAbbreviatedPath" : "\/_includes\/footer.html",
-      "outputAbbreviatedPath" : "No Output Path",
-      "outputPathIsSetByUser" : 0,
-      "ignore" : 0,
-      "ignoreWasSetByUser" : 0,
-      "fileType" : 8192
-    },
-    "\/_layouts\/home.html" : {
-      "inputAbbreviatedPath" : "\/_layouts\/home.html",
-      "outputAbbreviatedPath" : "No Output Path",
-      "outputPathIsSetByUser" : 0,
-      "ignore" : 0,
-      "ignoreWasSetByUser" : 0,
-      "fileType" : 8192
-    },
-    "\/config.rb" : {
-      "inputAbbreviatedPath" : "\/config.rb",
-      "outputAbbreviatedPath" : "\/config.rb",
-      "outputPathIsSetByUser" : 0,
-      "ignore" : 0,
-      "ignoreWasSetByUser" : 0,
-      "fileType" : 131072
-    },
-    "\/_layouts\/post.html" : {
-      "inputAbbreviatedPath" : "\/_layouts\/post.html",
-      "outputAbbreviatedPath" : "No Output Path",
-      "outputPathIsSetByUser" : 0,
-      "ignore" : 0,
-      "ignoreWasSetByUser" : 0,
-      "fileType" : 8192
-    },
-    "\/_includes\/profile.md" : {
-      "expandTabs" : 1,
-      "inputAbbreviatedPath" : "\/_includes\/profile.md",
-      "outputAbbreviatedPath" : "\/_includes\/profile.html",
-      "outputPathIsSetByUser" : 0,
-      "ignore" : 0,
-      "enableFootnoteSupport" : 0,
-      "enableSmartyPants" : 1,
-      "ignoreWasSetByUser" : 0,
-      "fileType" : 4096
-    },
-    "\/_posts\/2013-04-15-ordering-pagination.md" : {
-      "expandTabs" : 1,
-      "inputAbbreviatedPath" : "\/_posts\/2013-04-15-ordering-pagination.md",
-      "outputAbbreviatedPath" : "\/_posts\/2013-04-15-ordering-pagination.html",
-      "outputPathIsSetByUser" : 0,
-      "ignore" : 0,
-      "enableFootnoteSupport" : 0,
-      "enableSmartyPants" : 1,
-      "ignoreWasSetByUser" : 0,
-      "fileType" : 4096
-    },
-    "\/_layouts\/base.html" : {
-      "inputAbbreviatedPath" : "\/_layouts\/base.html",
-      "outputAbbreviatedPath" : "No Output Path",
-      "outputPathIsSetByUser" : 0,
-      "ignore" : 0,
-      "ignoreWasSetByUser" : 0,
-      "fileType" : 8192
-    },
-    "\/_includes\/about.html" : {
-      "inputAbbreviatedPath" : "\/_includes\/about.html",
-      "outputAbbreviatedPath" : "No Output Path",
-      "outputPathIsSetByUser" : 0,
-      "ignore" : 0,
-      "ignoreWasSetByUser" : 0,
-      "fileType" : 8192
-    },
-    "\/_includes\/nav.html" : {
-      "inputAbbreviatedPath" : "\/_includes\/nav.html",
-      "outputAbbreviatedPath" : "No Output Path",
-      "outputPathIsSetByUser" : 0,
-      "ignore" : 0,
-      "ignoreWasSetByUser" : 0,
-      "fileType" : 8192
-    },
-    "\/js\/min\/mustache.min.js" : {
-      "syntaxCheckerStyle" : 1,
-      "inputAbbreviatedPath" : "\/js\/min\/mustache.min.js",
-      "outputAbbreviatedPath" : "\/js\/min\/min\/mustache.min-ck.js",
-      "outputPathIsSetByUser" : 0,
-      "ignore" : 1,
-      "ignoreWasSetByUser" : 0,
-      "fileType" : 64,
-      "outputStyle" : 1
-    },
-    "\/_layouts\/photo.html" : {
-      "inputAbbreviatedPath" : "\/_layouts\/photo.html",
-      "outputAbbreviatedPath" : "No Output Path",
-      "outputPathIsSetByUser" : 0,
-      "ignore" : 0,
-      "ignoreWasSetByUser" : 0,
-      "fileType" : 8192
-    },
-    "\/js\/min\/menu-ck.js" : {
-      "syntaxCheckerStyle" : 1,
-      "inputAbbreviatedPath" : "\/js\/min\/menu-ck.js",
-      "outputAbbreviatedPath" : "\/js\/min\/min\/menu-ck-ck.js",
-      "outputPathIsSetByUser" : 0,
-      "ignore" : 1,
-      "ignoreWasSetByUser" : 0,
-      "fileType" : 64,
-      "outputStyle" : 1
-    },
-    "\/_includes\/social.html" : {
-      "inputAbbreviatedPath" : "\/_includes\/social.html",
-      "outputAbbreviatedPath" : "No Output Path",
-      "outputPathIsSetByUser" : 0,
-      "ignore" : 0,
-      "ignoreWasSetByUser" : 0,
-      "fileType" : 8192
-    },
-    "\/blog\/index.md" : {
-      "expandTabs" : 1,
-      "inputAbbreviatedPath" : "\/blog\/index.md",
-      "outputAbbreviatedPath" : "\/blog\/index.html",
-      "outputPathIsSetByUser" : 0,
-      "ignore" : 0,
-      "enableFootnoteSupport" : 0,
-      "enableSmartyPants" : 1,
-      "ignoreWasSetByUser" : 0,
-      "fileType" : 4096
-    },
-    "\/css\/main.css" : {
-      "inputAbbreviatedPath" : "\/css\/main.css",
-      "outputAbbreviatedPath" : "No Output Path",
-      "outputPathIsSetByUser" : 0,
-      "ignore" : 1,
-      "ignoreWasSetByUser" : 0,
-      "fileType" : 16
-    },
-    "\/README.md" : {
-      "expandTabs" : 1,
-      "inputAbbreviatedPath" : "\/README.md",
-      "outputAbbreviatedPath" : "\/README.html",
-      "outputPathIsSetByUser" : 0,
-      "ignore" : 1,
-      "enableFootnoteSupport" : 0,
-      "enableSmartyPants" : 1,
-      "ignoreWasSetByUser" : 1,
-      "fileType" : 4096
-    },
-    "\/_layouts\/blog-post.html" : {
-      "inputAbbreviatedPath" : "\/_layouts\/blog-post.html",
-      "outputAbbreviatedPath" : "No Output Path",
-      "outputPathIsSetByUser" : 0,
-      "ignore" : 0,
-      "ignoreWasSetByUser" : 0,
-      "fileType" : 8192
-    },
-    "\/_includes\/header-b.html" : {
-      "inputAbbreviatedPath" : "\/_includes\/header-b.html",
-      "outputAbbreviatedPath" : "No Output Path",
-      "outputPathIsSetByUser" : 0,
-      "ignore" : 0,
-      "ignoreWasSetByUser" : 0,
-      "fileType" : 8192
-    },
-    "\/img\/chrismousdale.jpg" : {
-      "inputAbbreviatedPath" : "\/img\/chrismousdale.jpg",
-      "outputAbbreviatedPath" : "\/img\/chrismousdale.jpg",
-      "outputPathIsSetByUser" : 0,
-      "processed" : 0,
-      "ignore" : 0,
-      "initialSize" : 49305,
-      "ignoreWasSetByUser" : 0,
-      "fileType" : 16384
-    },
-    "\/_includes\/pop-nav.html" : {
-      "inputAbbreviatedPath" : "\/_includes\/pop-nav.html",
-      "outputAbbreviatedPath" : "No Output Path",
-      "outputPathIsSetByUser" : 0,
-      "ignore" : 0,
-      "ignoreWasSetByUser" : 0,
-      "fileType" : 8192
-    },
-    "\/_includes\/share.html" : {
-      "inputAbbreviatedPath" : "\/_includes\/share.html",
       "outputAbbreviatedPath" : "No Output Path",
       "outputPathIsSetByUser" : 0,
       "ignore" : 0,

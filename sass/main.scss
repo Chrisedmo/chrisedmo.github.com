@@ -32,12 +32,15 @@ $gothic: "franklin-gothic-urw-cond-1","franklin-gothic-urw-cond-2", sans-serif;
 $serif: "ff-tisa-web-pro-1","ff-tisa-web-pro-2", palatino, serif;
 
 $base: 18px; 
+$base-mobile: 16px;
 $line-height: ($base * 1.55);
 
 $size1: ($base - 6px);
 $size2: ($base + ($base / 2));
 
 $padding: ($base * 2);
+
+$mobile-space: 30px;
 
 $headerHeight: 60px;
 
@@ -161,6 +164,12 @@ p {
     margin-top: 0;
 }
 
+@media only screen and (max-width: 45em) {
+    p,h2 {
+        margin-bottom: $base-mobile;
+    }
+}
+
 h2 {
     line-height: 1.2;
 }
@@ -172,6 +181,9 @@ h4 {
 
 p.title {
     font-size: $size2;
+    @media only screen and (max-width: 30em) {
+        font-size: ($base-mobile * 1.5);
+    }
 }
 
 a, a:visited {
@@ -218,6 +230,12 @@ a, a:visited {
         color: #fff;
         text-decoration: none;
         font-size: 3em;
+        @media only screen and (max-width: 36em) {
+            font-size: ($base-mobile * 2);
+        }
+        @media only screen and (max-width: 30em) {
+            font-size: ($base-mobile + 4);
+        }
         .home & {
             color: #000;
         }
@@ -257,6 +275,9 @@ a.top-link {
     color: #fff;
     overflow-y: scroll;
     -webkit-overflow-scrolling: touch;
+    @media only screen and (max-width: 30em) {
+        padding: $mobile-space 0;
+    }
     a {
         color: #fff;
     }
@@ -290,6 +311,10 @@ a.top-link {
         margin-bottom: $padding;
         position: relative;
         overflow-x: hidden;
+        @media only screen and (max-width: 45em) {
+            padding: ($base-mobile * 2);
+            margin-bottom: ($base-mobile * 2);
+        }
         &:after {
             content: 'Read more »';
             position: absolute;
@@ -327,6 +352,14 @@ a.top-link {
         }
         &:last-child {
             display: none;
+        }
+        @media only screen and (max-width: 30em) {
+            p:last-child {
+                margin-bottom: 0;
+            }
+            &:after {
+                display: none;
+            }
         }
     }    
     &.open {
@@ -419,11 +452,19 @@ aside.social-links {
         font-size: 3em;
         margin: 0;
         padding: 0 0 40px 0;
+        @media only screen and (max-width: 30em) {
+            font-size: ($base-mobile * 1.5);
+            padding-bottom: ($base-mobile * 2);
+        }
         ul {
             padding: 0;
         }
         a {
             font-size: 1.25em;
+            @media only screen and (max-width: 30em) {
+                font-size: ($base-mobile * 3);
+                margin-bottom: $base-mobile;
+            }            
             .js & {
                 &:hover {
                     color: #fff;
@@ -431,6 +472,11 @@ aside.social-links {
             }
         }
     }
+    @media only screen and (max-width: 30em) {
+        h4 {
+            margin-bottom: ($base-mobile * 2);
+        }
+    }    
 }
 
 .intro {
@@ -464,9 +510,15 @@ aside.social-links {
         margin-bottom: 0;
         line-height: 0.8;
         letter-spacing: -2px;
-
+        @media only screen and (max-width: 45em) {
+            font-size: 15vw;
+            margin-bottom: $base-mobile;
+        }
         .home & {
             margin-bottom: $padding;
+            @media only screen and (max-width: 45em) {
+                margin-bottom: $base-mobile;
+            }
         }
     }
     h3 {
@@ -478,6 +530,9 @@ aside.social-links {
     p.lead {
         font-size: 50px; 
         margin-bottom: $padding;
+        @media only screen and (max-width: 30em) {
+            margin-bottom: $base-mobile;
+        }
     }
     .inner {
         // TODO: Make this fixed
@@ -669,11 +724,19 @@ header {
     p {
         margin-top: 0;
     }
+    ul {
+
+    }
 }
 
 .content-body {
-    padding-top: ($base * 3);
-    padding-bottom: ($base * 3);
+    padding: ($base * 3) 0;
+    @media only screen and (max-width: 30em) {
+        padding: ($base-mobile * 2) 0;
+        ul {
+            padding-left: 20px;
+        }
+    }
 }
 
 // HOME PAGE BLOG POSTS
@@ -799,6 +862,9 @@ blockquote p {
         @media only screen and (max-width: 450px) {
             margin-right: 0;
     }
+    @media only screen and (max-width: 45em) {
+        font-size: ($base-mobile * 2);
+    }
 }
 blockquote.alt p {
     margin-right: 0;
@@ -832,6 +898,9 @@ blockquote.alt p {
     text-align: center;
     @include transition-property(background-color);
     @include transition-duration(0.2s);
+    @media only screen and (max-width: 30em) {
+        padding-top: ($base-mobile * 2);
+    }    
     // STICKY FOOTER
     .js & {
         position: fixed;
@@ -852,6 +921,9 @@ blockquote.alt p {
 .bottom-footer {
     background-color: #444;
     padding: ($base) 0 ($base * 3);
+    @media only screen and (max-width: 30em) {
+        padding-bottom: $base-mobile;
+    }    
     color: #fff;
     a {
         color: #999;
@@ -937,6 +1009,7 @@ and (orientation: portrait)  {
     }
     aside.social-links {
         position: relative;
+        margin-top: $base-mobile;
     }
     aside.social-links a {
         line-height: 1;
