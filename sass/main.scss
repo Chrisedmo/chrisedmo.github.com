@@ -479,6 +479,15 @@ aside.social-links {
     }    
 }
 
+@media only screen and (max-width: 30em) {
+    .head .social-links {
+        float: right;
+    }
+    a.top-link {
+        top: 35px;
+    }
+}
+
 .intro {
     background-color: #000;
     z-index: 0;
@@ -1027,11 +1036,6 @@ and (orientation: portrait)  {
 @media only screen and (-webkit-min-device-pixel-ratio: 1.5),
        only screen and (min-resolution: 144dpi) {
     /* Style adjustments for viewports that meet the condition */
-    .intro {
-        &.image {
-            height: 100%;
-        }
-    }
 }
 
 @media print,
