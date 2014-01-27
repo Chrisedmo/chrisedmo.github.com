@@ -388,7 +388,7 @@
     "kitAutoOutputPathStyle" : 0,
     "animateCSSInjections" : 1,
     "sassDecimalPrecision" : 5,
-    "skippedItemsString" : ".svn, .git, .hg, log, _hidden, _site, _posts",
+    "skippedItemsString" : "_site, _posts, .git, _hidden, log, \/_includes, .svn, .hg",
     "genericWebpageFileExtensionsString" : "html, htm, shtml, shtm, xhtml, php, jsp, asp, aspx, erb, ctp",
     "coffeeSyntaxCheckerStyle" : 1,
     "stylusAutoOutputPathStyle" : 2,
@@ -727,15 +727,13 @@
       "ignoreWasSetByUser" : 1,
       "fileType" : 4096
     },
-    "\/js\/min\/menu-ck.js" : {
-      "syntaxCheckerStyle" : 1,
-      "inputAbbreviatedPath" : "\/js\/min\/menu-ck.js",
-      "outputAbbreviatedPath" : "\/js\/min\/min\/menu-ck-ck.js",
+    "\/_includes\/profile.html" : {
+      "inputAbbreviatedPath" : "\/_includes\/profile.html",
+      "outputAbbreviatedPath" : "No Output Path",
       "outputPathIsSetByUser" : 0,
       "ignore" : 1,
       "ignoreWasSetByUser" : 0,
-      "fileType" : 64,
-      "outputStyle" : 1
+      "fileType" : 8192
     },
     "\/cv.md" : {
       "expandTabs" : 1,
@@ -773,6 +771,14 @@
       "outputStyle" : 0,
       "useLibsass" : 0
     },
+    "\/_layouts\/base.html" : {
+      "inputAbbreviatedPath" : "\/_layouts\/base.html",
+      "outputAbbreviatedPath" : "No Output Path",
+      "outputPathIsSetByUser" : 0,
+      "ignore" : 0,
+      "ignoreWasSetByUser" : 0,
+      "fileType" : 8192
+    },
     "\/js\/mustache.js" : {
       "syntaxCheckerStyle" : 1,
       "inputAbbreviatedPath" : "\/js\/mustache.js",
@@ -801,8 +807,8 @@
       "ignoreWasSetByUser" : 0,
       "fileType" : 8192
     },
-    "\/_includes\/about.html" : {
-      "inputAbbreviatedPath" : "\/_includes\/about.html",
+    "\/_layouts\/photo.html" : {
+      "inputAbbreviatedPath" : "\/_layouts\/photo.html",
       "outputAbbreviatedPath" : "No Output Path",
       "outputPathIsSetByUser" : 0,
       "ignore" : 0,
@@ -817,58 +823,8 @@
       "ignoreWasSetByUser" : 0,
       "fileType" : 8192
     },
-    "\/_layouts\/blog-post.html" : {
-      "inputAbbreviatedPath" : "\/_layouts\/blog-post.html",
-      "outputAbbreviatedPath" : "No Output Path",
-      "outputPathIsSetByUser" : 0,
-      "ignore" : 0,
-      "ignoreWasSetByUser" : 0,
-      "fileType" : 8192
-    },
-    "\/_layouts\/photo.html" : {
-      "inputAbbreviatedPath" : "\/_layouts\/photo.html",
-      "outputAbbreviatedPath" : "No Output Path",
-      "outputPathIsSetByUser" : 0,
-      "ignore" : 0,
-      "ignoreWasSetByUser" : 0,
-      "fileType" : 8192
-    },
-    "\/js\/menu.js" : {
-      "syntaxCheckerStyle" : 1,
-      "inputAbbreviatedPath" : "\/js\/menu.js",
-      "outputAbbreviatedPath" : "\/js\/min\/menu-ck.js",
-      "outputPathIsSetByUser" : 0,
-      "ignore" : 0,
-      "ignoreWasSetByUser" : 0,
-      "fileType" : 64,
-      "outputStyle" : 1
-    },
-    "\/_includes\/disqus.html" : {
-      "inputAbbreviatedPath" : "\/_includes\/disqus.html",
-      "outputAbbreviatedPath" : "No Output Path",
-      "outputPathIsSetByUser" : 0,
-      "ignore" : 0,
-      "ignoreWasSetByUser" : 0,
-      "fileType" : 8192
-    },
-    "\/css\/main.css" : {
-      "inputAbbreviatedPath" : "\/css\/main.css",
-      "outputAbbreviatedPath" : "No Output Path",
-      "outputPathIsSetByUser" : 0,
-      "ignore" : 1,
-      "ignoreWasSetByUser" : 0,
-      "fileType" : 16
-    },
-    "\/_includes\/blog-feed.html" : {
-      "inputAbbreviatedPath" : "\/_includes\/blog-feed.html",
-      "outputAbbreviatedPath" : "No Output Path",
-      "outputPathIsSetByUser" : 0,
-      "ignore" : 0,
-      "ignoreWasSetByUser" : 0,
-      "fileType" : 8192
-    },
-    "\/_includes\/pop-nav.html" : {
-      "inputAbbreviatedPath" : "\/_includes\/pop-nav.html",
+    "\/_includes\/about.html" : {
+      "inputAbbreviatedPath" : "\/_includes\/about.html",
       "outputAbbreviatedPath" : "No Output Path",
       "outputPathIsSetByUser" : 0,
       "ignore" : 0,
@@ -885,6 +841,46 @@
       "ignoreWasSetByUser" : 0,
       "fileType" : 16384
     },
+    "\/_includes\/disqus.html" : {
+      "inputAbbreviatedPath" : "\/_includes\/disqus.html",
+      "outputAbbreviatedPath" : "No Output Path",
+      "outputPathIsSetByUser" : 0,
+      "ignore" : 0,
+      "ignoreWasSetByUser" : 0,
+      "fileType" : 8192
+    },
+    "\/_includes\/blog-feed.html" : {
+      "inputAbbreviatedPath" : "\/_includes\/blog-feed.html",
+      "outputAbbreviatedPath" : "No Output Path",
+      "outputPathIsSetByUser" : 0,
+      "ignore" : 0,
+      "ignoreWasSetByUser" : 0,
+      "fileType" : 8192
+    },
+    "\/_layouts\/blog-post.html" : {
+      "inputAbbreviatedPath" : "\/_layouts\/blog-post.html",
+      "outputAbbreviatedPath" : "No Output Path",
+      "outputPathIsSetByUser" : 0,
+      "ignore" : 0,
+      "ignoreWasSetByUser" : 0,
+      "fileType" : 8192
+    },
+    "\/css\/main.css" : {
+      "inputAbbreviatedPath" : "\/css\/main.css",
+      "outputAbbreviatedPath" : "No Output Path",
+      "outputPathIsSetByUser" : 0,
+      "ignore" : 1,
+      "ignoreWasSetByUser" : 0,
+      "fileType" : 16
+    },
+    "\/_includes\/pop-nav.html" : {
+      "inputAbbreviatedPath" : "\/_includes\/pop-nav.html",
+      "outputAbbreviatedPath" : "No Output Path",
+      "outputPathIsSetByUser" : 0,
+      "ignore" : 0,
+      "ignoreWasSetByUser" : 0,
+      "fileType" : 8192
+    },
     "\/js\/glitch.js" : {
       "syntaxCheckerStyle" : 0,
       "inputAbbreviatedPath" : "\/js\/glitch.js",
@@ -894,14 +890,6 @@
       "ignoreWasSetByUser" : 1,
       "fileType" : 64,
       "outputStyle" : 1
-    },
-    "\/_layouts\/base.html" : {
-      "inputAbbreviatedPath" : "\/_layouts\/base.html",
-      "outputAbbreviatedPath" : "No Output Path",
-      "outputPathIsSetByUser" : 0,
-      "ignore" : 0,
-      "ignoreWasSetByUser" : 0,
-      "fileType" : 8192
     },
     "\/blog\/index.md" : {
       "expandTabs" : 1,
@@ -963,26 +951,16 @@
       "ignoreWasSetByUser" : 0,
       "fileType" : 8192
     },
-    "\/js\/classie.js" : {
-      "syntaxCheckerStyle" : 0,
-      "inputAbbreviatedPath" : "\/js\/classie.js",
-      "outputAbbreviatedPath" : "\/js\/min\/classie-ck.js",
-      "outputPathIsSetByUser" : 0,
-      "ignore" : 1,
-      "ignoreWasSetByUser" : 1,
-      "fileType" : 64,
-      "outputStyle" : 1
-    },
-    "\/_layouts\/post.html" : {
-      "inputAbbreviatedPath" : "\/_layouts\/post.html",
+    "\/_includes\/share.html" : {
+      "inputAbbreviatedPath" : "\/_includes\/share.html",
       "outputAbbreviatedPath" : "No Output Path",
       "outputPathIsSetByUser" : 0,
       "ignore" : 0,
       "ignoreWasSetByUser" : 0,
       "fileType" : 8192
     },
-    "\/_includes\/share.html" : {
-      "inputAbbreviatedPath" : "\/_includes\/share.html",
+    "\/_layouts\/post.html" : {
+      "inputAbbreviatedPath" : "\/_layouts\/post.html",
       "outputAbbreviatedPath" : "No Output Path",
       "outputPathIsSetByUser" : 0,
       "ignore" : 0,
@@ -1034,6 +1012,16 @@
       "ignoreWasSetByUser" : 0,
       "fileType" : 16384
     },
+    "\/js\/min\/cm.min.js" : {
+      "syntaxCheckerStyle" : 1,
+      "inputAbbreviatedPath" : "\/js\/min\/cm.min.js",
+      "outputAbbreviatedPath" : "\/js\/min\/min\/cm.min-ck.js",
+      "outputPathIsSetByUser" : 0,
+      "ignore" : 1,
+      "ignoreWasSetByUser" : 0,
+      "fileType" : 64,
+      "outputStyle" : 1
+    },
     "\/_includes\/profile.md" : {
       "expandTabs" : 1,
       "inputAbbreviatedPath" : "\/_includes\/profile.md",
@@ -1045,11 +1033,11 @@
       "ignoreWasSetByUser" : 0,
       "fileType" : 4096
     },
-    "\/js\/min\/cm.min.js" : {
+    "\/js\/cm.js" : {
       "syntaxCheckerStyle" : 1,
-      "inputAbbreviatedPath" : "\/js\/min\/cm.min.js",
-      "outputAbbreviatedPath" : "\/js\/min\/min\/cm.min-ck.js",
-      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/js\/cm.js",
+      "outputAbbreviatedPath" : "\/js\/min\/cm.min.js",
+      "outputPathIsSetByUser" : 1,
       "ignore" : 0,
       "ignoreWasSetByUser" : 0,
       "fileType" : 64,
@@ -1070,16 +1058,6 @@
       "outputStyle" : 0,
       "useLibsass" : 0
     },
-    "\/js\/cm.js" : {
-      "syntaxCheckerStyle" : 1,
-      "inputAbbreviatedPath" : "\/js\/cm.js",
-      "outputAbbreviatedPath" : "\/js\/min\/cm-ck.js",
-      "outputPathIsSetByUser" : 0,
-      "ignore" : 0,
-      "ignoreWasSetByUser" : 0,
-      "fileType" : 64,
-      "outputStyle" : 1
-    },
     "\/_includes\/home-intro.html" : {
       "inputAbbreviatedPath" : "\/_includes\/home-intro.html",
       "outputAbbreviatedPath" : "No Output Path",
@@ -1087,6 +1065,16 @@
       "ignore" : 0,
       "ignoreWasSetByUser" : 0,
       "fileType" : 8192
+    },
+    "\/js\/jquery.adaptive-backgrounds.js" : {
+      "syntaxCheckerStyle" : 1,
+      "inputAbbreviatedPath" : "\/js\/jquery.adaptive-backgrounds.js",
+      "outputAbbreviatedPath" : "\/js\/min\/jquery.adaptive-backgrounds-ck.js",
+      "outputPathIsSetByUser" : 0,
+      "ignore" : 0,
+      "ignoreWasSetByUser" : 0,
+      "fileType" : 64,
+      "outputStyle" : 1
     },
     "\/index.md" : {
       "expandTabs" : 1,
@@ -1098,16 +1086,6 @@
       "enableSmartyPants" : 1,
       "ignoreWasSetByUser" : 1,
       "fileType" : 4096
-    },
-    "\/js\/jquery.adaptive-backgrounds.js" : {
-      "syntaxCheckerStyle" : 1,
-      "inputAbbreviatedPath" : "\/js\/jquery.adaptive-backgrounds.js",
-      "outputAbbreviatedPath" : "\/js\/min\/jquery.adaptive-backgrounds-ck.js",
-      "outputPathIsSetByUser" : 0,
-      "ignore" : 0,
-      "ignoreWasSetByUser" : 0,
-      "fileType" : 64,
-      "outputStyle" : 1
     },
     "\/_includes\/footer.html" : {
       "inputAbbreviatedPath" : "\/_includes\/footer.html",

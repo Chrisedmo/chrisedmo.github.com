@@ -1,6 +1,6 @@
-<div class="profile">
+<div class="profile" itemprop="author">
 	<img src="/img/chrismousdale.jpg" alt="" class="img-circle"/>
 	
-	<p>Hi there I'm Chris Mousdale, a designer living in Jerey Channel Islands. </p>
+	<p itemscope itemtype="http://schema.org/Person">Hi there I'm <span itemprop="name">Chris Mousdale</span>, a designer living in Jerey Channel Islands. </p>
 
 </div>

@@ -57,22 +57,21 @@
 <div id="b-container">
 	
 	{% include header-b.html %}	
-	<section role="content" id="main-content">
+	<section role="content" id="main-content" itemscope itemType="http://schema.org/BlogPosting">
 	
 	<header {% if page.image %} class="blog-post intro image" style="background: url('{{ page.image }}') no-repeat center; background-size: cover;">{% else %} class="blog-post intro" style="background-color: #{{ page.bg }};">{% endif %}
+		{% if page.image %}<meta itemprop="image" content="{{ page.image }}"/>{% endif %}
 		<div class="container">
 			<div class="inner">
-				<h1>{{page.title}}</h1>
+				<h1 itemprop="name">{{page.title}}</h1>
 			</div>
-			<!-- {% if page.image %}
-				<img src="{{ page.image }}" alt="">
-			{% endif %} -->
 		</div>
 	</header>
 	<div class="content">
 		<article class="content-body">
 			<aside>
 				<p class="date">
+					<meta itemprop="datePublished" content="{{page.date | date:"%Y-%m-%d"}}"/>
 					<time datetime="{{page.date | date:"%Y-%m-%d"}}">Posted on: <span>{{ page.date | date_to_long_string }}</span></time>
 				</p>
 				{% if page.comments %}
@@ -82,7 +81,7 @@
 				{% endif %}
 				{% include profile.md %}
 			</aside>
-			{{ content }}
+			<div itemprop="articleBody">{{ content }}</div>
 		</article>
 		
 		<nav class="pagination clearfix" role="navigation">
