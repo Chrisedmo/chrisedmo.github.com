@@ -52,11 +52,10 @@
 	<link rel="stylesheet" href="/css/main.css">
 	<script src="/js/modernizr.custom.js"></script>
 </head>
-<body class="blog-post {{ page.page-class }}">
+<body class="blog-post {{ page.page-class }}" itemscope itemType="http://schema.org/BlogPosting">
  {% include pop-nav.html %}
 	
 	{% include header-b.html %}	
-	<section role="content" id="main-content" itemscope itemType="http://schema.org/BlogPosting">
 	
 	<header {% if page.image %} class="blog-post intro image" style="background: url('{{ page.image }}') no-repeat center; background-size: cover;">{% else %} class="blog-post intro" style="background-color: #{{ page.bg }};">{% endif %}
 		{% if page.image %}<meta itemprop="image" content="{{ page.image }}"/>{% endif %}
@@ -66,7 +65,7 @@
 			</div>
 		</div>
 	</header>
-	<div class="content">
+	<div class="content" role="content">
 		<article class="content-body">
 			<aside>
 				<p class="date">
@@ -103,9 +102,9 @@
 		</nav>
 	</div>
 	
-	</section>
 	<div class="breaker"></div>
 	{% include footer.html %}
+
 <script id="mobileNav" type="text/template">
 	<div class="container">
 		<ul>

@@ -727,14 +727,6 @@
       "ignoreWasSetByUser" : 1,
       "fileType" : 4096
     },
-    "\/_includes\/profile.html" : {
-      "inputAbbreviatedPath" : "\/_includes\/profile.html",
-      "outputAbbreviatedPath" : "No Output Path",
-      "outputPathIsSetByUser" : 0,
-      "ignore" : 1,
-      "ignoreWasSetByUser" : 0,
-      "fileType" : 8192
-    },
     "\/cv.md" : {
       "expandTabs" : 1,
       "inputAbbreviatedPath" : "\/cv.md",
@@ -799,14 +791,6 @@
       "fileType" : 64,
       "outputStyle" : 1
     },
-    "\/_includes\/social.html" : {
-      "inputAbbreviatedPath" : "\/_includes\/social.html",
-      "outputAbbreviatedPath" : "No Output Path",
-      "outputPathIsSetByUser" : 0,
-      "ignore" : 0,
-      "ignoreWasSetByUser" : 0,
-      "fileType" : 8192
-    },
     "\/_layouts\/photo.html" : {
       "inputAbbreviatedPath" : "\/_layouts\/photo.html",
       "outputAbbreviatedPath" : "No Output Path",
@@ -815,21 +799,15 @@
       "ignoreWasSetByUser" : 0,
       "fileType" : 8192
     },
-    "\/_includes\/circle-nav.html" : {
-      "inputAbbreviatedPath" : "\/_includes\/circle-nav.html",
-      "outputAbbreviatedPath" : "No Output Path",
+    "\/img\/squarespace-logo.png" : {
+      "inputAbbreviatedPath" : "\/img\/squarespace-logo.png",
+      "outputAbbreviatedPath" : "\/img\/squarespace-logo.png",
       "outputPathIsSetByUser" : 0,
+      "processed" : 0,
       "ignore" : 0,
+      "initialSize" : 65232,
       "ignoreWasSetByUser" : 0,
-      "fileType" : 8192
-    },
-    "\/_includes\/about.html" : {
-      "inputAbbreviatedPath" : "\/_includes\/about.html",
-      "outputAbbreviatedPath" : "No Output Path",
-      "outputPathIsSetByUser" : 0,
-      "ignore" : 0,
-      "ignoreWasSetByUser" : 0,
-      "fileType" : 8192
+      "fileType" : 32768
     },
     "\/img\/chrismousdale.jpg" : {
       "inputAbbreviatedPath" : "\/img\/chrismousdale.jpg",
@@ -840,22 +818,6 @@
       "initialSize" : 49305,
       "ignoreWasSetByUser" : 0,
       "fileType" : 16384
-    },
-    "\/_includes\/disqus.html" : {
-      "inputAbbreviatedPath" : "\/_includes\/disqus.html",
-      "outputAbbreviatedPath" : "No Output Path",
-      "outputPathIsSetByUser" : 0,
-      "ignore" : 0,
-      "ignoreWasSetByUser" : 0,
-      "fileType" : 8192
-    },
-    "\/_includes\/blog-feed.html" : {
-      "inputAbbreviatedPath" : "\/_includes\/blog-feed.html",
-      "outputAbbreviatedPath" : "No Output Path",
-      "outputPathIsSetByUser" : 0,
-      "ignore" : 0,
-      "ignoreWasSetByUser" : 0,
-      "fileType" : 8192
     },
     "\/_layouts\/blog-post.html" : {
       "inputAbbreviatedPath" : "\/_layouts\/blog-post.html",
@@ -872,14 +834,6 @@
       "ignore" : 1,
       "ignoreWasSetByUser" : 0,
       "fileType" : 16
-    },
-    "\/_includes\/pop-nav.html" : {
-      "inputAbbreviatedPath" : "\/_includes\/pop-nav.html",
-      "outputAbbreviatedPath" : "No Output Path",
-      "outputPathIsSetByUser" : 0,
-      "ignore" : 0,
-      "ignoreWasSetByUser" : 0,
-      "fileType" : 8192
     },
     "\/js\/glitch.js" : {
       "syntaxCheckerStyle" : 0,
@@ -901,14 +855,6 @@
       "enableSmartyPants" : 1,
       "ignoreWasSetByUser" : 0,
       "fileType" : 4096
-    },
-    "\/_includes\/header.html" : {
-      "inputAbbreviatedPath" : "\/_includes\/header.html",
-      "outputAbbreviatedPath" : "No Output Path",
-      "outputPathIsSetByUser" : 0,
-      "ignore" : 0,
-      "ignoreWasSetByUser" : 0,
-      "fileType" : 8192
     },
     "\/config.rb" : {
       "inputAbbreviatedPath" : "\/config.rb",
@@ -943,40 +889,8 @@
       "fileType" : 64,
       "outputStyle" : 1
     },
-    "\/_includes\/contact-form.html" : {
-      "inputAbbreviatedPath" : "\/_includes\/contact-form.html",
-      "outputAbbreviatedPath" : "No Output Path",
-      "outputPathIsSetByUser" : 0,
-      "ignore" : 0,
-      "ignoreWasSetByUser" : 0,
-      "fileType" : 8192
-    },
-    "\/_includes\/share.html" : {
-      "inputAbbreviatedPath" : "\/_includes\/share.html",
-      "outputAbbreviatedPath" : "No Output Path",
-      "outputPathIsSetByUser" : 0,
-      "ignore" : 0,
-      "ignoreWasSetByUser" : 0,
-      "fileType" : 8192
-    },
     "\/_layouts\/post.html" : {
       "inputAbbreviatedPath" : "\/_layouts\/post.html",
-      "outputAbbreviatedPath" : "No Output Path",
-      "outputPathIsSetByUser" : 0,
-      "ignore" : 0,
-      "ignoreWasSetByUser" : 0,
-      "fileType" : 8192
-    },
-    "\/_includes\/header-b.html" : {
-      "inputAbbreviatedPath" : "\/_includes\/header-b.html",
-      "outputAbbreviatedPath" : "No Output Path",
-      "outputPathIsSetByUser" : 0,
-      "ignore" : 0,
-      "ignoreWasSetByUser" : 0,
-      "fileType" : 8192
-    },
-    "\/_includes\/nav.html" : {
-      "inputAbbreviatedPath" : "\/_includes\/nav.html",
       "outputAbbreviatedPath" : "No Output Path",
       "outputPathIsSetByUser" : 0,
       "ignore" : 0,
@@ -1022,17 +936,6 @@
       "fileType" : 64,
       "outputStyle" : 1
     },
-    "\/_includes\/profile.md" : {
-      "expandTabs" : 1,
-      "inputAbbreviatedPath" : "\/_includes\/profile.md",
-      "outputAbbreviatedPath" : "\/_includes\/profile.html",
-      "outputPathIsSetByUser" : 0,
-      "ignore" : 0,
-      "enableFootnoteSupport" : 0,
-      "enableSmartyPants" : 1,
-      "ignoreWasSetByUser" : 0,
-      "fileType" : 4096
-    },
     "\/js\/cm.js" : {
       "syntaxCheckerStyle" : 1,
       "inputAbbreviatedPath" : "\/js\/cm.js",
@@ -1058,14 +961,6 @@
       "outputStyle" : 0,
       "useLibsass" : 0
     },
-    "\/_includes\/home-intro.html" : {
-      "inputAbbreviatedPath" : "\/_includes\/home-intro.html",
-      "outputAbbreviatedPath" : "No Output Path",
-      "outputPathIsSetByUser" : 0,
-      "ignore" : 0,
-      "ignoreWasSetByUser" : 0,
-      "fileType" : 8192
-    },
     "\/js\/jquery.adaptive-backgrounds.js" : {
       "syntaxCheckerStyle" : 1,
       "inputAbbreviatedPath" : "\/js\/jquery.adaptive-backgrounds.js",
@@ -1086,14 +981,6 @@
       "enableSmartyPants" : 1,
       "ignoreWasSetByUser" : 1,
       "fileType" : 4096
-    },
-    "\/_includes\/footer.html" : {
-      "inputAbbreviatedPath" : "\/_includes\/footer.html",
-      "outputAbbreviatedPath" : "No Output Path",
-      "outputPathIsSetByUser" : 0,
-      "ignore" : 0,
-      "ignoreWasSetByUser" : 0,
-      "fileType" : 8192
     }
   }
 }

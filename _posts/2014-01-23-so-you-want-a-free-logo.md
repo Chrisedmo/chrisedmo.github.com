@@ -2,6 +2,7 @@
 layout: blog-post
 title: "So you want a free logo…"
 short: "Have Squarespace just killed designers?"
+image: /img/squarespace-logo.jpg
 bg: 222
 ---
 
