@@ -25,7 +25,7 @@ layout: nil
           <name>Chris Mousdale</name>
           <uri>{{ site.url }}</uri>
         </author>
-        <content type="html">{{ post.content | xml_escape }}</content type="html">
+        <content type="html">{{ post.content | xml_escape }}</content>
       </entry>
     {% endfor %}
 
