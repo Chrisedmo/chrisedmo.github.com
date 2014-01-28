@@ -1,10 +1,10 @@
 $(document).ready(function() {
 	// Dynamic colours for home page buttons
-	var opts = {
-		parent: '.btn-c',
-		normalizeTextColor: true
-	};
-	$.adaptiveBackground.run(opts);
+    var opts = {
+        parent: '.btn-c',
+        normalizeTextColor: true
+    };
+    $.adaptiveBackground.run(opts);
 	// Dynamic JS Menu
 	$.getJSON('/allPosts.json', function(data)	{
 		var template = '<ul>{{#jsMenu}}<li><a href="{{href}}" title="{{title}}"><h2>{{title}}</h2><p class="date">{{#date}}{{day}} {{month}} {{year}}{{/date}}</p><p>{{short}}</p></a></li>{{/jsMenu}}</ul>';
