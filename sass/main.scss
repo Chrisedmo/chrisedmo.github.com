@@ -546,11 +546,11 @@ aside.social-links {
         bottom: $padding;
         .home & { 
             width: 90%;
-            left: auto;
-            right: auto;
+            left: 50%;
             text-align: center;
             top: ($padding * 6);
             bottom: auto;
+            margin-left: -45%;
             @media screen and (max-width: 400px) {
                 @include box-sizing(border-box);
                 width: 90%;  
