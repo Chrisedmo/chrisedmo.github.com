@@ -59,7 +59,7 @@ $headerHeight: 60px;
 // COLOURS
 
 $lGray: #eee;
-$link: #2C3D49;
+$link: #34678B;
 $accent: #FF8324;
 $orange: #e67e22;
 
@@ -737,6 +737,9 @@ header {
 
 .content-body {
     padding: ($base * 3) 0;
+    img {
+        max-width: 100%;
+    }
     @media only screen and (max-width: 30em) {
         padding: ($base-mobile * 2) 0;
         ul {
