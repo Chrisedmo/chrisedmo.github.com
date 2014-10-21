@@ -740,6 +740,16 @@ header {
     img {
         max-width: 100%;
     }
+    a {
+        position: relative;
+        &:before {
+            content: '';
+            border-bottom: 1px dotted;
+            position: relative;position: absolute;
+            width: 100%;
+            bottom: 3px;
+        }
+    }
     @media only screen and (max-width: 30em) {
         padding: ($base-mobile * 2) 0;
         ul {
@@ -929,13 +939,13 @@ blockquote.alt p {
 
 .bottom-footer {
     background-color: #444;
-    padding: ($base) 0 ($base * 3);
+    padding: ($base * 2) 0 ($base * 2);
     @media only screen and (max-width: 30em) {
         padding-bottom: $base-mobile;
     }    
     color: #fff;
     a {
-        color: #999;
+        color: #cecece;
     }
 }
 
