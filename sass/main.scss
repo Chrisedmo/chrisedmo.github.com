@@ -62,6 +62,7 @@ $lGray: #eee;
 $link: #34678B;
 $accent: #FF8324;
 $orange: #e67e22;
+$sex: #b50d9b;
 
 $nav-colour: #f39c12;
 $nav-colour-1: #d35400;
@@ -498,8 +499,12 @@ aside.social-links {
     -webkit-box-align:center;
     -webkit-box-pack:center;
     display:-webkit-box;
-    background: url(../img/mousdale.gif) no-repeat center;
+    background: url(../img/mousdale.gif) no-repeat 50% 20% $sex;
     background-size: cover;
+    @media only screen and (max-width: 30em) {
+        background-size: cover;
+        background-position: 50% 8em;
+    }
     .home-inner {
         position: relative;
     }
