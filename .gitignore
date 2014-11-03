@@ -7,4 +7,4 @@ photography/*
 portfolio/*
 .DS_Store
 codekit-config.json
-.sass-cache/*
+.sass-cache

@@ -47,9 +47,10 @@
 </head>
 <body class="home {{ page.page-class }}">
 {% include pop-nav.html %}
-	{% include header.html %}
-	<section role="content">
-		{% include home-intro.html %}
+	<section role="content" class="home-intro">
+		<div class="container">
+			<div class="home-inner">{{ content }}</div>
+		</div>
 	</section>
 	{% include footer.html %}
 <script id="mobileNav" type="text/template">

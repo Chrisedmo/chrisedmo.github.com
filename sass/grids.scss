@@ -23,6 +23,9 @@
     @media only screen and (max-width: 450px) {
     	width: 90%;
 	}
+	@media only screen and (min-width: 80em) {
+		max-width: 800px;
+	}
 
 }
 
