@@ -28,7 +28,7 @@ a.symbol:before {
 }
 
 
-$gothic: "franklin-gothic-urw-cond-1","franklin-gothic-urw-cond-2", sans-serif;
+$gothic: "brandon-grotesque-1","brandon-grotesque-2", sans-serif;
 $serif: "ff-tisa-web-pro-1","ff-tisa-web-pro-2", palatino, serif;
 
 $base: 18px; 
@@ -154,6 +154,7 @@ h1,h2,h3,p,li,.head {
 h1, h2, h3, h4, h5, h6, h2.post-title, p.title {
     font-family: $gothic;    
     text-transform: uppercase;    
+    font-weight: 900;
 	text-rendering: optimizeLegibility;
 	-moz-font-feature-settings: "kern=1"; 
 	-ms-font-feature-settings: "kern" 1;
@@ -202,19 +203,17 @@ a, a:visited {
     width: 100%;
     text-align: center;
     padding-bottom: 16px;
-    background-color: #444;
+    background-color: rgba(0,0,0,0.35);
+    // background-color: #fff;
     .container {
         position: relative;
     }
     .home & {
-        background-color: #fff;
-        background-color: rgba(255,255,255,0.9);
         position: absolute;
         top: 0;
         z-index: 1;
     }
     .blog-post & {
-        background-color: transparent;
         position: absolute;
         top: 0;
         z-index: 1;        
@@ -248,6 +247,7 @@ a.top-link {
     font-size: $base;
     line-height: 1;
     position: absolute;
+    font-weight: 600;
     left: 0;
     line-height: $headerHeight;
     @include opacity(0.5);
@@ -268,6 +268,9 @@ a.top-link {
     z-index: 9;
     background: rgba(25,25,25,0.9);
     padding: $headerHeight 0;
+    @include transition(all);
+    @include transition-duration(0.25s);
+    @include transition-timing-function(cubic-bezier(0,1,0.5,1));
     .lt-ie9 & {
         background: #333;
         @include opacity(0.85);
@@ -306,7 +309,7 @@ a.top-link {
         list-style: none;
         margin-left: 0;
         border: 2px solid #fff;
-        padding: $padding;
+        padding: $padding 15%;
         text-align: center;
         margin-bottom: $padding;
         position: relative;
@@ -318,6 +321,7 @@ a.top-link {
         &:after {
             content: 'Read more »';
             position: absolute;
+            font-weight: 600;
             right: -20%;
             bottom: 0;
             top: 0;
@@ -346,7 +350,7 @@ a.top-link {
             }
             &:after {
                 // bottom: 50%;
-                right: -12%;
+                right: -15%;
                 opacity: 1;
             }
         }
@@ -488,6 +492,64 @@ aside.social-links {
     }
 }
 
+// NEW HOMEPAGE
+
+.home-intro {
+    -webkit-box-align:center;
+    -webkit-box-pack:center;
+    display:-webkit-box;
+    background: url(../img/mousdale.gif) no-repeat center;
+    background-size: cover;
+    .home-inner {
+        position: relative;
+    }
+    h1 {
+        font-size: 14vw;
+        line-height: 0.75; 
+        letter-spacing: -10px;
+        color: #000;  /* Fallback: assume this color ON TOP of image */
+        font-weight: 900;
+        color: rgba(0,0,0,0.5);
+        // background: url(../img/mousdale.gif) no-repeat center;
+        // background-size: 100%;
+        // background-attachment: fixed;
+        // -webkit-background-clip: text;
+        // -webkit-text-fill-color: transparent;
+        margin-bottom: ($base*2);
+        @media only screen and (max-width: 30em) {
+            font-size: 3em;
+            letter-spacing: 0;
+        }
+        @media only screen and (min-width: 100em) {
+            font-size: 227px;
+        }
+    }
+    .btn {
+        position: absolute;
+        top: 0;
+        right: 2em;
+        @media only screen and (max-width: 30em) {
+            position: static;
+        }
+    }
+}
+
+.sub-intro {
+    max-width: 500px;
+    color: #fff;
+    a:not(.btn) {
+        color: #fff;
+        position: relative;
+        &:before {
+            content: '';
+            border-bottom: 1px dotted;
+            position: relative;position: absolute;
+            width: 100%;
+            bottom: 3px;
+        }
+    }
+}
+
 .intro {
     background-color: #000;
     z-index: 0;
@@ -519,6 +581,9 @@ aside.social-links {
         @media only screen and (max-width: 45em) {
             font-size: 15vw;
             margin-bottom: $base-mobile;
+        }
+        @media only screen and (min-width: 80em) {
+            font-size: 100px;
         }
         .home & {
             margin-bottom: $padding;
@@ -604,6 +669,16 @@ aside.social-links {
     left: 50%;
     bottom: -10%;
     @include transform(rotate(-25deg));
+}
+
+// NAV PANEL
+
+.dk-panel {
+    background-color: #000;
+    padding: ($padding / 3) 0;
+    img {
+        max-width: 40px;
+    }
 }
 
 header {
@@ -740,6 +815,17 @@ header {
     img {
         max-width: 100%;
     }
+    // BODY LINKS
+    a {
+        position: relative;
+        &:before {
+            content: '';
+            border-bottom: 1px dotted;
+            position: relative;position: absolute;
+            width: 100%;
+            bottom: 3px;
+        }
+    }
     @media only screen and (max-width: 30em) {
         padding: ($base-mobile * 2) 0;
         ul {
@@ -785,10 +871,23 @@ header {
 
 // BUTTONS
 .btn {
+    font-family: $gothic;
+    text-transform: uppercase;
+    font-weight: 600;
     border: 2px solid #fff;
     border-radius: 5px;
     color: #fff;
+    background-color: $accent;
     padding: ($padding / 2) $padding;
+    @include transition-property(background-color);
+    @include transition-duration(0.3s);
+    .home & {
+        display: block;
+        background-color: transparent;
+    }
+    &:hover {
+        background-color: darken($accent, 10);
+    }
 }
 
 // PAGINATION
@@ -825,6 +924,9 @@ header {
             position: relative;
             @include transition-property(left, right);
             @include transition-duration(0.35s, 0.35s);
+            &:first-child {
+                margin-bottom: 0.5em;
+            }
         }
         a{
             display: block;
@@ -849,8 +951,8 @@ blockquote {
 
 blockquote p {
     margin-right: -49%;
-    margin-top: .5em;
-    margin-bottom: .5em;
+    margin-top: ($base * 2) !important;
+    margin-bottom: ($base * 2);
     font-family: $gothic;
     font-weight: normal;
     font-size: 51px;
@@ -925,17 +1027,20 @@ blockquote.alt p {
         position: static;
         padding: 0;
     }
+    h4 {
+        font-size: 27px;
+    }
 }
 
 .bottom-footer {
     background-color: #444;
-    padding: ($base) 0 ($base * 3);
+    padding: ($base * 2) 0 ($base * 2);
     @media only screen and (max-width: 30em) {
         padding-bottom: $base-mobile;
     }    
     color: #fff;
     a {
-        color: #999;
+        color: #cecece;
     }
 }
 
