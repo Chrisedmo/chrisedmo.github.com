@@ -14,32 +14,27 @@
 	<meta name="description" content="{{ site.description }}">
 	<meta name="og:description" content="{{ site.description }}">
 	{% endif %}
-	{% if page.categories %}
-	<meta name="keywords" content="{{page.categories | join: ','}}" />
-	{% else %}
-	<meta name="keywords" content="{{site.keywords | join: ','}}" />
-	{% endif %}
 	<meta property="og:title" content="{{page.title}}" />
 	{% if page.image %}
 	<meta property="og:image" content="{{page.image}}" />
 	{% endif %}
 
 	<meta name="author" content="Chris Mousdale">
-	<meta name="publisher" content="Chris Mousdale"/>  
+	<meta name="publisher" content="Chris Mousdale"/>
 	<meta name="copyright" content="Chris Mousdale"/>
 	<meta name="HandheldFriendly" content="True">
 	<meta name="viewport" content="width=device-width,initial-scale=1">
-	<meta http-equiv="cleartype" content="on">	
+	<meta http-equiv="cleartype" content="on">
 	<link rel="author" href="https://plus.google.com/+ChrisMousdale/">
 	<link rel="alternate" type="application/atom+xml" title="RSS Feed for mousdale.com" href="/feed.atom" />
 	<!-- Prefetch DNS for external assets (Twitter widgets etc). -->
 	<link rel="dns-prefetch" href="//fonts.googleapis.com">
-    <link rel="dns-prefetch" href="//use.typekit.net/">
-    <link rel="dns-prefetch" href="//platform.twitter.com">
-    <link rel="dns-prefetch" href="//www.google-analytics.com">
-    <link rel="dns-prefetch" href="//p.twitter.com">
-    <link rel="dns-prefetch" href="//cdn.api.twitter.com">
-    <link rel="dns-prefetch" href="//mousdale.disqus.com">
+  <link rel="dns-prefetch" href="//use.typekit.net/">
+  <link rel="dns-prefetch" href="//platform.twitter.com">
+  <link rel="dns-prefetch" href="//www.google-analytics.com">
+  <link rel="dns-prefetch" href="//p.twitter.com">
+  <link rel="dns-prefetch" href="//cdn.api.twitter.com">
+  <link rel="dns-prefetch" href="//mousdale.disqus.com">
     <!-- TYPEKIT I LOVE YOU -->
 	<script type="text/javascript">
 	  (function() {
@@ -55,9 +50,9 @@
 </head>
 <body class="blog-post {{ page.page-class }}" itemscope itemType="http://schema.org/BlogPosting">
  {% include pop-nav.html %}
-	
-	{% include header-b.html %}	
-	
+
+	{% include header-b.html %}
+
 	<header {% if page.image %} class="blog-post intro image" style="background: url('{{ page.image }}') no-repeat center; background-size: cover;">{% else %} class="blog-post intro" style="background-color: #{{ page.bg }};">{% endif %}
 		{% if page.image %}<meta itemprop="image" content="{{ page.image }}"/>{% endif %}
 		<div class="container">
@@ -82,27 +77,27 @@
 			</aside>
 			<div itemprop="articleBody">{{ content }}</div>
 		</article>
-		
+
 		<nav class="pagination clearfix" role="navigation">
-			<div class="arrow-wrapper next"> 
-			{% if page.next.url %} 
+			<div class="arrow-wrapper next">
+			{% if page.next.url %}
 				<a href="{{page.next.url}}" title="Next Post: {{page.next.title}}">
 					<p class="date">Next Post:</p>
 				    <p class="title"> &laquo; {{page.next.title}}</p>
-				</a> 
-			{% endif %} 
-			</div> 
-			<div class="arrow-wrapper prev"> 
-			{% if page.previous.url %} 
+				</a>
+			{% endif %}
+			</div>
+			<div class="arrow-wrapper prev">
+			{% if page.previous.url %}
 				<a href="{{page.previous.url}}" title="Previous Post: {{page.previous.title}}">
 					<p class="date">Previous Post:</p>
 				    <p class="title">{{page.previous.title}} &raquo; </p>
-				</a> 
-			{% endif %} 
-			</div> 
+				</a>
+			{% endif %}
+			</div>
 		</nav>
 	</div>
-	
+
 	<div class="breaker"></div>
 	{% include footer.html %}
 
@@ -115,7 +110,7 @@
 					<a href="{{href}}" title="{{title}}"><h3>{{title}}</h3></a>
 				</li>
 			{{/jsMenu}}
-		{% endraw %}		
+		{% endraw %}
 		</ul>
 	</div>
 </script>

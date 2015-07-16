@@ -9,29 +9,26 @@
 	<title> {% if page.title %} {{ page.title }} | {% endif %} Chris Mousdale :: Designer &amp; Developer</title>
 	{% if page.description %}
 	<meta name="description" content="{{ page.description }}">
+	<meta name="og:description" content="{{ page.description }}">
 	{% else %}
 	<meta name="description" content="{{ site.description }}">
-	{% endif %}
-	{% if page.categories %}
-	<meta name="keywords" content="{{page.categories | join: ','}}" />
-	{% else %}
-	<meta name="keywords" content="{{site.keywords | join: ','}}" />
+	<meta name="og:description" content="{{ site.description }}">
 	{% endif %}
 	<meta name="author" content="Chris Mousdale">
 	<meta name="publisher" content="Chris Mousdale"/>
 	<meta name="copyright" content="Chris Mousdale"/>
 	<meta name="HandheldFriendly" content="True">
 	<meta name="viewport" content="width=device-width,initial-scale=1">
-	<meta http-equiv="cleartype" content="on">	
+	<meta http-equiv="cleartype" content="on">
 	<link rel="publisher" href="https://plus.google.com/+ChrisMousdale/">
 	<link rel="alternate" type="application/atom+xml" title="RSS Feed for mousdale.com" href="/feed.atom" />
 	<!-- Prefetch DNS for external assets (Twitter widgets etc). -->
 	<link rel="dns-prefetch" href="//fonts.googleapis.com">
-    <link rel="dns-prefetch" href="//use.typekit.net/">
-    <link rel="dns-prefetch" href="//platform.twitter.com">
-    <link rel="dns-prefetch" href="//www.google-analytics.com">
-    <link rel="dns-prefetch" href="//p.twitter.com">
-    <link rel="dns-prefetch" href="//cdn.api.twitter.com">
+  <link rel="dns-prefetch" href="//use.typekit.net/">
+  <link rel="dns-prefetch" href="//platform.twitter.com">
+  <link rel="dns-prefetch" href="//www.google-analytics.com">
+  <link rel="dns-prefetch" href="//p.twitter.com">
+  <link rel="dns-prefetch" href="//cdn.api.twitter.com">
     <!-- TYPEKIT I LOVE YOU -->
 	<script type="text/javascript">
 	  (function() {
@@ -48,9 +45,9 @@
 <body class="page {{ page.page-class }}">
 	{% include header.html %}
 	<section role="content">
-	
-	{{ content }}	
-	
+
+	{{ content }}
+
 	</section>
 
 <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
