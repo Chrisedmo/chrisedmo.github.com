@@ -1,6 +1,17 @@
 highlighter: pygments
+author: Chris Mousdale
 description: Chris Mousdale is a digital creative, specilaising in web design, branding and web development for Wordpress and Shopify living in Jersey, Channel Islands.
 analytics: UA-15920114-1
 permalink: /blog/:categories/:year/:month/:day/:title.html
 url: "http://www.mousdale.com"
 excerpt_separator: "\n\n"
+
+# CONTACT DETAILS
+email_address: chris@mousdale.com
+
+# SOCIAL MEDIA HANDLES
+twitter_username: chrisedmo
+linkedin_username: chrismousdale
+dribbble_username: chrisedmo
+github_username: chrisedmo
+instagram_username: chrisedmo
