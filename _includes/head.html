@@ -1,0 +1,31 @@
+<head>
+	<meta charset="utf-8">
+	<title> {% if page.title %} {{ page.title }} | {% endif %} {{ site.author }}</title>
+	<meta name="description" content="{% if page.description %}{{ page.description }}{% else %}{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% endif %}{% else %}{{ site.description }}{% endif %}">
+	<meta name="author" content="{{ site.author }}">
+	<meta name="publisher" content="{{ site.author }}"/>
+	<meta name="copyright" content="{{ site.author }}"/>
+	<meta name="HandheldFriendly" content="True">
+	<meta name="viewport" content="width=device-width,initial-scale=1">
+	<meta http-equiv="cleartype" content="on">
+	<link rel="alternate" type="application/atom+xml" title="RSS Feed for mousdale.com" href="/feed.atom" />
+	<!-- Prefetch DNS for external assets (Twitter widgets etc). -->
+	<link rel="dns-prefetch" href="//fonts.googleapis.com">
+  <link rel="dns-prefetch" href="//use.typekit.net/">
+  <link rel="dns-prefetch" href="//platform.twitter.com">
+  <link rel="dns-prefetch" href="//www.google-analytics.com">
+  <link rel="dns-prefetch" href="//p.twitter.com">
+  <link rel="dns-prefetch" href="//cdn.api.twitter.com">
+    <!-- TYPEKIT I LOVE YOU -->
+	<script type="text/javascript">
+	  (function() {
+	    var config = {
+	      kitId: 'ezu6pyt',
+	      scriptTimeout: 3000
+	    };
+	    var h=document.getElementsByTagName("html")[0];h.className+=" wf-loading";var t=setTimeout(function(){h.className=h.className.replace(/(\s|^)wf-loading(\s|$)/g," ");h.className+=" wf-inactive"},config.scriptTimeout);var tk=document.createElement("script"),d=false;tk.src='//use.typekit.net/'+config.kitId+'.js';tk.type="text/javascript";tk.async="true";tk.onload=tk.onreadystatechange=function(){var a=this.readyState;if(d||a&&a!="complete"&&a!="loaded")return;d=true;clearTimeout(t);try{Typekit.load(config)}catch(b){}};var s=document.getElementsByTagName("script")[0];s.parentNode.insertBefore(tk,s)
+	  })();
+	</script>
+	<link rel="stylesheet" href="/css/main.css">
+	<script src="/js/modernizr.custom.js"></script>
+</head>

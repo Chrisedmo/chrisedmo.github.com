@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]> <html class="no-js lt-ie10 lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js lt-ie10 lt-ie9 lt-ie8" lang="en"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js lt-ie10 lt-ie9" lang="en"> <![endif]-->
+<!--[if IE 9]>    <html class="no-js lt-ie10" lang="en"> <![endif]-->
+<!--[if gt IE 9]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+{% include head.html %}
+<body class="home {{ page.page-class }}">
+	<section role="content" class="home-intro">
+		<div class="container">
+			<div class="home-inner">{{ content }}</div>
+		</div>
+	</section>
+	{% for page in site.pages %}
+		{% if page.title %}
+		<a class="page-link" href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a>
+		{% endif %}
+	{% endfor %}
+	{% include footer.html %}
+<script id="mobileNav" type="text/template">
+	<div class="container">
+		<ul>
+		{% raw %}
+			{{#jsMenu}}
+				<li>
+					<a href="{{href}}" title="{{title}}"><h3>{{title}}</h3></a>
+				</li>
+			{{/jsMenu}}
+		{% endraw %}
+		</ul>
+	</div>
+</script>
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+<script src="/js/min/mustache.min.js"></script>
+<script>window.jQuery || document.write('<script src="js/vendor/jquery-1.7.2.min.js"><\/script>')</script>
+<script src="/js/min/cm.min.js"></script>
+</body>
+</html>

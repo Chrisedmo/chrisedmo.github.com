@@ -4,54 +4,8 @@
 <!--[if IE 8]>    <html class="no-js lt-ie10 lt-ie9" lang="en"> <![endif]-->
 <!--[if IE 9]>    <html class="no-js lt-ie10" lang="en"> <![endif]-->
 <!--[if gt IE 9]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
-<head>
-	<meta charset="utf-8">
-	<title> {% if page.title %} {{ page.title }} | {% endif %} Chris Mousdale :: Designer &amp; Developer</title>
-	{% if page.description %}
-	<meta name="description" content="{{ page.description }}">
-	<meta name="og:description" content="{{ page.description }}">
-	{% else %}
-	<meta name="description" content="{{ site.description }}">
-	<meta name="og:description" content="{{ site.description }}">
-	{% endif %}
-	<meta property="og:title" content="{{page.title}}" />
-	{% if page.image %}
-	<meta property="og:image" content="{{page.image}}" />
-	{% endif %}
-
-	<meta name="author" content="Chris Mousdale">
-	<meta name="publisher" content="Chris Mousdale"/>
-	<meta name="copyright" content="Chris Mousdale"/>
-	<meta name="HandheldFriendly" content="True">
-	<meta name="viewport" content="width=device-width,initial-scale=1">
-	<meta http-equiv="cleartype" content="on">
-	<link rel="author" href="https://plus.google.com/+ChrisMousdale/">
-	<link rel="alternate" type="application/atom+xml" title="RSS Feed for mousdale.com" href="/feed.atom" />
-	<!-- Prefetch DNS for external assets (Twitter widgets etc). -->
-	<link rel="dns-prefetch" href="//fonts.googleapis.com">
-  <link rel="dns-prefetch" href="//use.typekit.net/">
-  <link rel="dns-prefetch" href="//platform.twitter.com">
-  <link rel="dns-prefetch" href="//www.google-analytics.com">
-  <link rel="dns-prefetch" href="//p.twitter.com">
-  <link rel="dns-prefetch" href="//cdn.api.twitter.com">
-  <link rel="dns-prefetch" href="//mousdale.disqus.com">
-    <!-- TYPEKIT I LOVE YOU -->
-	<script type="text/javascript">
-	  (function() {
-	    var config = {
-	      kitId: 'ezu6pyt',
-	      scriptTimeout: 3000
-	    };
-	    var h=document.getElementsByTagName("html")[0];h.className+=" wf-loading";var t=setTimeout(function(){h.className=h.className.replace(/(\s|^)wf-loading(\s|$)/g," ");h.className+=" wf-inactive"},config.scriptTimeout);var tk=document.createElement("script"),d=false;tk.src='//use.typekit.net/'+config.kitId+'.js';tk.type="text/javascript";tk.async="true";tk.onload=tk.onreadystatechange=function(){var a=this.readyState;if(d||a&&a!="complete"&&a!="loaded")return;d=true;clearTimeout(t);try{Typekit.load(config)}catch(b){}};var s=document.getElementsByTagName("script")[0];s.parentNode.insertBefore(tk,s)
-	  })();
-	</script>
-	<link rel="stylesheet" href="/css/main.css">
-	<script src="/js/modernizr.custom.js"></script>
-</head>
+{% include head.html %}
 <body class="blog-post {{ page.page-class }}" itemscope itemType="http://schema.org/BlogPosting">
- {% include pop-nav.html %}
-
-	{% include header-b.html %}
 
 	<header {% if page.image %} class="blog-post intro image" style="background: url('{{ page.image }}') no-repeat center; background-size: cover;">{% else %} class="blog-post intro" style="background-color: #{{ page.bg }};">{% endif %}
 		{% if page.image %}<meta itemprop="image" content="{{ page.image }}"/>{% endif %}
@@ -73,7 +27,6 @@
 						Comments: <a href="{{ post.url }}#disqus_thread" data-disqus-identifier="{{ post.path | split:'/' | last | cgi_escape }}" title="View comments for this post"></a>
 					</p>
 				{% endif %}
-				{% include profile.md %}
 			</aside>
 			<div itemprop="articleBody">{{ content }}</div>
 		</article>
