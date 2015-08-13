@@ -1,0 +1,28 @@
+$gothic: "brandon-grotesque-1","brandon-grotesque-2", sans-serif;
+$serif: "ff-tisa-web-pro-1","ff-tisa-web-pro-2", palatino, serif;
+
+$base: 18px;
+$base-mobile: 16px;
+$line-height: ($base * 1.55);
+
+$size1: ($base - 6px);
+$size2: ($base + ($base / 2));
+
+$padding: ($base * 2);
+
+$mobile-space: 30px;
+
+$headerHeight: 60px;
+
+
+// COLOURS
+
+$lGray: #eee;
+$link: #34678B;
+$accent: #FF8324;
+$orange: #e67e22;
+$sex: #b50d9b;
+
+$nav-colour: #f39c12;
+$nav-colour-1: #d35400;
+$nav-colour-2: $orange;
