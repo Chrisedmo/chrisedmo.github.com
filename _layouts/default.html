@@ -1,15 +1,12 @@
 {% include head.html %}
+{% include main-navigation.html %}
 <body class="home {{ page.page-class }}">
 	<section role="content" class="home-intro">
 		<div class="container">
 			<div class="home-inner">{{ content }}</div>
 		</div>
 	</section>
-	{% for page in site.pages %}
-		{% if page.title %}
-		<a class="page-link" href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a>
-		{% endif %}
-	{% endfor %}
+
 	{% include footer.html %}
 <script id="mobileNav" type="text/template">
 	<div class="container">

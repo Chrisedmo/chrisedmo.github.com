@@ -1,4 +1,5 @@
 {% include head.html %}
+{% include main-navigation.html %}
 <body class="blog-post {{ page.page-class }}" itemscope itemType="http://schema.org/BlogPosting">
 
 	<header {% if page.image %} class="blog-post intro image" style="background: url('{{ page.image }}') no-repeat center; background-size: cover;">{% else %} class="blog-post intro" style="background-color: #{{ page.bg }};">{% endif %}
