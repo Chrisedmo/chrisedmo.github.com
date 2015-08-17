@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Chris Mousdale Online CV
+title: Chris Mousdale CV
 ---
 
 ## Gah… still working on this bit…

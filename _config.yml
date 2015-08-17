@@ -9,16 +9,12 @@ excerpt_separator: "\n\n"
 
 # NAVIGATION
 navigation:
- - title: Home
-   url: /index.html
  - title: Projects
    url: /projects/
  - title: About
    url: /about.html
  - title: Blog
    url: /blog/
- - title: Contact
-   url: /contact.html
 
 # CONTACT DETAILS
 email_address: chris@mousdale.com

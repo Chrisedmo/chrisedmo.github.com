@@ -1,9 +1,9 @@
 <nav role="navigation">
     <ul>
-    {% for link in site.navigation %}
-        <li{% if page.url contains link.url %} class="active"{% endif %}>
-            <a href="{{ link.url }}">{{ link.title }}</a>
-        </li>
-    {% endfor %}
+      {% for link in site.navigation %}
+          <li{% if page.url contains link.url %} class="active"{% endif %}>
+              <a href="{{ link.url }}">{{ link.title }}</a>
+          </li>
+      {% endfor %}
     </ul>
 </nav>

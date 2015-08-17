@@ -1,30 +1,15 @@
 <div class="blog-feed">
-    <div class="divider">
-        <div class="container">
-            <aside>
-                <h2>More of my blog posts:</h2>
-                <p>Here you will find a collection of my articles and thoughts. </p>
-                <p>You can subscribe via <a href="/feed.xml" title="Chris Mousdale's RSS feed">RSS</a>, or follow me on <a href="http://www.twitter.com/chrisedmo">Twitter</a> for more.</p>
-            </aside>
-            <aside class="posts">
-                <ul class="block-list" role="navigation">
-                    {% for post in site.posts %}
-                    <li {% if post.image %} class="wt" style="background: url('{{ post.image }}') no-repeat center; background-size: cover;"{% endif %}{% if post.bg %}class="wt" style="background-color: #{{ post.bg }}"{% endif %}>
-                        <a href="{{ post.url }}" title="{{ post.title }}">
-                            <span class="container">
-                                <span class="date-container">
-                                    <p class="date">{{ post.date | date: "%d %B, %Y" }}</p>
-                                </span>
-                                <span class="post-container">
-                                    <h2 class="post-title">{{ post.title }}</h2>
-                                    <p>{{ post.short }}</p>
-                                </span>
-                            </span>
-                        </a>
-                    </li>
-                    {% endfor %}
-                </ul>
-            </aside>
-        </div>
-    </div>
+  <aside class="posts">
+    <ul role="navigation">
+      {% for post in site.posts %}
+      <li style="{% if post.image %}background: url('{{ post.image }}') no-repeat center; background-size: cover;{% else %}background-color: #{{ post.bg }}{% endif %}">
+        <a href="{{ post.url }}" title="{{ post.title }}">
+          <span class="date">{{ post.date | date: "%d %B, %Y" }}</span>
+          <h2 class="post-title">{{ post.title }}</h2>
+          <p>{{ post.short }}</p>
+        </a>
+      </li>
+      {% endfor %}
+    </ul>
+  </aside>
 </div>
